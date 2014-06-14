@@ -1,0 +1,8 @@
+Ihor asked us to give him a list of technologies, which we want to use in our project.
+Let's write some suggestions with technologies, you think will be suitable for our project, below.
+
+For example:
+
+I'd like to use sass for styling our components.
+And I also think it would be good practise to use native js, not JQuery and plugins, but if we will need some plugins
+later, it also would not very bad.
