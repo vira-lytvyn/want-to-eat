@@ -6,5 +6,3 @@ For example:
 I'd like to use sass for styling our components.
 And I also think it would be good practise to use native js, not JQuery and plugins, but if we will need some plugins
 later, it also would not very bad.
-
-blablabla_Test
