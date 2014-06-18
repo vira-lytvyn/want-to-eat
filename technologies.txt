@@ -12,8 +12,10 @@ bad if we'll commit all node modules to git repository, we should install all gr
 push only package.json file to github).
 
 
-������ {
-	��� ������� �� �������㳿 ���������������. ��� � ��� ��� ������ ���� ��������� - � ��� ���� � � ���������.
-	� ����� ���������� �� ��������� ���� ������� ������� ���������. ������ ������ ������ �� ��������� ���.
-	SASS � ��������.. ��� �������� � ������ ���� ������ ���-��������� - ���������� � ����. �� ���� �������� ����� �� ���� � ����� �� ���� �������.
+Volodya {
+	Actually I don't care what technologies to use. Everything what do you need - will I use.
+	I just have a proposal to not use a lot of technologies, because in our project we don't need that, and that may make a exstra problems.
+	I propose just to use native code.
+	I support to use SASS here.. if I understand right it's nothing over-complicated there.
+	I hope we can get used it for a day and it will be more better to work with SASS.
 }
