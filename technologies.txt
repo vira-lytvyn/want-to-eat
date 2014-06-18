@@ -8,8 +8,10 @@ And I also think it would be good practise to use native js, not JQuery and plug
 later, it also would not very bad.
 
 
-Володя {
-	Мені байдуже які технології використовувати. Все з чим вам зручно буде працювати - з тим буду і я працювати.
-	Є також пропозиція не загружати себе великою кількістю технологій. Просто посати проект на нейтівному коді.
-	SASS я підтримую.. там наскільки я розумію немає чогось над-складного - вкладеності і змінні. до того звикнути можна за день і думаю це буде зручніше.
+Volodya {
+	Actually I don't care what technologies to use. Everything what do you need - will I use.
+	I just have a proposal to not use a lot of technologies, because in our project we don't need that, and that may make a exstra problems.
+	I propose just to use native code.
+	I support to use SASS here.. if I understand right it's nothing over-complicated there.
+	I hope we can get used it for a day and it will be more better to work with SASS.
 }
