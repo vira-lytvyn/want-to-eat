@@ -6,3 +6,10 @@ For example:
 I'd like to use sass for styling our components.
 And I also think it would be good practise to use native js, not JQuery and plugins, but if we will need some plugins
 later, it also would not very bad.
+
+
+Володя {
+	Мені байдуже які технології використовувати. Все з чим вам зручно буде працювати - з тим буду і я працювати.
+	Є також пропозиція не загружати себе великою кількістю технологій. Просто посати проект на нейтівному коді.
+	SASS я підтримую.. там наскільки я розумію немає чогось над-складного - вкладеності і змінні. до того звикнути можна за день і думаю це буде зручніше.
+}
