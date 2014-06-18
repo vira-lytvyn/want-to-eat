@@ -3,14 +3,15 @@ Let's write some suggestions with technologies, you think will be suitable for o
 
 For example:
 
-I'd like to use sass for styling our components.
-And I also think it would be good practise to use native js, not JQuery and plugins, but if we will need some plugins
-later, it also would not very bad.
+Vira {
+    I'd like to use sass for styling our components.
+    And I also think it would be good practise to use native js, not JQuery and plugins, but if we will need some plugins
+    later, it also would not very bad.
 
-And what about grunt? I'd like to use it... We can practice in configuring grunt and git(locally, because it would be
-bad if we'll commit all node modules to git repository, we should install all grunt modules in '--save dev' mode and
-push only package.json file to github).
-
+    And what about grunt? I'd like to use it... We can practice in configuring grunt and git(locally, because it would be
+    bad if we'll commit all node modules to git repository, we should install all grunt modules in '--save dev' mode and
+    push only package.json file to github).
+}
 
 Volodya {
 	Actually I don't care what technologies to use. Everything what do you need - will I use.
