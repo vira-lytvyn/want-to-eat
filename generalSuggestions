@@ -1,0 +1,7 @@
+I have one more suggestion, about our project.
+
+I think it would be not bad if we create one more git branch. For example, "dev" branch, and will work with this
+branch and in "master" brunch we well merge only "build" files. We can push to master branch every two days, or daily,
+or weekly, or when we'll need this.
+
+But we can do it a bit later, after listening a presentation about SCM.
