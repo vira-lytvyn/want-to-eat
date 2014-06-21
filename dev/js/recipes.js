@@ -1,7 +1,7 @@
 var id = 0;
 var parent = document.getElementById('placeHolder');
 
-function buildRecipeDescription(id) {
+function buildRecipeDetail(id) {
     var currentRecipe = data[id];
 
     var recipe = document.createElement('div');
@@ -74,5 +74,5 @@ function sendEmail(dataRecipe) {
 }
 
 
-var doneRecipe = buildRecipeDescription(id);
+var doneRecipe = buildRecipeDetail(id);
 pushDoneRecipe (parent, doneRecipe);
