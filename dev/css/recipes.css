@@ -5,7 +5,15 @@ body {
 #placeHolder {
     background: gray;
     width: 90%;
-    min-height: 300px;
     margin: 0 auto;
     padding: 20px;
+}
+
+#doneRecipe {
+    background: lime;
+    padding: 20px;
+}
+
+#doneRecipe img {
+    float: right;
 }
