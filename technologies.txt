@@ -22,3 +22,5 @@ Volodya {
 }
 
 test commit from Volodia
+
+test commit from Taras
