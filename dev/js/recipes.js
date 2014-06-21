@@ -1,6 +1,5 @@
 var id = 0;
 var parent = document.getElementById('placeHolder');
-console.log()
 
 function buildRecipeDescription(id) {
     var currentRecipe = data[id];
@@ -50,9 +49,10 @@ function pushDoneRecipe (parentElement, recipe) {
 
 function sendEmail(dataRecipe) {
 
-    var box = document.createElement('div');
+    var box = document.createElement('fomr');
     box.id = 'sendEmail';
     box.style.display = 'block';
+    box.setAttribute ('action', '#');
 
     var email = document.createElement('input');
     email.type = 'email';
@@ -60,10 +60,16 @@ function sendEmail(dataRecipe) {
 
 
     var send = document.createElement('input');
-    send.type = 'button';
+    send.type = 'submit';
+    send.value = 'send';
+    send.onclick = function() {
+//        submit();
+        box.style.display = 'none';
+    }
     box.appendChild(send);
 
-    document.body.apenndChild(box);
+    document.getElementById('placeHolder').appendChild(box);
+    box.style.marginLeft = parseInt(getComputedStyle(box).marginLeft) - (box.clientWidth / 2) + 'px';
 }
 
 

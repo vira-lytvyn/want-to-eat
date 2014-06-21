@@ -17,3 +17,11 @@ body {
 #doneRecipe img {
     float: right;
 }
+
+#sendEmail {
+    background: #666;
+    position: absolute;
+    padding: 5px;
+    left: 50%;
+    top: 20%;
+}
