@@ -1,7 +1,7 @@
-function attachReaction (event, element) {
+function attachReaction (event, element, func) {
     if (element.attachEvent) {
-        return element.attachEvent('on'+event, showHideSublist);
+        return element.attachEvent('on'+event, func);
     } else {
-        return element.addEventListener(event, showHideSublist, false);
+        return element.addEventListener(event, func, false);
     }
 }
