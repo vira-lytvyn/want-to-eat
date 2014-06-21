@@ -2360,7 +2360,8 @@ var data = [
         "ingredients": [
             "enim dolore cupidatat ut",
             "consectetur elit nostrud pariatur",
-            "et Lorem commodo ex        "laboris nostrud aute deserunt",
+            "et Lorem commodo ex        ",
+            "laboris nostrud aute deserunt",
             "quis reprehenderit ad magna",
             "veniam ipsum esse eiusmod",
             "duis magna irure labore"
