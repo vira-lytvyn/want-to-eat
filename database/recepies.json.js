@@ -1,4 +1,4 @@
-[
+var data = [
     {
         "id": 0,
         "recipe_id": 41470,
