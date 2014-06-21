@@ -31,6 +31,7 @@ function buildRecipeDescription(id) {
     save.value = 'save';
     save.type = 'button';
     recipe.appendChild(save);
+    attachReaction('click', save);
 
     var share = document.createElement('input');
     share.value = 'share by e-mail';
