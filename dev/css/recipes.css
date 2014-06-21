@@ -1,0 +1,11 @@
+body {
+    background: #000;
+}
+
+#placeHolder {
+    background: gray;
+    width: 90%;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
