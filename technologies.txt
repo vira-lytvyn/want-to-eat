@@ -20,3 +20,7 @@ Volodya {
 	I support to use SASS here.. if I understand right it's nothing over-complicated there.
 	I hope we can get used it for a day and it will be more better to work with SASS.
 }
+
+test commit from Volodia
+
+test commit from Taras
