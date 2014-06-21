@@ -13,6 +13,8 @@ Vira {
     push only package.json file to github).
 }
 
+some changes
+
 Volodya {
 	Actually I don't care what technologies to use. Everything what do you need - will I use.
 	I just have a proposal to not use a lot of technologies, because in our project we don't need that, and that may make a exstra problems.
