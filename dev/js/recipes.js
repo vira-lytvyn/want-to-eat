@@ -31,7 +31,7 @@ function buildRecipeDetail(id) {
     save.value = 'save';
     save.type = 'button';
     recipe.appendChild(save);
-    attachReaction('click', save);
+    attachReaction('click', save, setCookie(id));
 
     var share = document.createElement('input');
     share.value = 'share by e-mail';
