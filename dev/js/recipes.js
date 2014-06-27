@@ -1,4 +1,4 @@
-var id = 0;
+var id = 5;
 var parent = document.getElementById('placeHolder');
 
 function buildRecipeDetail(id) {
@@ -31,7 +31,7 @@ function buildRecipeDetail(id) {
     save.value = 'save';
     save.type = 'button';
     recipe.appendChild(save);
-    attachReaction('click', save, setCookie(id));
+    attachReaction('click', save, createCookie('recipe_' + id, id, 7));
 
     var share = document.createElement('input');
     share.value = 'share by e-mail';
