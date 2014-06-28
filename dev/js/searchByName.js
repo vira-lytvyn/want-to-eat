@@ -12,7 +12,9 @@ function searchBy() {
     var nameArr = searchByName(mealArrByName);
     var authorArr = searchByAuthor(mealArrByAuthor);
 
+    console.log('by name');
     console.log(nameArr);
+    console.log('by author');
     console.log(authorArr);
 
     console.log(new Date/1000 - time);
@@ -74,11 +76,6 @@ function searchByName(mealArr) {
     }
 
     mealArr = directArr.concat(directWordsArr, withinArr, multiWordsInlineArr, multiWordsArr);
-    console.log(directArr);
-    console.log(directWordsArr);
-    console.log(withinArr);
-    console.log(multiWordsInlineArr);
-    console.log(multiWordsArr);
     return mealArr
 }
 
@@ -138,10 +135,5 @@ function searchByAuthor(mealArr) {
     }
 
     mealArr = directArr.concat(directWordsArr, withinArr, multiWordsInlineArr, multiWordsArr);
-    console.log(directArr);
-    console.log(directWordsArr);
-    console.log(withinArr);
-    console.log(multiWordsInlineArr);
-    console.log(multiWordsArr);
     return mealArr
 }
