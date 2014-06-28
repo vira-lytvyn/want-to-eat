@@ -18,7 +18,7 @@
 #section2 h2{
     text-align: center;
 }
-.radio{
+.categoryRadio{
     margin-left: 50px ;
 }
 
@@ -35,7 +35,7 @@ div.ingredients_div h3{
     display: block;
     width: 100px;
     margin: 15px auto 10px;
-    text-align: center;
+
 }
 
 .getRecipeButton{
