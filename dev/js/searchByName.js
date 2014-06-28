@@ -14,6 +14,7 @@ function searchBy() {
 
     console.log('by name');
     console.log(nameArr);
+
     console.log('by author');
     console.log(authorArr);
 
