@@ -23,6 +23,16 @@ function buildRecipeDetail(id) {
     time.innerHTML = 'added: ' + currentRecipe.added + ';';
     recipe.appendChild(time);
 
+    var ingredients = document.createElement('ol');
+    var ingData = currentRecipe.ingredients;
+    for (var i = 0; i < ingData.length; i++) {
+        ingredients.innerHTML += '<li>' + ingData[i] + '</li>';
+    }
+    var ingSpan = document.createElement('span');
+    ingSpan.innerHTML = 'you need such ingredients:<br/>';
+    ingredients.insertBefore(ingSpan, ingredients.firstChild);
+    recipe.appendChild(ingredients);
+
     var description = document.createElement('p');
     description.innerHTML = currentRecipe.description;
     recipe.appendChild(description);
@@ -41,12 +51,10 @@ function buildRecipeDetail(id) {
     };
     recipe.appendChild(share);
 
-    return recipe;
+    document.getElementById('placeHolder').appendChild(recipe);
 }
 
-function pushDoneRecipe (parentElement, recipe) {
-    parentElement.appendChild(recipe);
-}
+buildRecipeDetail(id);
 
 function sendEmail(dataRecipe) {
 
@@ -64,7 +72,6 @@ function sendEmail(dataRecipe) {
     send.type = 'submit';
     send.value = 'send';
     send.onclick = function() {
-//        submit();
         box.style.display = 'none';
     }
     box.appendChild(send);
@@ -72,7 +79,3 @@ function sendEmail(dataRecipe) {
     document.getElementById('placeHolder').appendChild(box);
     box.style.marginLeft = parseInt(getComputedStyle(box).marginLeft) - (box.clientWidth / 2) + 'px';
 }
-
-
-var doneRecipe = buildRecipeDetail(id);
-pushDoneRecipe (parent, doneRecipe);
