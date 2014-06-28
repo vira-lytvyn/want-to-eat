@@ -1,6 +1,3 @@
-var id = 5;
-var parent = document.getElementById('placeHolder');
-
 function buildRecipeDetail(id) {
     var currentRecipe = data[id];
 
@@ -54,9 +51,11 @@ function buildRecipeDetail(id) {
     document.getElementById('placeHolder').appendChild(recipe);
 }
 
-buildRecipeDetail(id);
+buildRecipeDetail(5);
 
 function sendEmail(dataRecipe) {
+
+    console.log(dataRecipe);
 
     var box = document.createElement('fomr');
     box.id = 'sendEmail';
@@ -73,7 +72,7 @@ function sendEmail(dataRecipe) {
     send.value = 'send';
     send.onclick = function() {
         box.style.display = 'none';
-    }
+    };
     box.appendChild(send);
 
     document.getElementById('placeHolder').appendChild(box);
