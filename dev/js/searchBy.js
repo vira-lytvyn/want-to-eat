@@ -74,6 +74,5 @@ function searchByTarget(target) {
     }
 
     totalArr = directArr.concat(directWordsArr, withinArr, multiWordsInlineArr, multiWordsArr);
-
     return totalArr;
 }
