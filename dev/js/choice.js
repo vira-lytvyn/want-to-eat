@@ -6,7 +6,7 @@
 var clientIngredients;
 var clientCategory;
 
-function selectCategory(ID){
+function selectCategory(id){
     var form = document.getElementById('category_form');
     var categories = form.getElementsByTagName('div');//select all div(categories)
 
