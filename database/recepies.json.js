@@ -135,5 +135,60 @@ var data = [
             "Add more lemon zest to the glaze for an extra lemon flavor."
         ],
         "source_url": "http://www.wikihow.com/Make-Starbucks-Lemon-Loaf"
+    },
+    {
+        "id": 11,
+        "title": "Fruit and Chocolate Salad",
+        "authors": ["DarknessAndLight", "Adelaide", "Ally"],
+        "picture": "http://pad2.whstatic.com/images/thumb/1/1c/Make-a-Fruit-and-Chocolate-Salad-Step-7.jpg/670px-Make-a-Fruit-and-Chocolate-Salad-Step-7.jpg",
+        "description": "Like healthy foods but love chocolate too? If so, fruit and chocolate salad is for you!",
+        "ingredients": [
+            "9 Strawberries", "1 Apple", "1 Orange",
+            "Chocolate sauce", "Small white chocolate bar" , "1 Lemon"
+        ],
+        "rate": 86,
+        "category": "salads",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Wash your hands.",
+                "description": "Wash your hands."
+            },
+            {
+                "id": 2,
+                "name": "Gather everything you need.",
+                "description": "Put the nine strawberries into a bowl, along with the apple and orange. Turn on the tap water and put the bowl underneath it. Wash all the fruits thoroughly, but not so much that they get battered!"
+            },
+            {
+                "id": 3,
+                "name": "Gently pat the fruits dry with your kitchen roll and put them back in the bowl.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Place your grater over the bowl and grate the white chocolate carefully into it.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Put the grater to the side and chop open a lemon.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Squeeze the lemon juice over the fruits and then squirt some chocolate sauce on, too.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Done.",
+                "description": "Serves 4 people."
+            }
+        ],
+        "tips": [
+            "Be very careful when using knives and graters!"
+        ],
+        "source_url": "http://www.wikihow.com/Make-a-Fruit-and-Chocolate-Salad"
     }
 ];
