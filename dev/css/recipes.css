@@ -3,25 +3,69 @@ body {
 }
 
 #placeHolder {
-    background: gray;
-    width: 90%;
+    background: white;
+    width: 320px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 #doneRecipe {
-    background: lime;
-    padding: 20px;
+    background: gray;
+    padding-top: 5px;
 }
 
-#doneRecipe img {
+.main-blocks {
+    display: block;
+    background: darkorange;
+    padding: 1.5%;
+    margin: 1.5%;
+    margin-bottom: 5px;
+}
+
+.main-blocks.info {
+    display: block;
+    width: 44%;
+    float: left;
+    height: 40px;
+}
+
+.sub-blocks {
+    background: yellow;
+    margin: 5px -5px -5px -5px;
+}
+
+.main-blocks img {
     float: right;
 }
 
-#sendEmail {
-    background: #666;
-    position: absolute;
-    padding: 5px;
-    left: 50%;
-    top: 20%;
+#ingredients {
+    clear: both;
+}
+
+#mealCat {
+    background: seagreen;
+    margin-right: 5px;
+    padding: 0 2px;
+}
+#mealType {
+    background: firebrick;
+    margin-right: 5px;
+    padding: 0 2px;
+}
+
+#source {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+#author,
+#ingTitle {
+    cursor: pointer;
+}
+
+.main-blocks.button {
+    display: inline-block;
+    width: 47%;
+    cursor: pointer;
 }
