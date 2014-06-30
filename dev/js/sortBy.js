@@ -20,4 +20,4 @@ function sortBy(target, data) {
     console.log(data);
 }
 
-sortBy('title', data);
+//sortBy('title', data);
