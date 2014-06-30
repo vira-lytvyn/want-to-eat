@@ -428,5 +428,401 @@ var data = [
             "You can make the pizza for any number of people, depending on the amount of dough."
         ],
         "source_url": "http://www.wikihow.com/Make-a-Hawaiian-Pizza"
+    },
+    {
+        "id": 16,
+        "title": "Turkey Sandwich",
+        "authors": ["Shakira", "Suki", "Tryme2", "Maniac"],
+        "picture": "http://pad3.whstatic.com/images/thumb/3/33/Create-a-Turkey-Sandwich-Step-8.jpg/670px-Create-a-Turkey-Sandwich-Step-8.jpg",
+        "description": "Turkey sandwiches and really tasty, especially so if done right. Here is the guide on how to make a perfect turkey sandwich!",
+        "ingredients": [
+            "Mayonnaise or salad cream or good, thick butter (to your own preference or need)", "2 slices of thick bread (white, brown and seeded are best)", "A good amount of fresh turkey (from a roast or something like that, though packaged turkey can be used)",
+            "A handful of lettuce", "1 tomato"
+        ],
+        "rate": 65,
+        "category": "sandwiches",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Wash your hands well, making sure you get under the nails and right in between the fingers)",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Get the bread and smear each slice thickly with your chosen spread.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Layer your turkey evenly onto one slice of bread, leaving small gaps every now and then to allow the spread to ooze through.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Tuck in your lettuce, making sure that you layer it evenly, because an uneven spread of lettuce can make the sandwich dull.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Slice your tomato on a clean chopping board incredibly thinly, making sure that it is also even.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Gently press your second slice of bread onto your beautiful sandwich, making sure that is is parallel to the other slice.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Cut into 4 small, even triangles or 2 large squares.",
+                "description": "Triangles make them look petite and pretty while enormous squares look like a good heart doorstep."
+            },
+            {
+                "id": 8,
+                "name": "Serve on pretty bone china plates or chipped, cracked plain plates for either a stately look or a rough and ready look.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Best serves with lemonade and cupcakes.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Cut everything thinly and delicately."
+        ],
+        "source_url": "http://www.wikihow.com/Create-a-Turkey-Sandwich"
+    },
+    {
+        "id": 17,
+        "title": "Double Decker Grilled Cheese",
+        "authors": ["Chr1st1e", "MA", "Sondra C", "Maluniu"],
+        "picture": "http://pad2.whstatic.com/images/thumb/1/16/Make-a-Double-Decker-Grilled-Cheese-Intro.jpg/670px-Make-a-Double-Decker-Grilled-Cheese-Intro.jpg",
+        "description": "Enjoy a simple and time saving snack that you can make under ten minutes, so a grilled cheese is the perfect snack! But if you are one with a bigger appetite then you might want to consider this recipe!",
+        "ingredients": [
+            "2 tablespoons butter", "3 slices bread", "American sliced cheese"
+        ],
+        "rate": 57,
+        "category": "sandwiches",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Heat a frying pan on medium heat.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Spread at least 2 teaspoons of butter on each of the 3 slices of bread.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Make a regular grilled cheese sandwich in the pan.",
+                "description": "Flip it over when it's toasted."
+            },
+            {
+                "id": 4,
+                "name": "Add the 2nd slice of cheese on top and layer the 3rd slice of bread.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Carefully flip it over to toast the new slice of bread.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Remove from the heat and enjoy.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "For added flavour try adding ham or tomatoes to your double-decker grilled cheese",
+            "You can keep using this method using more than three slices of bread for up to however many slices you want. Just keep flipping the bread and adding on to it.",
+            "Use a cast-iron pan or a good non-stick pan",
+            "Use more than one type and cheese for one sandwich.",
+            "Try adding garlic salt along with the butter for extra taste",
+            "If you are in the mood to be creative you could also use different shaped cutters and make your double-decker grilled cheese into fun shapes!"
+        ],
+        "source_url": "http://www.wikihow.com/Make-a-Double-Decker-Grilled-Cheese"
+    },
+    {
+        "id": 18,
+        "title": "Bowl of Chicken Soup",
+        "authors": ["MA", "BR", "Lillian May", "Ivica"],
+        "picture": "http://pad3.whstatic.com/images/thumb/b/b7/Make-a-Bowl-of-Chicken-Soup-Intro.jpg/670px-Make-a-Bowl-of-Chicken-Soup-Intro.jpg",
+        "description": "A bowl of chicken stock and noodles is a great, quick meal if you are sick or are in no time to cook another meal. The stock can soothe your throat if you are suffering with a cold.",
+        "ingredients": [
+            "A package of egg noodles", "1 teaspoon chicken stock (bouillon granules)", "Various spices [optional]",
+            "Spring onions (green onions) [optional]"
+        ],
+        "rate": 63,
+        "category": "soups",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Warm up the water in the saucepan and get the stock ready.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Put in one teaspoon of chicken stock (granules) in the boiling water.",
+                "description": "If the water turns a deep yellow it is ready for the noodles. If not put in some extra stock."
+            },
+            {
+                "id": 3,
+                "name": "Add herbs and spices, if using.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Add the noodles.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Wait 5 minutes with the stove on high.",
+                "description": "If it starts to boil over turn it down to a low boil or simmer."
+            },
+            {
+                "id": 6,
+                "name": "Cook until the noodles are tender.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "When ready pour into bowl and serve with spring onions on top.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "A good guide is to use about 1 cup egg noodles, depending on size, for every cup of liquid."
+        ],
+        "source_url": "http://www.wikihow.com/Make-a-Bowl-of-Chicken-Soup"
+    },
+    {
+        "id": 19,
+        "title": "Make Chicken Noodle Soup",
+        "authors": ["MA", "Tryme2", "Maluniu", "Divascancook"],
+        "picture": "http://pad1.whstatic.com/images/thumb/9/94/Make-Chicken-Noodle-Soup-Step-11.jpg/670px-Make-Chicken-Noodle-Soup-Step-11.jpg",
+        "description": "Chicken noodle soup is a hearty soup that is perfect for a cold winter’s day, for helping you get over a cold, or just for any day when you have a craving for chicken, noodles, and vegetable goodness. There are a variety of ways to make chicken soup, whether you want it to be creamy, spicy, or just a little different. If you want to know how to make chicken noodle soup, just follow these steps.",
+        "ingredients": [
+            "2 large chicken breasts", "4 diced carrots",
+            "4 diced celery stalks", "3/4 white onion" , "3 sprigs fresh parsley",
+            "1 tsp. garlic powder", "1 tsp. black pepper", "1 tsp. salt", "A few dashes of poultry seasoning",
+            "2 cups egg noodles", "2-3 low sodium bouillon cubes", "1 tbsp. butter"
+        ],
+        "rate": 54,
+        "category": "soups",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Add the chicken breasts, celery, carrots, onions, and parsley in a large pot.",
+                "description": "Place 2 large chicken breasts, 2 chopped celery stalks, 2 chopped carrots, 1/2 a diced white onion, and 3 springs of fresh parsley into a large pot."
+            },
+            {
+                "id": 2,
+                "name": "Cover the ingredients with water and add seasonings.",
+                "description": "Cover the ingredients with water and add 1 tsp. of garlic powder, 1 tsp. of black pepper, and 1 tsp. of salt."
+            },
+            {
+                "id": 3,
+                "name": "Bring the ingredients to a boil and reduce the heat.",
+                "description": "Then, cover the soup and let it simmer of 1 hour. This will blend the ingredients that will make up the chicken soup stock."
+            },
+            {
+                "id": 4,
+                "name": "Skim off any foam that rises to the top.",
+                "description": "This will make the soup’s stock even tastier."
+            },
+            {
+                "id": 5,
+                "name": "Remove the chicken and set it aside to cool.",
+                "description": "Place it on a plate"
+            },
+            {
+                "id": 6,
+                "name": "Strain the stock into a bowl.",
+                "description": "Then, transfer it back into the pot and place it on the range."
+            },
+            {
+                "id": 7,
+                "name": "Add bouillon cubes and allow them to dissolve by bringing it to a boil.",
+                "description": "Add additional seasonings to taste."
+            },
+            {
+                "id": 8,
+                "name": "Pick the meat off the bone and set it aside.",
+                "description": "The chicken in the soup will be free of bones."
+            },
+            {
+                "id": 9,
+                "name": "Chop up the carrots, onions, and celery and sauté them in a tablespoon of butter.",
+                "description": "Peel and dice 2 carrots and dice 2 celery stalks and 1/4 of a white onion and saute them in a tablespoon of butter until they’re tender. This should take 3-5 minutes."
+            },
+            {
+                "id": 10,
+                "name": "Add the chicken, carrots, celery, and onion into the stock and bring to a boil for 5-10 minutes or until carrots are tender.",
+                "description": "After five minutes, you can start testing the carrots to see if the soup is ready."
+            },
+            {
+                "id": 11,
+                "name": "Add 2 cups of egg noodles and cook uncovered for 10-12 minutes or until the noodles are tender.",
+                "description": ""
+            },
+            {
+                "id": 12,
+                "name": "Serve.",
+                "description": "Serve this delicious simple chicken noodle soup by itself or with a loaf of bread."
+            }
+        ],
+        "tips": [
+            "Add the seasonings a little at a time and taste the stock after each seasoning. Season until the stock tastes just the way you desire.",
+            "Use cheesecloth to strain the broth if needed",
+            "If you've never made homemade chicken stock, don't be alarmed by the bland taste before you add in the bouillon & seasoning."
+        ],
+        "source_url": ""
+    },
+    {
+        "id": 20,
+        "title": "Barley and Vegetable Soup",
+        "authors": ["Flickety", "MA", "Lillian May,", "Dakinijones"],
+        "picture": "http://pad1.whstatic.com/images/thumb/1/18/Cook-Barley-and-Vegetable-Soup-Intro.jpg/670px-Cook-Barley-and-Vegetable-Soup-Intro.jpg",
+        "description": "A delicious soup that warms and fills on a cold day. Barley is very nutritious and is often used as a staple in hearty soups. This soup can be made ahead of eating; in fact, it improves with keeping and is ideal if you can make a day ahead of serving. This recipe is suitable for vegetarians.",
+        "ingredients": [
+            "3 tbsp olive oil", "1 onion, diced roughly",
+            "2 carrots, washed and diced", "4 sticks of celery, diced" , "8 button mushrooms, sliced",
+            "1/2 red bell pepper/capsicum, julienned", "Handful green beans, chopped into small lengths", "1 cup pearl barley", "2 bay leaves",
+            "Pinch fresh thyme", "sea salt to taste", "freshly ground black pepper"
+        ],
+        "rate": 39,
+        "category": "soups",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Pour the olive oil, onion, carrot, beans, mushrooms, red pepper and celery to the saucepan.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Cook over medium heat for ten minutes.",
+                "description": "Only soften the vegetables; do not let them go brown."
+            },
+            {
+                "id": 3,
+                "name": "Add the barley, thyme and bay leaves.",
+                "description": "Cover generously with cold water."
+            },
+            {
+                "id": 4,
+                "name": "Bring to the boil.",
+                "description": "Turn down the heat and allow to simmer for one hour until the barley is tender."
+            },
+            {
+                "id": 5,
+                "name": "Remove the bay leaves.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Season with salt and pepper to taste.",
+                "description": "Serve."
+            },
+            {
+                "id": 7,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Store the soup covered in the refrigerator for up to four days.",
+            "If wished, the addition of peeled tomato can also make a delicious variant on this soup. Cut into small pieces before adding.",
+            "Barley should be stored in an airtight container in a cool, dry place.",
+            "This is a good hearty soup that can make a meal in itself. Serve with crusty bread or bread rolls for a complete meal."
+        ],
+        "source_url": "http://www.wikihow.com/Cook-Barley-and-Vegetable-Soup"
+    },
+    {
+        "id": 0,
+        "title": "",
+        "authors": ["", "", "", ""],
+        "picture": "",
+        "description": "",
+        "ingredients": [
+            "", "", "",
+            "", "" , "",
+            "", "", "", "",
+            "", "", ""
+        ],
+        "rate": 39,
+        "category": "",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "",
+            ""
+        ],
+        "source_url": ""
     }
 ];
