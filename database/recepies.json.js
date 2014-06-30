@@ -1370,6 +1370,1209 @@ var data = [
         "source_url": "http://www.wikihow.com/Cook-Barley-and-Vegetable-Soup"
     },
     {
+        "id": 21,
+        "title": "Tempeh Bacon",
+        "authors": ["Flickety", "Maluniu", "Spyagent", "Krystle"],
+        "picture": "http://pad3.whstatic.com/images/thumb/8/81/Make-Tasty-Tempeh-Bacon-Step-7.jpg/670px-Make-Tasty-Tempeh-Bacon-Step-7.jpg",
+        "description": "Want to go vegetarian but feel like you can't give up bacon? Here's healthy and yummy way to satisfy your carnivorous cravings while staying meat free! The following recipe will serve two.",
+        "ingredients": [
+            "Litelife organic tempeh (or other suitable brand)", "Organic tamari sauce", "Hot sauce or liquid smoke",
+            "Olive oil"
+        ],
+        "rate": 78,
+        "category": "hot meals, sandwiches",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Cut the tempeh in 1/4 inch strips.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Combine 2 Tbsp",
+                "description": "hot sauce or liquid smoke and 4 tbsp. organic tamari sauce in a shallow dish."
+            },
+            {
+                "id": 3,
+                "name": "Place cut tempeh strips in marinade, flip strips over once, and let stand for 2-5 minutes.",
+                "description": "Tempeh will absorb most of the marinade."
+            },
+            {
+                "id": 4,
+                "name": "Heat skillet with 1 tbsp.",
+                "description": "olive oil or vegetable oil on med high."
+            },
+            {
+                "id": 5,
+                "name": "Place marinated tempeh in skillet and reduce heat to med low.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Brown tempeh for about 3 minutes on each side.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Enjoy with eggs and toast (or how about going vegan and enjoying it with tofu scrambles?",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "If you are trying to avoid fried foods, you may add 1 tbsp. olive oil to marinade and bake tempeh in the toaster oven on 350 degrees for 25 minutes.",
+            "Don't let the oil get too hot before you put the tempeh in the skillet or the oil may pop and burn- much like bacon grease will if it is too hot."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Tempeh-Bacon"
+    },
+    {
+        "id": 22,
+        "title": "Fried Tofu Sticks",
+        "authors": ["ZoeSquared", "DifuWu", "Flickety", "Maluniu"],
+        "picture": "http://pad2.whstatic.com/images/thumb/8/8e/Make-Fried-Tofu-Sticks-Step-8.jpg/670px-Make-Fried-Tofu-Sticks-Step-8.jpg",
+        "description": "Tofu is a useful alternative to meat for those who are vegetarian/vegan or just for those who like the flavor and texture of tofu. These fried tofu stick appetizers are so good that even the wariest of guests will want to try them! These go well with the honey mustard dipping sauce, so the recipe for that is included as well.",
+        "ingredients": [
+            "1 block of firm or extra-firm tofu", "2 tbsp chili sauce or sweet chili sauce", "1 tbsp soya sauce",
+            "2 tbsp corn starch", "1 cup fresh breadcrumbs" , "Salt and pepper to taste", "3 tbsp honey",
+            "1 tbsp Dijon mustard", "1 tsp soya sauce", "Salt and pepper to taste"
+        ],
+        "rate": 93,
+        "category": "hot meals",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Cut the tofu into finger-size strips. ",
+                "description": "Think of extra-thick French fries, and you'll have the right idea of the size needed. Place on folded paper towels and cover with more paper towels. This step will wick away a lot of the moisture. If you like, you might even apply some weight like a plate. Taking away some moisture will give it a chewier texture and eliminate splatter when you fry them. (Don't discard the paper towels. Let them air dry and you can reuse them to wipe up spills.)"
+            },
+            {
+                "id": 2,
+                "name": "Mix the soya sauce and chili sauce together.",
+                "description": "Marinate the tofu in sauce for 30 plus minutes, depending on how flavorful you want it. If you removed some of the moisture, it will absorb the marinade quicker."
+            },
+            {
+                "id": 3,
+                "name": "Mix together the breadcrumbs and cornstarch.",
+                "description": "Add salt and pepper to taste."
+            },
+            {
+                "id": 4,
+                "name": "Roll the tofu strips in the mixture.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Fill a deep frying pan or wok with oil.",
+                "description": "Fry the tofu strips until golden brown. Remove when cooked. If they seem greasy, place on kitchen towel to soak up any extra grease."
+            },
+            {
+                "id": 6,
+                "name": "Make the dipping sauce.",
+                "description": "Simply mix all of the ingredients together and it's ready to go."
+            },
+            {
+                "id": 7,
+                "name": "Serve the slightly cooled tofu sticks immediately.",
+                "description": "Dip tofu sticks into the dip and enjoy!"
+            },
+            {
+                "id": 8,
+                "name": "Finished!",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "See how the tofu strips turn out using garlic breadcrumbs, or any type of bread.",
+            "Enjoy it while it lasts. If you're throwing a party, make double, triple, or more of this recipe. They'll go fast!",
+            "Try out various different dips.",
+            "Try adding herbs or spices to the breadcrumb mixture for interesting flavors.",
+            "Do not use any tofu other than firm or extra-firm. It will fall apart, either when marinating or when frying.",
+            "Watch carefully when frying, and be careful around the hot oil, as it can spit and burn you."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Fried-Tofu-Sticks"
+    },
+    {
+        "id": 23,
+        "title": "Tofu and Summer Vegetables",
+        "authors": ["Flickety", "Tryme2", "Scott Cushman", "BR"],
+        "picture": "http://pad3.whstatic.com/images/thumb/3/38/Make-Tofu-and-Summer-Vegetables-Intro.jpg/670px-Make-Tofu-and-Summer-Vegetables-Intro.jpg",
+        "description": "A perfect summer meal for vegetarians and vegans, this combination of braised vegetables and tofu contains a nutritional power pack sure to please.",
+        "ingredients": [
+            "450g tofu", "1 tbsp olive oil", "1 tbsp butter or vegetable margarine", "2 large onions", "2 cloves garlic",
+            "3 brown mushrooms", "2 zucchini", "1 large red pepper", "1 large green pepper", "1 tsp paprika",
+            "1/2 tsp salt", "1 tsp lemon pepper (check contents are vegetarian)", "400g peeled tomatoes"
+        ],
+        "rate": 74,
+        "category": "salads",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Cut the tofu into small cubes.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Chop the vegetables into small pieces.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Heat the oil and butter or margarine in a heavy based frying pan.",
+                "description": "When the mixture has warmed up, add the onions, garlic and mushrooms. Sauté for 5 minutes or until the onion is soft and translucent."
+            },
+            {
+                "id": 4,
+                "name": "Add all the other ingredients and stir.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Cover and simmer the vegetables and tofu.",
+                "description": "Cook on low heat on the stovetop for three quarters of an hour to an hour."
+            },
+            {
+                "id": 6,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Vary the seasonings as desired."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Tofu-and-Summer-Vegetables"
+    },
+    {
+        "id": 24,
+        "title": "Tofu Ginger Spread",
+        "authors": ["Flickety", "Kalpit"],
+        "picture": "http://pad1.whstatic.com/images/thumb/d/db/Make-Tofu-Ginger-Spread-Step-5.jpg/670px-Make-Tofu-Ginger-Spread-Step-5.jpg",
+        "description": "An easy-to-make vegan spread for sandwiches, crudites and savoury biscuits.",
+        "ingredients": [
+            "220g tofu", "1 dessert spoon tamari", "1 small clove garlic",
+            "1/2 teaspoon ginger root, finely chopped", "1 spring onion, chopped" , "1 tablespoon parsley"
+        ],
+        "rate": 83,
+        "category": "sandwiches, pasta",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Mash the tofu.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Mix the tamari into the tofu.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Crush garlic, ginger, spring onion and parsley.",
+                "description": "Mix them with the mashed tofu."
+            },
+            {
+                "id": 4,
+                "name": "Grind to form a smooth paste.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Use as a spread or dip.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "This makes a great sandwich spread - add salad, cucumber slices, tomato slices etc."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Tofu-Ginger-Spread"
+    },
+    {
+        "id": 25,
+        "title": "Pasta with Swiss Chard and Mushrooms",
+        "authors": ["Lewis Collard", "Caidoz", "Flickety", "Jeff"],
+        "picture": "http://pad1.whstatic.com/images/thumb/9/91/00-Swiss-chard-pasta.JPG/670px-00-Swiss-chard-pasta.JPG",
+        "description": "Swiss chard is a leafy vegetable that is very easy to grow yourself, and is delicious in all sorts of meals. One way to enjoy it is with a quick, simple pasta, made with some cheap and readily-available ingredients.",
+        "ingredients": [
+            "Four large leaves of Swiss chard (spinach leaves are a reasonable substitute)",
+            "150 grams (5.3 oz) pasta (penne or fusilli are ideal)", "Vegetable oil",
+            "Butter (or vegan substitute)", "Four closed-cup mushrooms" , "One onion",
+            "Four cherry tomatoes (or half a normal tomato)", "Salt (or substitute)", "Basil",
+            "Fresh herbs and Parmesan cheese for garnishing (optional)"
+        ],
+        "rate": 90,
+        "category": "pasta",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Add a little oil to your frying pan and put it on a low heat.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Chop the onion finely, avoiding tears.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Add the chopped onion to the frying pan.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Wash the chard thoroughly.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Cut the stems from the chard just below the leaves.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Slice the chard stems into two or three thin segments lengthwise (depending on the thickness of the stem).",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Slice the chard stems in the other direction, to chop them into small chunks.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Add the stems to your frying pan.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Finely chop the leaves of the chard.",
+                "description": ""
+            },
+            {
+                "id": 10,
+                "name": "Add the chard leaves to your frying pan and stir.",
+                "description": ""
+            },
+            {
+                "id": 11,
+                "name": "Chop the four mushrooms finely.",
+                "description": ""
+            },
+            {
+                "id": 12,
+                "name": "Add the chopped mushrooms to the frying pan, then turn up the heat.",
+                "description": ""
+            },
+            {
+                "id": 13,
+                "name": "Cut a slit in the cherry tomatoes.",
+                "description": "Then, squeeze the insides into the frying pan."
+            },
+            {
+                "id": 14,
+                "name": "Chop up the remainder of the tomato finely.",
+                "description": "Add that to your frying pan."
+            },
+            {
+                "id": 15,
+                "name": "Add salt, basil, and your favourite herbs and spices to the frying pan, to taste.",
+                "description": ""
+            },
+            {
+                "id": 16,
+                "name": "Keep it moving!",
+                "description": "This is best done with a hot hob (stove top); it needs to be stirred continuously to stop it from burning."
+            },
+            {
+                "id": 17,
+                "name": "Add a little water to your frying pan as the vegetables start to stick to the bottom of the pan (which they will).",
+                "description": ""
+            },
+            {
+                "id": 18,
+                "name": "Keep cooking and stirring until the chopped mushrooms have largely disintegrated, the tomato is no longer identifiable, and the chard starts to lose its consistency.",
+                "description": ""
+            },
+            {
+                "id": 19,
+                "name": "Add a little more water to your frying pan, then turn it down to a very low heat.",
+                "description": "Cover your frying pan."
+            },
+            {
+                "id": 20,
+                "name": "Add a little butter and salt to the pan in which you will be cooking the pasta, then add water.",
+                "description": "(The health-conscious can skip the salt; vegans can use a little cooking oil instead of butter. The latter will stop the pasta from sticking, but it won't taste as nice.)"
+            },
+            {
+                "id": 21,
+                "name": "Bring your water to the boil then add the pasta to the boiling water.",
+                "description": "Stir occasionally until the pasta is cooked; this typically takes 10-15 minutes."
+            },
+            {
+                "id": 22,
+                "name": "Drain your pasta once it is cooked.",
+                "description": ""
+            },
+            {
+                "id": 23,
+                "name": "Remove your frying pan from the heat, then uncover (carefully!)",
+                "description": "and add your pasta to your frying pan. Mix them well."
+            },
+            {
+                "id": 24,
+                "name": "Return the frying pan to a high heat and cook your pasta mixture for another 2-3 minutes, stirring continuously.",
+                "description": ""
+            },
+            {
+                "id": 25,
+                "name": "Garnish and serve.",
+                "description": ""
+            }
+        ],
+        "tips": [],
+        "source_url": "http://www.wikihow.com/Make-Pasta-with-Swiss-Chard-and-Mushrooms"
+    },
+    {
+        "id": 26,
+        "title": "Vegetarian Ramen",
+        "authors": ["DifuWu", "Sarah Eliza", "Maluniu"],
+        "picture": "http://pad1.whstatic.com/images/thumb/6/6d/Vegetarian-Ramen-Step-6.jpg/670px-Vegetarian-Ramen-Step-6.jpg",
+        "description": "Have you ever sat down to a bowl of ramen and thought it could use a few more ingredients? Now you can fix that! So roll up your sleeves and let's get cooking!",
+        "ingredients": [
+            "One package Top brand Oriental Ramen (or other Ramen marked as vegetarian)", "Teriyaki sauce", "Soy Sauce",
+            "Egg", "Peas" , "Carrots", "Radishes", "Onions", "Ginger", "2 cups water"
+        ],
+        "rate": 93,
+        "category": "",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Boil your water.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "When the water boils, turn down the heat a little bit until it simmers and add the veggies (preferable already cooked, leftovers are great for this).",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Add a dash of teriyaki sauce and about one half tablespoon Soy Sauce, one half teaspoon ginger, and part of the flavor packet.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Bring it back up into a boil, and separate the egg and drizzle the egg whites into the broth, also drop in the yolk, be careful to keep the yolk whole.",
+                "description": "This way the egg poaches right in the broth."
+            },
+            {
+                "id": 5,
+                "name": "Stir a little bit so the egg doesn't burn and add the noodles.",
+                "description": "Boil for two minutes stirring frequently."
+            },
+            {
+                "id": 6,
+                "name": "Pour into a bowl and enjoy.",
+                "description": "Makes about 2-3 bowlfuls."
+            }
+        ],
+        "tips": [
+            "Top oriental ramen does not contain dairy, egg, or meat. However, below the ingredients on the packaging it warns that it is processed in a factory that processes seafood. Some health food stores may also carry vegetarian brands of ramen, but they will not be as cheap!",
+            "You can also add a dash of weak vinegar if you like that taste, or garlic.",
+            "If you want to lessen fat intake, cook the noodles first, then drain the water and make the new broth.",
+            "Add whatever leftover veggies you have to the broth.",
+            "Don't break the yolk or you will have a mess!"
+        ],
+        "source_url": "http://www.wikihow.com/Make-Vegetarian-Ramen"
+    },
+    {
+        "id": 27,
+        "title": "Chicken Chilli Ramen",
+        "authors": ["Maluniu", "Flickety", "Lillian May", "Nicoletta Z"],
+        "picture": "http://pad2.whstatic.com/images/thumb/0/0c/Make-Chicken-Chilli-Ramen-Intro.jpg/670px-Make-Chicken-Chilli-Ramen-Intro.jpg",
+        "description": "A delicious main meal with a fusion of tender chicken, Japanese noodles and crunchy vegetables. Serves 2",
+        "ingredients": [
+            "2 1/8 pint (1 liter) chicken broth", "3 tablespoons peanut oil", "1 1/3 ounces (40 ml) rice wine",
+            "3 shallots (sliced)", "2 garlic cloves (crushed)" , "1 carrot (chopped)", "2 centimeters ginger (chopped)",
+            "1 green chilli (chopped)", "2 tablespoons soy sauce", "2 packages of instant ramen noodles",
+            "1 chicken breast", "Handful of coriander sprigs", "1/2 spring onion (peeled and sliced)",
+            "1/4 red pepper (sliced)", "1 tablespoon chilli oil", "Few slices of cucumber", "Salt and pepper"
+        ],
+        "rate": 69,
+        "category": "pasta",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Heat the peanut oil in a heated saucepan.",
+                "description": "Add the shallots, ginger, garlic, carrots, and chilli and stir gently."
+            },
+            {
+                "id": 2,
+                "name": "Wait until the vegetables have slightly softened.",
+                "description": "Then add the soy sauce, rice wine, and broth. Season the mixture with salt and pepper. Stir everything together and let it simmer slowly for about 15 to 20 minutes."
+            },
+            {
+                "id": 3,
+                "name": "Use a strainer/sieve and separate the broth from the solids in another pan.",
+                "description": "Discard the solids and place the new pan with the broth back on the heat."
+            },
+            {
+                "id": 4,
+                "name": "Submerge the chicken breast fully in the heated broth.",
+                "description": "Poach the chicken and simmer for 7 minutes. Be careful as a strong boil will make the chicken tough and dry; try to achieve a slow simmer so that the chicken gets tender and moist."
+            },
+            {
+                "id": 5,
+                "name": "Remove the chicken from the broth and place it on a side tray.",
+                "description": "Pour the ramen noodles into the broth for about 2 to 3 minutes. Be aware and don't let the noodles overcook."
+            },
+            {
+                "id": 6,
+                "name": "Serve the noodles and broth in bowls.",
+                "description": "Cut the chicken into slices (against the grain) and place a few chicken slices in the bowls. Garnish the bowls with cucumber, red pepper, spring onions, and coriander. Top everything with chilli oil."
+            },
+            {
+                "id": 7,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [],
+        "source_url": "http://www.wikihow.com/Make-Chicken-Chilli-Ramen"
+    },
+    {
+        "id": 28,
+        "title": "Ramen Noodle Chicken Casserole",
+        "authors": ["Bo", "Flickety", "Maluniu", "Eric"],
+        "picture": "http://pad2.whstatic.com/images/thumb/1/13/Make-Ramen-Noodle-Chicken-Casserole-Step-7.jpg/670px-Make-Ramen-Noodle-Chicken-Casserole-Step-7.jpg",
+        "description": "Nothing but ramen noodles and a few loose ingredients in your cupboard? Try this recipe and turn your college student-style dinner into a home-cooked meal.",
+        "ingredients": [
+            "2 packages of original flavor ramen noodles", "4 cups water", "1 can (10 3/4 oz) cream of chicken soup",
+            "1 lb (16 oz) chicken breasts, cubed", "Mixed vegetables of your choice" , "1 slice of bread",
+            "1 tablespoon oil"
+        ],
+        "rate": 70,
+        "category": "pasta",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Prepare the ramen",
+                "description": "Prepare the ramen according to the package directions, leaving the seasoning on the side. Drain the noodles and place into a medium sized bowl."
+            },
+            {
+                "id": 2,
+                "name": "Cook the chicken",
+                "description": "Cook the chicken over medium heat until cooked thoroughly."
+            },
+            {
+                "id": 3,
+                "name": "Add the chicken and cream of chicken soup to the bowl.",
+                "description": "Add the vegetables to the bowl. This could be anything from carrots, corn, peas, mushrooms, etc."
+            },
+            {
+                "id": 4,
+                "name": "Stir mixture (optionally adding seasoning packet(s)) and add it to the pre-greased casserole dish.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Break up the bread slice into pieces and layer it onto the mixture.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Bake at 350 degrees F (180 degrees C) for 25 minutes or until the bread is browned.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Let cool for 5 minutes and serve.",
+                "description": "This dish goes well with a salad, steamed vegetables, or as a meal by itself."
+            }
+        ],
+        "tips": [
+            "Try substituting any or all of the ingredients in this recipe. You can use real pasta or rice rather than ramen. You can use any 'cream of' soup that sounds tasty (mushrooms, broccoli, celery, etc.) You can use tuna or any bit of leftover meat you have on hand. You'll find you can mix and match quite a bit, according to what's in your pantry. If you want to use rice, you can add a bit of extra liquid (one empty soup can should do it) and cook the rice right in the baking pan. Bake for about 40 minutes, until the rice is tender. If you want to use pasta, cook it first, but undercook it a little, since it will soak up some liquids from the sauce. In a pinch, you can also cook pasta during the baking, using liquids in the casserole, but the consistency will be a bit off.",
+            "Ramen seasoning is high in sodium and MSG. If you wish to reduce these seasonings, you can substitute sliced onion and herbs.",
+            "Avoid using the seasoning packets if you're worried about sodium and MSG.",
+            "A beaten egg can also be a good addition to this casserole."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Ramen-Noodle-Chicken-Casserole"
+    },
+    {
+        "id": 29,
+        "title": "Lasagne",
+        "authors": ["Brigitta M.", "Zack", "Jakeob Vigil"],
+        "picture": "http://pad3.whstatic.com/images/thumb/d/d6/Cook-Lasagne-Step-18.jpg/670px-Cook-Lasagne-Step-18.jpg",
+        "description": "This is a popular dish enjoyed in many countries. Now it is here for everyone to enjoy.",
+        "ingredients": [
+            "1 pound (0.45 kilograms) sweet Italian sausage (without casing), cooked and crumbled",
+            "1 pound (0.45 kilograms) ricotta or cottage cheese", "1 pound (0.45 kilograms) shredded Mozzarella cheese",
+            "1 large can sliced mushrooms", "Lasagna noodles" , "Pam or other non-stick cooking spray",
+            "2 small or 1 large jar spaghetti sauce", "Parmesan or Romano cheese"
+        ],
+        "rate": 68,
+        "category": "pasta",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Boil enough noodles to make four layers in a 9x12 pan",
+                "description": "about two boxes of sixteen."
+            },
+            {
+                "id": 2,
+                "name": "Separate and set aside your noodles.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Mix sausage, ricotta (or cottage) cheese, mozzarella cheese, and the mushrooms in a large bowl.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Divide this mixture into three parts.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Spray your pan with nonstick cooking spray.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Layer your lasagna with 1/3 of the sauce on the bottom.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Add enough noodles to cover the bottom of the pan on top of that.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Add 1/3 of the sausage and cheese mixture.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Repeat layers 1-3 two more times.",
+                "description": "You should run out of the sausage and cheese mixture."
+            },
+            {
+                "id": 10,
+                "name": "Add another 1/3 jar of sauce.",
+                "description": ""
+            },
+            {
+                "id": 11,
+                "name": "Add another layer of noodles.",
+                "description": ""
+            },
+            {
+                "id": 12,
+                "name": "Add the last of the sauce.",
+                "description": ""
+            },
+            {
+                "id": 13,
+                "name": "Sprinkle the top with Parmesan cheese.",
+                "description": ""
+            },
+            {
+                "id": 14,
+                "name": "Cover with foil.",
+                "description": ""
+            },
+            {
+                "id": 15,
+                "name": "Cook for 40 minutes in a 350 degree F oven.",
+                "description": ""
+            },
+            {
+                "id": 16,
+                "name": "Uncover and cook until the parmesan just starts to brown, about another 5 minutes or so depending on your oven.",
+                "description": ""
+            },
+            {
+                "id": 17,
+                "name": "Let sit for 10 minutes before serving.",
+                "description": ""
+            },
+            {
+                "id": 18,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Noodle cooking tips: Adding about a tablespoon or so of olive oil to the water while cooking will prevent the noodles from sticking; Cooking until the noodles are 'al dente' (firm, but tender) will ensure a better lasagne; After the noodles are done cooking, pour them in a strainer and quickly run cold (not hot!) water over them. This will prevent the noodles from cooking any further; Separate the noodles carefully as soon as possible and place them on a serving tray or large plate with paper towels. This will prevent them from sticking.",
+            "If you can get it, ricotta cheese is so much better for this than the cottage cheese.",
+            "Alternatively, you may wish to use romano or a parmesan/romano blend instead of the Parmesan. Shredded versions work just as well as the grated.",
+            "Even though mozzarella cheese comes pre-shredded, shredding your own will better ensure the quality.",
+            "You can build you lasagne with uncooked noodles. If you cover it with tin foil before putting in the oven, the moisture from cooking will also cook the noodles to perfection. It saves a step and time.",
+            "Since this is such a basic lasagne, you may wish to add a few more ingredients. Two small cans of sliced olives are good, as are sliced fresh tomatoes (add these after you have removed the foil. Otherwise, you will end with a soggy lasagne).",
+            "For an authentic taste, make your own homemade sauce using equal parts celery, carrot, and onion slowly stewed with tinned tomatoes.",
+            "If you're daring and up for it, it's actually possible to cook a lasagne in your dishwasher."
+        ],
+        "source_url": "http://www.wikihow.com/Cook-Lasagne"
+    },
+    {
+        "id": 30,
+        "title": "Mushroom Risotto",
+        "authors": ["Jack Herrick", "Sondra C", "BR", "Flickety"],
+        "picture": "http://pad1.whstatic.com/images/thumb/6/64/Make-Mushroom-Risotto-Step-4.jpg/670px-Make-Mushroom-Risotto-Step-4.jpg",
+        "description": "Risotto is a classy rice dish typically served as an appetizer. You should base your portions on a half cup of rice per person.",
+        "ingredients": [
+            "1 small onion", "1 box risotto rice", "1 package of sliced portobello mushrooms",
+            "1 half stick of butter", "milk" , "1 can cream of mushroom soup", "1 can cream of onion soup",
+            "salt and pepper to taste"
+        ],
+        "rate": 98,
+        "category": "hot meals",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Dice a small onion and put it into the pan with a half stick of butter on medium heat.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Wash and chop one package of portobello mushrooms and saute with the onions.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "When the onions are caramelized, add the rice, a spoon full of cream of mushroom and a spoon full of cream of onion.",
+                "description": "Then add a half cup of milk and stir till the rice absorbs all of the liquid. Turn the heat up to about 3/4 and stir."
+            },
+            {
+                "id": 4,
+                "name": "Repeat step 3 until the rice is done to your liking.",
+                "description": "It should no longer be firm."
+            },
+            {
+                "id": 5,
+                "name": "Spoon into a bowl and top with fresh grated Parmesan.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Saute extra mushrooms and onions so that when your risotto is done you can top it off with them.",
+            "Risotto needs constant attention and must be constantly stirred after the addition of the rice.",
+            "Remember stir, stir, stir",
+            "Risotto rice is located in the specialty area at your local grocer.",
+            "Test your rice often to make sure it's at the correct firmness before you remove it from heat.",
+            "This can also be done with any broth such as a beef broth, a chicken broth, or a vegetable broth."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Mushroom-Risotto"
+    },
+    {
+        "id": 31,
+        "title": "Simple Risotto",
+        "authors": ["Marsela", "Grahamster", "Jordan Gardiner", "alice kristensen"],
+        "picture": "http://pad1.whstatic.com/images/thumb/0/0f/Make-Simple-Risotto-Step-6.jpg/670px-Make-Simple-Risotto-Step-6.jpg",
+        "description": "Rice is a base food used all over the world. And risotto is cooked in different ways, with different ingredients. Here is the simplest recipe, using just the base ingredients.",
+        "ingredients": [
+            "Rice", "Butter", "Salt", "2.5 glasses of water"
+        ],
+        "rate": 50,
+        "category": "hot meals",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Be sure to have the items listed in the ingredients section.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Put the butter inside a large pan and put it to melt in medium heat.",
+                "description": "You will need enough butter to cover 1/4 inch of the pan when melted. Meanwhile put to boil the water with some salt."
+            },
+            {
+                "id": 3,
+                "name": "When melted butter is hot, pour the rice and stir.",
+                "description": "Continue to stir all the time; fry it until 70% of the rice looks white."
+            },
+            {
+                "id": 4,
+                "name": "Carefully and slowly pour the rice to the boiling water.",
+                "description": "Cover it, lower the heat and let it boil."
+            },
+            {
+                "id": 5,
+                "name": "When you see no more water remove from heat and let it rest for 10 more minutes.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Enjoy",
+                "description": ""
+            }
+        ],
+        "tips": [],
+        "source_url": "http://www.wikihow.com/Make-Simple-Risotto"
+    },
+    {
+        "id": 32,
+        "title": "Vegetarian Risotto",
+        "authors": ["CBK", "Teresa", "Mike", "Milind"],
+        "picture": "http://pad2.whstatic.com/images/thumb/b/b6/Make-Vegetarian-Risotto-Intro.jpg/670px-Make-Vegetarian-Risotto-Intro.jpg",
+        "description": "Risottos are a good, hearty meal with many variations. They are perfect for entree or main meals or even allowed to chill, making them into balls, coating them in breadcrumbs and frying to make Arancini - risotto makes a very versatile recipe to know. Here's how to make a satisfying meal: to serve 4.",
+        "ingredients": [
+            "2 purple shallots or 1 medium onion, chopped finely.", "1.5 cups of risotto rice",
+            "2 garlic cloves, finely chopped.", "1 cup of white wine", "4 cups of Stock. Vegetarian chicken flavour is favourite.",
+            "Grated Parmesan cheese to taste.", "Olive oil or butter.", "2 small bunches of asparagus, chopped. Juice & zest of 1 lemon.",
+            "1 cup of frozen peas & a few strands of saffron (Milanese risotto)", "Sliced & fried mushrooms & chopped parsley or a little thyme",
+            "Pumpkin & zucchini/courgette cut into 1cm cubes", "1T curry powder", "1 cup coconut milk (omit wine & cheese)",
+            "Chopped red capsicum / bell pepper", "olives with saffron, cumin, coriander", "chopped parsley",
+            "Fresh spinach plus more cheese and mustard to taste."
+        ],
+        "rate": 70,
+        "category": "hot meals",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Make your basic risotto recipe.",
+                "description": "Put your saucepan on low heat and melt 1T of butter or 1T oil. When warm enough to saute, add the chopped onion, garlic & rice. Stir very well but don't allow to brown. Keep the heat low if needs be."
+            },
+            {
+                "id": 2,
+                "name": "When the rice is opaque, add 1 cup of stock and stir well.",
+                "description": "Keep stirring until it is absorbed which could be 2 or 3 minutes. If you have hard vegetables to add such as pumpkin, add them at this stage."
+            },
+            {
+                "id": 3,
+                "name": "When this is absorbed, add the next cup of stock.",
+                "description": "Continue to stir and add firm vegetables if you picked the capsicum or zucchini recipes."
+            },
+            {
+                "id": 4,
+                "name": "Keep stirring and add the next cup.",
+                "description": "At this stage the goal is the vegetables should be 1/3rd cooked. You can add asparagus at this stage as it doesn't take as long to cook."
+            },
+            {
+                "id": 5,
+                "name": "Allow to simmer gently.",
+                "description": "Add the next cup when it is absorbed continue to stir, but aim not to mash or stir furiously, its a gentle stir. Put on some music if this helps."
+            },
+            {
+                "id": 6,
+                "name": "Add the final cup of wine or stock and add your seasonings and/or grated cheese.",
+                "description": "If you picked the fried mushrooms or frozen peas option add them now with seasonings together."
+            },
+            {
+                "id": 7,
+                "name": "Allow this cup to absorb then taste the rice & veges to see if its cooked through.",
+                "description": "If it needs a little longer, turn off the heat and put the lid on for 5 minutes. The consistency should be distinct rice grains & vegetables in a creamy sauce. It shouldn't ideally be soupy, or stiff like mashed potato but in between."
+            },
+            {
+                "id": 8,
+                "name": "Stir before serving and add salt & pepper to taste, or a little cream if desired for extra creaminess.",
+                "description": "Serve with extra grated cheese if you wish."
+            },
+            {
+                "id": 9,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "If the risotto is too soupy a quick fix it to get a thick slice of baguette or bread and toast it (or butter & grill or fry the bread until golden) then serve the risotto poured over the bread. Garnish with some chopped herbs to taste.",
+            "If its too dry, add a little more wine, stock, water or cream to make a good consistency."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Vegetarian-Risotto"
+    },
+    {
+        "id": 33,
+        "title": "Cheese Canapes",
+        "authors": ["MA", "Flames 66", "Tamanna", "Genius_knight"],
+        "picture": "http://pad3.whstatic.com/images/thumb/c/c5/Make-Cheese-Canapes-Final.jpg/670px-Make-Cheese-Canapes-Final.jpg",
+        "description": "Grated cheese is sprinkled on bread circles and then seasoned with salt . The canapes are then broiled until the cheese melts.",
+        "ingredients": [
+            "1 cup grated cheese", "Few grains red pepper", "1/4 teaspoon salt", "6 slices bread"
+        ],
+        "rate": 78,
+        "category": "hot meals, sandwiches",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Preheat broiler.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Cut bread into circles.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Sprinkle with thick layer of grated cheese.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Season with salt and red pepper.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Place on baking sheet.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Broil until cheese melts.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Serve at once.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [],
+        "source_url": "http://www.wikihow.com/Make-Cheese-Canapes"
+    },
+    {
+        "id": 34,
+        "title": "Moretum (Garlic Cheese)",
+        "authors": ["L. W.", "Ben Rubenstein", "Flickety", "Tom Viren"],
+        "picture": "http://pad2.whstatic.com/images/thumb/7/73/Make-Moretum-%28Garlic-Cheese%29-Step-10.jpg/670px-Make-Moretum-%28Garlic-Cheese%29-Step-10.jpg",
+        "description": "Moretum is a spicy garlic cheese spread made with herbs, dating back to the days of Roman antiquity. It is described in the 'Appendix Vergiliana'. This modified recipe is for the true garlic lover.",
+        "ingredients": [
+            "2-5 garlic cloves", "2.5-5 oz Romano cheese", "1 tsp olive oil",
+            "1/2 tsp white wine vinegar", "1/8 a bunch fresh cilantro [two to three sprigs]" , "1/2 tsp dried dill",
+            "Pinch of salt", "fresh and dried herbs/spices", "1 loaf bread [recommended: French baguette]"
+        ],
+        "rate": 98,
+        "category": "sandwiches, salads",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Have a mortar and pestle ready.",
+                "description": "You will want to use a marble one, because the smell will never come off of a wooden one, and a plain, smooth ceramic one can be troublesome."
+            },
+            {
+                "id": 2,
+                "name": "Peel 2-5 garlic cloves, your choice, and mince them.",
+                "description": "Put these in the mortar and pound them until somewhat pasty. Add a pinch of salt and mix."
+            },
+            {
+                "id": 3,
+                "name": "Grate",
+                "description": "Grate 2.5 to 5 oz of Romano cheese, or mince by hand."
+            },
+            {
+                "id": 4,
+                "name": "Mix the cheese into the garlic until well blended.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Add a teaspoon of olive oil and 1/2 tsp of white wine vinegar; mix.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Pick out a few sprigs of fresh cilantro [coriander leaves] and chop finely with a sharp knife.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Add the leaves and 1/2 tsp of dill; mix again.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Add any additional herbs and spices.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Mix and pound again until spices are well-distributed and you have a slightly lumpy paste.",
+                "description": ""
+            },
+            {
+                "id": 10,
+                "name": "Spread the chunky paste as thinly as you can manage [it's not that spreadable] onto fresh slices of French baguettes.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "If you like it hot (sample first), you may want three cloves per 2oz cheese.",
+            "You may want to add any of the following in small amounts: pepper, lemon pepper, chives, basil, oregano, rosemary, minced onion [no more than 1/2 tsp], lemon peel, jalapeño pepper.",
+            "Remember not to add too much in seasonings. Your seasonings should never exceed more than a tablespoon of dry ingredients or enough fresh ingredients to make the color anything more than a greenish off-white. If you add too much, add more cheese and the other ingredients to match.",
+            "If you want to make this more spreadable, you may use butter or olive oil.",
+            "If your hands smell strongly of garlic, wash them with toothpaste.",
+            "If you would like to conveniently store your garlic cheese and keep your mortar and pestle from forever smelling of garlic, line the mortar with a plastic bag. This also aids with mixing, and allows you to use the back of the pestle [flat end] to crush the minced garlic into a very fine pulp.",
+            "Romans would have been flexible regarding the ingredients. Use what is fresh and available.",
+            "When in doubt, use 2 cloves for 4oz cheese. This should be mild enough for most people.",
+            "The Roman author Columella describes a moretum made with pine nuts.",
+            "This makes a wonderful side dish to any pasta entrée.",
+            "If you don't want it too spicy, try using garlic cloves which have been roasted first. It will add a whole new flavor and may make it easier to spread."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Moretum-(Garlic-Cheese)"
+    },
+    {
+        "id": 35,
+        "title": "Frittata",
+        "authors": ["Roxana5min", "Flickety", "Cfonseca"],
+        "picture": "https://astyleeye.files.wordpress.com/2012/06/frittata.jpg",
+        "description": "A frittata is an open-side omelet, and is also known as an Italian omelet. Frittatas are usually enriched with different ingredients, such as vegetables, meat and even pasta.",
+        "ingredients": [
+            "8 eggs", "1/2 cup of heavy cream", "sliced potatoes (optional)", "sliced leek (optional)", "butter" , "Cheese",
+            "Parsley", "Salt and Pepper"
+        ],
+        "rate": 80,
+        "category": "hot meals, baking",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Saute leeks at medium heat for 10 minutes",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Saute potatoes at medium heat for 6 minutes or until they're golden brown",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Mix the eggs with the heavy cream, add salt and pepper, and beat until everything is incorporated",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Add parsley and cheese to the egg mix",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Add leeks and potatoes to the egg mix",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Melt butter in a pan",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Once the butter is melted, pour the mix into the pan",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "On medium heat, cook eggs for about 2 minutes, scraping the sides and bottom with heat-resistant spatula.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Cook 7 minutes or until edges are set.",
+                "description": ""
+            },
+            {
+                "id": 10,
+                "name": "Flip or take to the oven.",
+                "description": ""
+            },
+            {
+                "id": 11,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Larger frittatas are usually finished in the broiler.",
+            "You can add almost any ingredient to your frittata, so it's a great way to use your leftovers.",
+            "If you make a potato frittata, cook the potatoes before puring them into the mix",
+            "If you can't flip your frittata, you can finish it in the oven.",
+            "Frittatas can be cooked and served immediately, or allowed to cool and served at room temperature."
+        ],
+        "source_url": "http://www.wikihow.com/Make-a-Frittata"
+    },
+    {
+        "id": 36,
+        "title": "Macaroni and Cheese Omelette",
+        "authors": ["James Emmanuel Johnson", "Sondra C", "Paul D", "Maluniu"],
+        "picture": "http://pad2.whstatic.com/images/thumb/f/f9/Make-a-Macaroni-and-Cheese-Omelette-Step-7-Version-2.jpg/670px-Make-a-Macaroni-and-Cheese-Omelette-Step-7-Version-2.jpg",
+        "description": "This is a Baked Macaroni & Cheese , but for Breakfast/Brunch. You can even have it for Original Side Dishes or Main Dishes.",
+        "ingredients": [
+            "One 1 lb. Box of Elbow or Spiral Macaroni", "1 1/2 c. Egg Substitute", "1-2 jars Cheese Dip (Melted)",
+            "Assorted Varieties of Omelet Ingredients", "1 1/4 c. Milk (or Half & Half)"
+        ],
+        "rate": 76,
+        "category": "pasta, hot meals, baking",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Cook Pasta in boiling water until tender.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Drain it, then put it into a Casserole Dish.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Pour on the egg substitute, milk, and melted cheese dip.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Spread it around with a rubber spatula.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Add as many omelet ingredients as you desire, or just make an 'Omelet Mac'.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Bake at 355 degrees for 20 minutes.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Enjoy!",
+                "description": ""
+            }
+        ],
+        "tips": [],
+        "source_url": "http://www.wikihow.com/Make-a-Macaroni-and-Cheese-Omelette"
+    },
+    {
+        "id": 37,
+        "title": "Omelette with Leftover Pasta",
+        "authors": ["Ben Rubenstein", "Germano", "Nicole Willson", "Eric"],
+        "picture": "http://pad2.whstatic.com/images/thumb/2/27/Make-an-Omelette-with-Leftover-Pasta-Intro.jpg/670px-Make-an-Omelette-with-Leftover-Pasta-Intro.jpg",
+        "description": "No matter how wealthy you are, throwing away food is almost always painful. This recipe for a frittata-styled omelette will allow you to use up leftover pasta from the day before, and will reward you with a delicious and very unusual dish.",
+        "ingredients": [
+            "Leftover pasta", "1 egg per portion of pasta", "salt", "pepper", "olive oil"
+        ],
+        "rate": 59,
+        "category": "hot meals, pasta",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Thoroughly mix the leftover pasta in a large bowl, adding 1 egg per portion of pasta.",
+                "description": "Salt and pepper to your taste."
+            },
+            {
+                "id": 2,
+                "name": "Use a pan of adequate size so that the mix is about 1 inch thick, grease it with just a little olive oil, cook it very very slowly until the mix becomes solid and the first side is browned",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Turn over the omelette as you usually do, possibly with the help of a dish since at this stage is still fragile and may break",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "When both sides are lightly browned, remove from heat and let it cool a little, then cut it in wedges and and serve it.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "The recipe will work best with long pasta such as spaghetti, tagliatelle or fettuccine.",
+            "If the sauce contains meatballs, heat them and serve them separately, or mince them into a meat sauce and mix with the pasta.",
+            "The pasta should not be overcooked or you'll end up with a soggy mess— al dente is best.",
+            "Tomato or meat sauce should be used in reasonable amounts; don't make your pasta look like a soup.",
+            "Leftover pasta, properly stored and refrigerated, is usually okay after 24 hours, but if you have any doubts discard it and make fresh pasta."
+        ],
+        "source_url": "http://www.wikihow.com/Make-an-Omelette-with-Leftover-Pasta"
+    },
+    {
+        "id": 38,
+        "title": "Milo Sweet Omelette",
+        "authors": ["Aishath Alya", "Maluniu"],
+        "picture": "http://pad1.whstatic.com/images/thumb/3/37/Make-Milo-Sweet-Omelette-Step-9.jpg/670px-Make-Milo-Sweet-Omelette-Step-9.jpg",
+        "description": "Are you tired of eating a plain old omelette, all the time? Well, no need to worry, follow these simple steps and make a Milo sweet omelette!",
+        "ingredients": [
+            "6 eggs", "Condensed milk", "2 table spoon Milo powder", "1/2 cup water", "Cooking oil"
+        ],
+        "rate": 72,
+        "category": "hot meals, desserts",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Put Milo and water in a bowl and mix it well.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Make sure there are no lumps.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Add the condensed milk to the mixture of Milo and water.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Mix the egg with the mixture of milk, Milo and water.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Heat the pan.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Spread a little bit of cooking oil in the pan.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Slowly pour the mixture on the pan.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "After 6 to 8 minutes remove from heat.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Enjoy!!!",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Do not over heat the pan."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Milo-Sweet-Omelette"
+    },
+    {
         "id": 0,
         "title": "",
         "authors": ["", "", "", ""],
@@ -1381,7 +2584,7 @@ var data = [
             "", "", "", "",
             "", "", ""
         ],
-        "rate": 39,
+        "rate": 00,
         "category": "",
         "vegetarian": false,
         "steps": [
