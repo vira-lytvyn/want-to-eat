@@ -4,7 +4,7 @@
 function showByType(type, arr) {
     var typeArr = [];
     for (var i = 0; i < arr.length; i++){
-        if(arr[i].type_of_meal === type) {
+        if(arr[i].vegetarian === type) {
             typeArr.push(arr[i]);
         }
     }
@@ -12,4 +12,4 @@ function showByType(type, arr) {
     return typeArr;
 }
 
-//showByType('pollotarian', data);
+showByType(false, data);
