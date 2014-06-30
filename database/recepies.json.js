@@ -190,5 +190,253 @@ var data = [
             "Be very careful when using knives and graters!"
         ],
         "source_url": "http://www.wikihow.com/Make-a-Fruit-and-Chocolate-Salad"
+    },
+    {
+        "id": 12,
+        "title": "Simple Mexican Salad",
+        "authors": ["Penmouse", "Scott", "Cushman"],
+        "picture": "http://pad3.whstatic.com/images/thumb/0/0c/Make-a-Simple-Mexican-Salad-Intro.jpg/670px-Make-a-Simple-Mexican-Salad-Intro.jpg",
+        "description": "Cucumbers, oranges, citrus juice, chili powder and salt make this zippy Mexican themed salad. The recipe makes enough to feed four.",
+        "ingredients": [
+            "2 cucumbers", "2 oranges", "1 lemon or lime, juice only",
+            "1/2 teaspoon chili powder", "1/2 teaspoon salt"
+        ],
+        "rate": 69,
+        "category": "salads",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Wash",
+                "description": "the cucumbers, oranges and lemon or lime under cold running water."
+            },
+            {
+                "id": 2,
+                "name": "Slice the cucumbers.",
+                "description": "Peel and cut the oranges into small pieces."
+            },
+            {
+                "id": 3,
+                "name": "Place cucumber and oranges in a medium size bowl.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Add chili powder, lemon or lime juice and salt.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Be very careful when using knives and graters!"
+        ],
+        "source_url": "http://www.wikihow.com/Make-a-Simple-Mexican-Salad"
+    },
+    {
+        "id": 13,
+        "title": "Taco Salad",
+        "authors": ["Jordyn", "Dvortygirl", "Maluniu", "Sondra"],
+        "picture": "http://pad3.whstatic.com/images/thumb/d/d7/Make-Taco-Salad-Step-10-preview.jpg/-crop-342-254-342px-Make-Taco-Salad-Step-10-preview.jpg",
+        "description": "Taco salad is an easy light meal or side dish. It's a great crowd-pleaser, too, and an easy dish to bring to a potluck or other gathering.",
+        "ingredients": [
+            "Lettuce", "Ground beef", "Cheddar and/or jack cheese, grated",
+            "Tomatoes, diced", "Taco sauce or powdered taco seasoning mix, enough for the beef" , "Salsa",
+            "Olives", "Guacamole", "Sour cream", "Taco shells and/or taco chips"
+        ],
+        "rate": 54,
+        "category": "salads",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Gather all you need.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Set aside a plate for everyone you will be serving.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Wash the lettuce",
+                "description": "and cut it into bite-sized pieces. Add the lettuce to the plate. Use enough to cover the plate completely, but don't overdo it."
+            },
+            {
+                "id": 4,
+                "name": "Brown the ground beef, drain off any excess juice or fat, and add the proper amount of seasoning according to the seasoning package.",
+                "description": "Sprinkle the seasoned, crumbled beef mixture over the plate, too."
+            },
+            {
+                "id": 5,
+                "name": "If you like, drain and rinse a can or two of black beans or pinto beans and add them.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Chop tomatoes into small cubes and add these too or, if you like a bit more zing, try good tomato salsa.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Sprinkle on some cheese.",
+                "description": "Grated cheddar and/or jack cheese are good choices."
+            },
+            {
+                "id": 8,
+                "name": "Break up some hard taco shells or tortilla chips and sprinkle them around.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Top with your choice of olives, sour cream, and guacamole.",
+                "description": "Serve and enjoy!"
+            }
+        ],
+        "tips": [
+            "If you can prepare this freshly enough, the beef and beans can be warm while the salad parts are cold, making for a pleasant contrast. If not, serve the whole thing chilled.",
+            "Toss with some french dressing for a great flavor. It's even better with Mae Ploy chili sauce."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Taco-Salad"
+    },
+    {
+        "id": 14,
+        "title": "",
+        "authors": ["", "", "", ""],
+        "picture": "",
+        "description": "",
+        "ingredients": [
+            "", "", "",
+            "", "" , "",
+            "", "", "", "",
+            "", "", ""
+        ],
+        "rate": 39,
+        "category": "salads",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "",
+            "."
+        ],
+        "source_url": ""
+    },
+    {
+        "id": 15,
+        "title": "",
+        "authors": ["", "", "", ""],
+        "picture": "",
+        "description": "",
+        "ingredients": [
+            "", "", "",
+            "", "" , "",
+            "", "", "", "",
+            "", "", ""
+        ],
+        "rate": 39,
+        "category": "salads",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "",
+            "."
+        ],
+        "source_url": ""
     }
 ];
