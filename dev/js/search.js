@@ -13,8 +13,7 @@ function searchIngridients () {
        }
         arr = searchThruIng(arr, dataIngridients[i]);
     }
-
-    }
+}
 
 function searchThruIng(arr, param){
     console.log(arr);

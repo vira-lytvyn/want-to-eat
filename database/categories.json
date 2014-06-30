@@ -17,7 +17,7 @@
       "eiusmod"
     ], 
     "id": 0, 
-    "name": "Church"
+    "name": "salads"
   }, 
   {
     "ingredients": [
@@ -29,7 +29,7 @@
       "ea"
     ], 
     "id": 1, 
-    "name": "Alexis"
+    "name": "soups"
   }, 
   {
     "ingredients": [
@@ -44,7 +44,7 @@
       "tempor"
     ], 
     "id": 2, 
-    "name": "Rochelle"
+    "name": "pizza"
   }, 
   {
     "ingredients": [
@@ -55,7 +55,7 @@
       "occaecat"
     ], 
     "id": 3, 
-    "name": "Traci"
+    "name": "sandwiches"
   }, 
   {
     "ingredients": [
@@ -76,7 +76,7 @@
       "veniam"
     ], 
     "id": 4, 
-    "name": "Cassie"
+    "name": "desserts"
   }, 
   {
     "ingredients": [
@@ -95,6 +95,44 @@
       "Lorem"
     ], 
     "id": 5, 
-    "name": "Ginger"
+    "name": "baking"
+  },
+  {
+    "ingredients": [
+      "fugiat",
+      "fugiat",
+      "incididunt",
+      "pariatur",
+      "eu",
+      "veniam",
+      "laboris",
+      "tempor",
+      "aliqua",
+      "nisi",
+      "ullamco",
+      "magna",
+      "Lorem"
+    ],
+    "id": 6,
+    "name": "hot meals"
+  },
+  {
+    "ingredients": [
+      "fugiat",
+      "fugiat",
+      "incididunt",
+      "pariatur",
+      "eu",
+      "veniam",
+      "laboris",
+      "tempor",
+      "aliqua",
+      "nisi",
+      "ullamco",
+      "magna",
+      "Lorem"
+    ],
+    "id": 7,
+    "name": "pasta"
   }
 ]
