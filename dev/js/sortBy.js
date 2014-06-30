@@ -5,7 +5,7 @@ function sortBy(target, data) {
     if (typeof data[0][target] === 'number') {
         console.log('hello');
         data.sort(function (a, b) {
-            return a[target] - b[target];
+            return b[target] - a[target];
         });
     } else if (typeof data[0][target] === 'string') {
         console.log('world');
@@ -17,6 +17,7 @@ function sortBy(target, data) {
     } else {
         console.log('Error: bad type of target!');
     }
+    console.log(data);
 }
 
-//sortBy('social_rank', data);
+sortBy('title', data);
