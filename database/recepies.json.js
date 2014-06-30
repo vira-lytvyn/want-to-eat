@@ -65,7 +65,75 @@ var data = [
             "Add milk to loosen the mixture if it is stiff.",
             "Push dough back down to the bottom of the mixer to aid the mixing."
         ],
-        "source_url": "http://www.wikihow.com/Make-Chocolate-Hazelnut-Buns",
-        "added": "2014-03-26T19:25:06 -02:00"
+        "source_url": "http://www.wikihow.com/Make-Chocolate-Hazelnut-Buns"
     },
+    {
+        "id": 1,
+        "title": "Starbucks Lemon Loaf",
+        "authors": "Susan Turnwell, General Rommel, Cindy, Krystle",
+        "picture": "http://pad1.whstatic.com/images/thumb/f/f0/Make-Starbucks-Lemon-Loaf-Step-9.jpg/670px-Make-Starbucks-Lemon-Loaf-Step-9.jpg",
+        "description": "You might have a special place in your heart for the delicious pastries at Starbucks, but you don't have to go there to enjoy this one.",
+        "ingredients": [
+            "1 ½ cups flour", "1/2 tsp. baking powder", "1/2 tsp. baking soda", "1/2 tsp. salt", "3 eggs",
+            "1 cup sugar", "2 tbsp. butter", "1 tsp. vanilla extract", "2 tsp. lemon extract", "1/3 cup lemon juice",
+            "1/2 cup oil", "Zest of one lemon", "1 cup powdered sugar", "2 tbsp. whole milk", "1/2 tsp. lemon extract"
+        ],
+        "rate": 62,
+        "category": "baking",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Preheat oven to 350 degrees.",
+                "description": "While oven is heating, grease and flour a loaf pan."
+            },
+            {
+                "id": 2,
+                "name": "Mix flour, baking soda, baking powder and salt in a large mixing bowl.",
+                "description": "Use a wire whisk to mix together."
+            },
+            {
+                "id": 3,
+                "name": "Combine eggs, sugar, butter vanilla extract, lemon extract and lemon juice in a mixing bowl.",
+                "description": "Consider using an electric mixer to make the process easier."
+            },
+            {
+                "id": 4,
+                "name": "Pour dry ingredients into wet ingredient bowl and combine.",
+                "description": "For best results add dry ingredients slowly and in increments so the dry ingredients don't spill from the bowl."
+            },
+            {
+                "id": 5,
+                "name": "Add oil and lemon zest and continue to mix well.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Pour mixture into the pre-greased loaf pan and place in oven.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Bake for 45 minutes and test loaf pan for doneness using a toothpick.",
+                "description": "If the toothpick comes out clean the loaf is ready to be removed from the oven."
+            },
+            {
+                "id": 8,
+                "name": "Make loaf cake glaze.",
+                "description": "Whisk powdered sugar, milk and lemon extract together in a bowl."
+            },
+            {
+                "id": 9,
+                "name": "Drizzle glaze over cooling loaf and allow to cool completely on a wire rack.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Bring eggs to room temperature before adding to mixture. Cold eggs may compromise the levity of the loaf.",
+            "Allow loaf to cool completely before removing from loaf pan (to avoid collapse).",
+            "Measure baking soda and powder carefully. Too much of either can collapse the loaf in the oven.",
+            "Add more lemon zest to the glaze for an extra lemon flavor."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Starbucks-Lemon-Loaf"
+    }
 ];
