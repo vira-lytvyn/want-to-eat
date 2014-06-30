@@ -137,6 +137,618 @@ var data = [
         "source_url": "http://www.wikihow.com/Make-Starbucks-Lemon-Loaf"
     },
     {
+        "id": 2,
+        "title": "Chocolate Peanut Butter Parfait",
+        "authors": [
+            "Olson Potsmith",
+            "Teresa",
+            "Catdog",
+            "Laura"
+        ],
+        "picture": "http://pad1.whstatic.com/images/thumb/3/3d/Make-a-Chocolate-Peanut-Butter-Parfait-Intro.jpg/670px-Make-a-Chocolate-Peanut-Butter-Parfait-Intro.jpg",
+        "description": "Looking for a mouth watering dessert that blends the creamy goodness of peanut butter with the decadent delight of chocolate? Skip the peanut butter cups and instead create a chocolate peanut butter parfait. This recipe also adds a hint of graham cracker for a little extra crunch.",
+        "ingredients": [
+            "Graham crackers, crumbled", "1 cup peanut butter", "1 8-ounce (225g) block of cream cheese",
+            "4 tbsp powder sugar", "1 8-ounce (225g) tub of whipped cream (or you can make your own)",
+            "1 12-ounce (340g) bag of milk chocolate chips", "½ cup milk"
+        ],
+        "rate": 92,
+        "category": "desserts",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Mix the peanut butter, cream cheese and powder sugar in a large mixing bowl.",
+                "description": "If possible, combine ingredients in a large Kitchen Aid mixer for a better blending result. Combine until the mixture is fully integrated and almost a crumbly consistency."
+            },
+            {
+                "id": 2,
+                "name": "Fold in whipped cream.",
+                "description": "Forgo the mixer for this step and instead use a rubber spatula to integrate the cream into the peanut butter, powdered sugar and cream cheese combination. Mix well until the whipped cream has become part of the mixture."
+            },
+            {
+                "id": 3,
+                "name": "Melt chocolate chips and milk.",
+                "description": "Melting chips and milk can be done two ways––in the microwave or on the stove top. Microwave chocolate chips and milk by placing them into a microwavable glass bowl. Set the microwave for 30 seconds and then stir the mixture. Return to the microwave for 30 more seconds, while watching the chocolate chips melt. Keep a careful eye on the microwave as you don’t want to burn the mixture. Stop microwaving when the majority of the chocolate chips have melted. Place the milk and chocolate chips in a double boiler over medium to medium low heat. Stir the mixture constantly as it cooks and melts. Remove the mixture from the heat before every chip has melted. The residual heat from the milk will melt the rest of the chips."
+            },
+            {
+                "id": 4,
+                "name": "Select serving dishes.",
+                "description": "You may want to use individual bowls or dishes to create your parfaits."
+            },
+            {
+                "id": 5,
+                "name": "Drop one layer of crumbled graham crackers in the bottom of each dish.",
+                "description": "You want enough to create a “crust” along the bottom."
+            },
+            {
+                "id": 6,
+                "name": "Plop in a few tablespoons of the peanut butter mixture.",
+                "description": "The size of your bowl or dish will generally determine how much peanut butter mixture you add. Add enough so you can layer each of the ingredients two times."
+            },
+            {
+                "id": 7,
+                "name": "Add the chocolate mixture.",
+                "description": "Add the mixture after it has cooled and is no longer extremely hot; this will stop it from tainting any of the other ingredients."
+            },
+            {
+                "id": 8,
+                "name": "Top with a dollop of whipped cream.",
+                "description": "This step is optional but can enhance the flavor of the chocolate and peanut butter combination."
+            },
+            {
+                "id": 9,
+                "name": "Sprinkle more crumbled graham crackers over the top.",
+                "description": "Create a thin layer of graham crackers."
+            },
+            {
+                "id": 10,
+                "name": "Repeat the process again until you’ve ended with a second dollop of whipped cream.",
+                "description": ""
+            },
+            {
+                "id": 11,
+                "name": "Top off with a graham cracker square or a piece of good chocolate sticking out of the middle.",
+                "description": ""
+            },
+            {
+                "id": 12,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Get creative with the toppings––include sprinkling small chocolate and/or peanut butter chips on top or adding a half (or a mini) of a chocolate covered peanut butter cup on top.",
+            "Consider serving in old fashioned ice cream sundae glasses for a fun effect.",
+            "Leave covered in the refrigerator until ready to serve, so that the ingredients congeal and set."
+        ],
+        "source_url": "http://www.wikihow.com/Make-a-Chocolate-Peanut-Butter-Parfait"
+    },
+    {
+        "id": 3,
+        "title": "Chocolate Toffee Squares",
+        "authors": [
+            "IsabelleZita",
+            "IngeborgK",
+            "Oliver",
+            "Harri"
+        ],
+        "picture": "http://pad1.whstatic.com/images/thumb/1/15/Chocolate_Toffee_Squares_23.JPG/670px-Chocolate_Toffee_Squares_23.JPG",
+        "description": "Ever wanted to make something really yummy, chocolatey, and addictive for a day trip or a movie night-in? Well, then this is the recipe for you! Yield: One 9x13 pan Preparation time: 25 minutes Baking time: 12 - 15 minutes",
+        "ingredients": [
+            "1 cup softened butter", "1 egg yolk", "1 cup brown sugar", "Butter flavored cooking spray or coconut oil",
+            "2/3 cup chopped pecans/walnuts (optional)", "1 package of 6 normal sized Hershey Bars",
+            "You can also substitute 1 6 oz. package of semi-sweet, sweet, or dark chocolate chips for the Hersey Bars."
+        ],
+        "rate": 26,
+        "category": "desserts",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Preheat the oven",
+                "description": "Preheat the oven to 350°/180ºC. Lightly grease the 9 x 13 inch (23cm x 33cm) cake pan with cooking spray or coconut oil."
+            },
+            {
+                "id": 2,
+                "name": "Mix all but the chocolate and nuts together in the mixer.",
+                "description": "This will make the toffee batter."
+            },
+            {
+                "id": 3,
+                "name": "Spread the toffee batter in the cake pan using the rubber spatula.",
+                "description": "Try to make the batter as even as possible."
+            },
+            {
+                "id": 4,
+                "name": "Place the toffee batter in the preheated oven.",
+                "description": "Bake for 12 to 15 minutes. Take the toffee out of the oven using the oven mitts."
+            },
+            {
+                "id": 5,
+                "name": "Lay one layer of chocolate over top of the toffee; for the best effect, put the chocolate on the hot toffee as soon as the toffee is taken out of the oven.",
+                "description": "Spread the melting chocolate with the rubber spatula until the top of the toffee has been evenly covered."
+            },
+            {
+                "id": 6,
+                "name": "Sprinkle the chocolate with chopped nuts.",
+                "description": "While optional, if you like nuts, this is a tasty addition."
+            },
+            {
+                "id": 7,
+                "name": "Put the chocolate toffee squares in the refrigerator for 2 hours or until chocolate is hard.",
+                "description": "After the chocolate has hardened and is firm, cut into squares of about 2x2 or so. Serve and enjoy!"
+            }
+        ],
+        "tips": [
+            "You can add whipped cream for a tasty treat!",
+            "For long term storage, keep in a fridge.",
+            "This tastes good when served at room and fridge temperature, depending if you want it warm or cool.",
+            "Whenever working with an oven always be careful.",
+            "Never put your hands or fingers in the mixer while it's running or you could be seriously injured."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Chocolate-Toffee-Squares"
+    },
+    {
+        "id": 4,
+        "title": "Dessert Pizza",
+        "authors": [
+            "Sovrcat",
+            "Jack Herrick",
+            "Glutted",
+            "1guitarhero2"
+        ],
+        "picture": "http://pad2.whstatic.com/images/thumb/a/af/Make-Dessert-Pizza-Step-5.jpg/670px-Make-Dessert-Pizza-Step-5.jpg",
+        "description": "This is a creative dessert that kids enjoy making and guests enjoy eating. For maximum effect, save a pizza box and put this delicious treat inside. Your guests will be pleasantly surprised by this sweet treat!",
+        "ingredients": [
+            "pizza crust", "pie crust", "brownie mix", "cookie dough", "chocolate sauce", "peanut butter",
+            "whipped cream", "cream cheese", "yogurt", "sliced fruit (kiwi, strawberries, banana, etc.)",
+            "watermelon slices can be cut into circles to look like pepperoni", "marshmallows", "sprinkles",
+            "coconut shavings", "cookie crumbs", "small candies like M&Ms, Skittles, jelly beans or gummy bears",
+            "gummy fish (to mimic anchovies)", "nuts", "caramel", "maple syrup", "spices (cinnamon, nutmeg, etc.)",
+            "mint leaves", "cereal", "jello"
+        ],
+        "rate": 81,
+        "category": "desserts, pizza",
+        "vegetarian": false,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Prepare the crust.",
+                "description": "Buy the pizza crust of your choice and prepare it without any toppings. just roll it out to the size of a typical pizza and bake it without any toppings before moving onto the next step. Let cool."
+            },
+            {
+                "id": 2,
+                "name": "Spread the 'sauce'.",
+                "description": "This can be anything that will hold the toppings on the pizza. To make it look like a real pizza, use red food coloring to mimic tomato sauce."
+            },
+            {
+                "id": 3,
+                "name": "Add the toppings.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Grill or broil the pizza briefly.",
+                "description": "This is optional, for if you want to melt any of the toppings (like marshmallows or chocolate) or brown them (coconut shavings)."
+            },
+            {
+                "id": 5,
+                "name": "Slice the pizza, serve, and enjoy!",
+                "description": ""
+            }
+        ],
+        "tips": [],
+        "source_url": "http://www.wikihow.com/Make-Dessert-Pizza"
+    },
+    {
+        "id": 5,
+        "title": "Vegan Chocolate Walnut Muffins",
+        "authors": [
+            "Flickety",
+            "Maluniu",
+            "Danny Day",
+            "KatherineP"
+        ],
+        "picture": "http://pad1.whstatic.com/images/thumb/2/21/Make-Vegan-Chocolate-Walnut-Muffins-Step-10.jpg/670px-Make-Vegan-Chocolate-Walnut-Muffins-Step-10.jpg",
+        "description": "These muffins are quite chocolatey, with a rich flavor and moist texture. These are great and much more satisfying than your average muffin—and that's all that really matters.",
+        "ingredients": [
+            "1 ¼ cups whole wheat flour", "¼ cup cocoa powder", "½ tsp baking soda", "½ tsp baking powder", "½ tsp salt",
+            "½ cup maple syrup", "¾ cup vanilla soy milk (or plain, with ½ tsp vanilla added)", "2 tbsp vegetable oil",
+            "½ cup chopped walnuts, plus 8 walnut halves to decorate"
+        ],
+        "rate": 65,
+        "category": "baking, desserts",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Preheat oven to 350ºF/180ºC.",
+                "description": "Grease 8 muffin cups in a baking tin."
+            },
+            {
+                "id": 2,
+                "name": "In a medium bowl, whisk together the flour, cocoa, baking soda, baking powder and salt.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "In a small bowl, whisk together the maple syrup, soy milk and vegetable oil.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Pour the wet ingredients into the flour mixture and stir then with a wooden spoon until the mixture becomes smooth.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Add the chopped walnuts and mix to blend them into the batter.",
+                "description": "Do not over-mix, but try not to have any pockets of dry ingredients left in the batter."
+            },
+            {
+                "id": 6,
+                "name": "Spoon the batter into your prepared muffin tins, filling each 2/3 full.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Garnish each muffin with a walnut half.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Bake the muffins for 18 to 20 minutes, until the top springs back when lightly pressed.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Cool the muffins on a wire rack.",
+                "description": ""
+            },
+            {
+                "id": 10,
+                "name": "You can either serve them warm, or cool them completely and store them in an airtight container for up to 5 days.",
+                "description": ""
+            }
+        ],
+        "tips": [],
+        "source_url": "http://www.wikihow.com/Make-Vegan-Chocolate-Walnut-Muffins"
+    },
+    {
+        "id": 6,
+        "title": "Raw Vegan Brownie",
+        "authors": [
+            "Flickety",
+            "Maluniu",
+            "KatherineP",
+            "Michaelabrams01"
+        ],
+        "picture": "http://pad2.whstatic.com/images/thumb/b/bf/Make-a-Raw-Vegan-Brownie-Step-8.jpg/670px-Make-a-Raw-Vegan-Brownie-Step-8.jpg",
+        "description": "Raw vegan brownies with a coconut or cocoa topping make a delicious and healthy dessert or treat. Here is how to make your own.",
+        "ingredients": [
+            "1 1/2 cups hazelnuts", "8 to 10 pitted dates", "1/2 cup cocoa powder", "1 vanilla bean", "Pinch of salt"
+        ],
+        "rate": 20,
+        "category": "baking, desserts",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Soak the hazelnuts overnight in water.",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "In the morning, drain them and rinse under running water.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Place the hazelnuts into a food processor.",
+                "description": "Grind them coarsely."
+            },
+            {
+                "id": 4,
+                "name": "Split the vanilla bean down its length using a sharp knife.",
+                "description": "Scrape the seeds out and put them in the food processor with the hazelnuts."
+            },
+            {
+                "id": 5,
+                "name": "Add the dates and salt into the hazelnut mixture.",
+                "description": "Process again until all the ingredients are well blended.There should still be obvious pieces of hazelnuts. If the mixture seems too crumbly, stiff, or dry, add a little water. Err on the side of less water, as you can always add more if needed."
+            },
+            {
+                "id": 6,
+                "name": "Prepare the cake pan.",
+                "description": "Line with parchment paper."
+            },
+            {
+                "id": 7,
+                "name": "Remove the mix from the food processor and press it into the cake pan.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Place the brownie into the refrigerator.",
+                "description": "Allow it to chill. Once chilled, it's ready to serve for dessert or a snack by cutting the brownie into or fingers or squares"
+            }
+        ],
+        "tips": [
+            "Instead of throwing away the vanilla bean shell, use it to flavor sugar. Place the vanilla bean shell in your jar of sugar and it will slowly infuse the vanilla flavor into the sugar.",
+            "Instead of a vanilla bean, you can use 1 tablespoon of vanilla extract.",
+            "Store in an airtight container in the refrigerator. Consume within 3 days.",
+            "Instead of parchment paper, you can also use plastic wrap."
+        ],
+        "source_url": "http://www.wikihow.com/Make-a-Raw-Vegan-Brownie"
+    },
+    {
+        "id": 7,
+        "title": "Chocolate Chip Cookies (Vegan)",
+        "authors": [
+            "Alexis M",
+            "Harri",
+            "Maluniu",
+            "KatherineP"
+        ],
+        "picture": "http://pad1.whstatic.com/images/thumb/f/f3/Make-Chocolate-Chip-Cookies-%28Vegan%29-Step-8.jpg/670px-Make-Chocolate-Chip-Cookies-%28Vegan%29-Step-8.jpg",
+        "description": "An awesome recipe for chocolate chip cookies that have no egg or dairy products.",
+        "ingredients": [
+            "2 cups flour", "1 tsp. salt", "1 tsp. baking soda", "1 cup margarine", "3/4 cup brown sugar",
+            "3/4 cup vegan sugar", "1 tsp. vanilla",
+            "Egg replacer equivalent of 2 eggs (Ener-G Egg Replacer works best, but you can also mix together 2 tsp. cornstarch and 1/4 cup water)",
+            "12 oz. semi-sweet chocolate chips"
+        ],
+        "rate": 64,
+        "category": "baking",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Lightly oil your cookie sheet as you preheat the oven to 350 F (180 C).",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "In a medium bowl, mix together the flour, salt, and baking soda.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "In a large bowl, cream together the margarine, brown sugar, sugar, vanilla and egg replacer mixture.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Stir the flour mixture into the wet ingredients and mix until the ingredients are well combined.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Add the chocolate chips and mix them into the batter.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Drop the dough by spoonfuls onto the cookie sheet and bake them for 8 to 10 minutes.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Once you take them out of the oven, cool the vegan chocolate chip cookies on a wire rack.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Serve warm or put them in your cookie jar once they've cooled for later.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "If your oven is large enough, you may want to consider filling two cookie sheets and baking them at the same time to make the baking process faster. You'll need twice the number of cooling racks too in that case."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Chocolate-Chip-Cookies-(Vegan)"
+    },
+    {
+        "id": 8,
+        "title": "Vegetarian Lasagna",
+        "authors": [
+            "Sondra C",
+            "Maluniu",
+            "Alex S",
+            "Peter"
+        ],
+        "picture": "http://pad1.whstatic.com/images/thumb/d/d7/Make-Vegetarian-Lasagna-Intro.jpg/670px-Make-Vegetarian-Lasagna-Intro.jpg",
+        "description": "Meatless lasagna is so great tasting and so healthy to eat that even those non-vegetarian lasagna lovers will never miss the meat. Add a tossed salad on the side, and you are enjoying one of the most favored of all meatless dishes.",
+        "ingredients": [
+            "1 pkg lasagna noodles", "one 24 oz jar tomato pasta sauce or sauce of your choice",
+            "one 24 oz cottage cheese", "3 eggs well beaten", "one 8 oz pkg sliced mushrooms",
+            "2 medium zucchinis, sliced", "one 12 oz mozzarella shredded cheese", "8 oz grated Parmesan cheese",
+            "olive oil spray or any spray of your choice"
+        ],
+        "rate": 52,
+        "category": "pasta, hot meals",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Use separate bowls to prepare the following:",
+                "description": "Add 3 beaten eggs to the cottage cheese mixed well; Combine mozzarella and Parmesan cheese; Sliced zucchini; Fresh spinach washed and cut; Sliced mushrooms; Mozzarella and Parmesan cheese combined."
+            },
+            {
+                "id": 2,
+                "name": "Spray the oil onto a 9 x 13 baking pan.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Cook lasagna until soft.",
+                "description": "Rinse under cold water to remove starch and place on top of the mixture."
+            },
+            {
+                "id": 4,
+                "name": "Spoon the pasta sauce over the noodles to cover.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Take a large spoon and add the cottage cheese and egg mixture all over the pasta sauce you just added to the lasagna.",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "name": "Add a second layer of the lasagna noodles and repeat the steps until all the ingredients have been completely added.",
+                "description": "End with the cheese mixture being the top ingredient."
+            },
+            {
+                "id": 7,
+                "name": "Bake in a 350 degrees Fahrenheit preheated oven for about 35 to 40 minutes until the cheese has a bubbled up look and a toasty looking but not quite burned top.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Finished.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Buy the washed and prepackaged spinach to save time in washing. Fresh spinach can be very gritty, and practically has to be washed leaf by leaf to get rid of the sand on each leaf.",
+            "Lasagna is best served right from the oven, although you can reheat it. Prepare ahead all the ingredients, cover with aluminum foil and place in the refrigerator. When ready to eat, remove, bake, and eat."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Vegetarian-Lasagna"
+    },
+    {
+        "id": 9,
+        "title": "Grill Tofu",
+        "authors": [
+            "Flickety"
+        ],
+        "picture": "http://pad2.whstatic.com/images/thumb/3/31/Grill-Tofu-Step-7.jpg/670px-Grill-Tofu-Step-7.jpg",
+        "description": "Grilled tofu, when done properly using quality tofu, is a delicious experience. It can be enjoyed as a vegetarian mean or as an accompaniment to many main meal dishes.",
+        "ingredients": [
+            "500g firm or extra firm tofu, sliced into equal slices of around 1-2cm thickness each",
+            "2 eggplants (aubergines), large, in 1cm thick slices", "3 zucchini (courgettes), large, in 1cm thick slices",
+            "1 large red onion, in 1/2 cm slices", "1 handful fresh mint leaves, chopped",
+            "6 scallions (spring onions), chopped", "30ml light soy sauce or tamari", "Juice from 1 large lemon",
+            "2 teaspoons toasted sesame seeds", "Sesame oil, for brushing/cooking"
+        ],
+        "rate": 50,
+        "category": "hot meals",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "After slicing the tofu, pat each slice dry.",
+                "description": "To do this, use a clean cloth such as a tea towel or a piece of muslin (calico)."
+            },
+            {
+                "id": 2,
+                "name": "Brush each slice with sesame oil.",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "name": "Brush the eggplant and zucchini slices with sesame oil.",
+                "description": "Do not brush the onion slices."
+            },
+            {
+                "id": 4,
+                "name": "Check the barbecue.",
+                "description": "The embers should be glowing red. Lay down the tofu slices on the edges of the barbecue grill, where it's hot but not directly over flames or heat. Arrange the other slices from outer edge to the middle, in a single layer."
+            },
+            {
+                "id": 5,
+                "name": "Leave to cook without turning.",
+                "description": "When you can see the sides turning brown, turn each slice over. The food is ready when a small sharp knife can easily pass through the zucchini and eggplant slices."
+            },
+            {
+                "id": 6,
+                "name": "Remove the vegetable slices first.",
+                "description": "Arrange in a large bowl or on a large platter. Sprinkle the stack with the mint and scallions. Pour over the lemon juice and soy sauce. Top with the sesame seeds. Toss through gently to coat."
+            },
+            {
+                "id": 7,
+                "name": "Serve.",
+                "description": "Give diners slices of tofu straight from the barbecue grill and ask them to help themselves to the grilled vegetables, or place these over the top of each serve of grilled tofu yourself if serving plated."
+            }
+        ],
+        "tips": [
+            "An indoor electric grill can also be used."
+        ],
+        "source_url": "http://www.wikihow.com/Grill-Tofu"
+    },
+    {
+        "id": 10,
+        "title": "Tofurkey (Tofu Not a Turkey)",
+        "authors": [
+            "Flickety",
+            "Teresa",
+            "Jack Herrick",
+            "Oliver"
+        ],
+        "picture": "http://dailyvegetarianrecipes.files.wordpress.com/2010/11/tofurkey2.jpg",
+        "description": "'Tofurkey' is a combination of the words 'tofu' and 'turkey'. As a meal it provides a delicious Thanksgiving meal alternative for vegetarians. This recipe is actually a stuffed 'Tofu Not-A-Turkey' by Alicia Silverstone. A dozen ingredients, an hour in the oven and *poof* you have a 'Not-A-Turkey' that even non-vegans will find tasty!",
+        "ingredients": [
+            "6 lbs. firm tofu", "1 cup diced onion", "1 Tbsp. sesame oil", "1/2 tsp. sage", "1/2 tsp. thyme",
+            "1 tsp. parsley", "Salt and pepper, to taste", "3 cups cubed whole wheat bread", "2 cups cubed corn bread",
+            "1/2 cup vegetable broth", "1/2 cup walnuts or pecans (optional)", "1/2 cup sesame oil", "1/4 cup soy sauce"
+        ],
+        "rate": 89,
+        "category": "hot meals, baking",
+        "vegetarian": true,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Prepare the tofu.",
+                "description": "One hour before cooking, mash the tofu and pack it into a colander lined with cheesecloth or a clean towel. Place the colander over a large bowl to catch the liquid from the tofu. Weigh it down with a heavy object such as a can or jar on top of a bowl or small plate."
+            },
+            {
+                "id": 2,
+                "name": "Make the stuffing.",
+                "description": "Sauté the onion and celery in the sesame oil. Mix the seasonings into the cubed bread. Combine everything, adding enough vegetable broth to moisten. Add nuts if desired."
+            },
+            {
+                "id": 3,
+                "name": "Preheat the oven to 400ºF.",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "name": "Press the tofu with your hands to form a hollow center, fill with the stuffing mixture, and press down.",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "name": "Flip the tofu onto an oiled baking sheet.",
+                "description": "Remove the towel or cheesecloth."
+            },
+            {
+                "id": 6,
+                "name": "Baste the tofu with 3/4 of the sesame oil and soy sauce mixture.",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "name": "Cover with foil, and bake for 1 hour.",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "name": "Remove the foil, baste again with the remaining basting mixture, return to the hot oven, and bake uncovered for 20 minutes or until golden.",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "name": "Transfer to a serving platter and serve with gravy.",
+                "description": ""
+            }
+        ],
+        "tips": [
+            "Make sure the gravy is also vegetarian."
+        ],
+        "source_url": "http://www.wikihow.com/Make-Tofurkey-(Tofu-Not-a-Turkey)"
+    },
+    {
         "id": 11,
         "title": "Fruit and Chocolate Salad",
         "authors": ["DarknessAndLight", "Adelaide", "Ally"],
