@@ -305,138 +305,128 @@ var data = [
     },
     {
         "id": 14,
-        "title": "",
-        "authors": ["", "", "", ""],
-        "picture": "",
-        "description": "",
+        "title": "Healthy Pizza",
+        "authors": ["General Jackson", "Sondra C", "Socha.michae", "Smack.E.M"],
+        "picture": "http://pad2.whstatic.com/images/thumb/f/f1/Make-a-Healthy-Pizza-Intro.jpg/670px-Make-a-Healthy-Pizza-Intro.jpg",
+        "description": "Have you ever wanted to make a healthy pizza? Follow the steps below and you'll have it in no time!",
         "ingredients": [
-            "", "", "",
-            "", "" , "",
-            "", "", "", "",
-            "", "", ""
+            "A base or your pizza dough", "A jar of mushroom or tomato sauce", "A meat layer",
+            "A vegetable layer", "A cheese grater" , "Some cheese"
         ],
-        "rate": 39,
-        "category": "salads",
+        "rate": 37,
+        "category": "pizza",
         "vegetarian": false,
         "steps": [
             {
                 "id": 1,
-                "name": "",
-                "description": ""
+                "name": "Spoon tomato or mushroom sauce onto the pizza base (you can either make your own crust or buy one at the grocery store).",
+                "description": "Spread the sauce all around the base, being careful not to add too much sauce."
             },
             {
                 "id": 2,
-                "name": "",
+                "name": "Sprinkle on a little cheese.",
                 "description": ""
             },
             {
                 "id": 3,
-                "name": "",
-                "description": ""
+                "name": "Add a vegetable layer.",
+                "description": "You can add mushrooms, black olives, onions, bell peppers and/or tomatoes."
             },
             {
                 "id": 4,
-                "name": "",
+                "name": "Sprinkle on a little more cheese.",
                 "description": ""
             },
             {
                 "id": 5,
-                "name": "",
-                "description": ""
+                "name": "Add the meat layer on.",
+                "description": "This can be pepperoni, ham, tuna, or even sausages. Make sure it covers all the sauce."
             },
             {
                 "id": 6,
-                "name": "",
-                "description": ""
+                "name": "Heat it in the oven at 210°C (450°F for a thick crust pizza or 425°F for a thin crust pizza).",
+                "description": "For fan assisted ovens, try 190°C or about 400-425°F. Bake for about 15 to 20 minutes until the cheese is melted."
             },
             {
                 "id": 7,
-                "name": "",
-                "description": ""
-            },
-            {
-                "id": 8,
-                "name": "",
-                "description": ""
-            },
-            {
-                "id": 9,
-                "name": "",
+                "name": "Finished.",
                 "description": ""
             }
         ],
         "tips": [
-            "",
-            "."
+            "Using a pizza stone to bake the pizza on, will help remove any moisture. This really works well for a thin, crisp crust.",
+            "Be creative, there are a lot of different ingredients you can add to a pizza."
         ],
-        "source_url": ""
+        "source_url": "http://www.wikihow.com/Make-a-Healthy-Pizza"
     },
     {
         "id": 15,
-        "title": "",
-        "authors": ["", "", "", ""],
-        "picture": "",
-        "description": "",
+        "title": "Hawaiian Pizza",
+        "authors": ["Ben Rubenstein", "Imperatrix", "Willancs", "Jeffrey walker"],
+        "picture": "http://pad1.whstatic.com/images/thumb/6/6d/Make-a-Hawaiian-Pizza-Step-10-Version-2.jpg/670px-Make-a-Hawaiian-Pizza-Step-10-Version-2.jpg",
+        "description": "Tired of the same old cheese pizza? Why not try something new? Try this easy, delicious Hawaiian pizza.",
         "ingredients": [
-            "", "", "",
-            "", "" , "",
-            "", "", "", "",
-            "", "", ""
+            "Frozen pizza dough", "Shredded mozzarella cheese", "Pineapple chunks (canned, drained)",
+            "Shredded Canadian bacon", "Pizza sauce"
         ],
-        "rate": 39,
-        "category": "salads",
+        "rate": 47,
+        "category": "pizza",
         "vegetarian": false,
         "steps": [
             {
                 "id": 1,
-                "name": "",
-                "description": ""
+                "name": "Preheat the oven",
+                "description": "beforehand to about 350° to 400°F (175° to 205°C)."
             },
             {
                 "id": 2,
-                "name": "",
-                "description": ""
+                "name": "Spread the dough out.",
+                "description": "Put one hand on the dough, hold the dough down, use your other hand, and spread the dough out to about a 12 inch diameter."
             },
             {
                 "id": 3,
-                "name": "",
+                "name": "Pinch the edges inwards and press down on the outside edges of the pizza.",
                 "description": ""
             },
             {
                 "id": 4,
-                "name": "",
-                "description": ""
+                "name": "Spread out the sauce with a spoon so the sauce covers the inside of the pizza.",
+                "description": "Make sure you leave at least an inch of space without sauce on it."
             },
             {
                 "id": 5,
-                "name": "",
-                "description": ""
+                "name": "Sprinkle a couple handfuls of shredded mozzarella cheese and spread out through the top of the pizza.",
+                "description": "If you like a little more cheese, add another handful of cheese on it. Make sure you don’t see spots of sauce; if you do, put some cheese to cover it up."
             },
             {
                 "id": 6,
-                "name": "",
-                "description": ""
+                "name": "Spread your shredded Canadian bacon and the pineapple chunks over the whole pizza.",
+                "description": "Make sure you don’t have them all bunched up."
             },
             {
                 "id": 7,
-                "name": "",
+                "name": "Put the pizza on the pan and then stick the pizza in the oven.",
                 "description": ""
             },
             {
                 "id": 8,
-                "name": "",
+                "name": "Bake the pizza for about 25 to 30 minutes so the crust can darken and be nice and crunchy.",
                 "description": ""
             },
             {
                 "id": 9,
-                "name": "",
+                "name": "Slice the pizza into eight separate slices.",
+                "description": ""
+            },
+            {
+                "id": 10,
+                "name": "Wait for about four to five minutes to let the pizza cool down.",
                 "description": ""
             }
         ],
         "tips": [
-            "",
-            "."
+            "You can make the pizza for any number of people, depending on the amount of dough."
         ],
-        "source_url": ""
+        "source_url": "http://www.wikihow.com/Make-a-Hawaiian-Pizza"
     }
 ];
