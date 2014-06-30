@@ -5,9 +5,11 @@
 //**************************main search function*****************************
 function searchBy() {
     var time = new Date/1000;
+    var search = document.getElementById('search');
+    var value = search.value;
 
-    var nameArr = searchByTarget('title');
-    var authorArr = searchByTarget('author');
+    var nameArr = searchByTarget('title', value);
+    var authorArr = searchByTarget('authors', value);
 
     console.log('by name');
     console.log(nameArr);
@@ -18,10 +20,9 @@ function searchBy() {
 }
 
 //***************************search by name************************************
-function searchByTarget(target) {
-    var search = document.getElementById('search'),
-        value = search.value,
-        i,
+function searchByTarget(target, value) {
+    var i,
+        iTarget,
         totalArr,
         directArr = [],
         directWordsArr = [],
@@ -47,15 +48,23 @@ function searchByTarget(target) {
     }
 
     for (i = 0; i < data.length; i++) {//<-search loop
-        if (value === data[i][target]) {//<-if value == search target
+        if (typeof data[i][target] === 'object') {
+            console.log('object');
+            iTarget = data[i][target].join(' ');
+        } else {
+            console.log('string');
+            iTarget = data[i][target];
+        }
+
+        if (value.toUpperCase() === iTarget.toUpperCase()) {//<-if value == search target
             directArr.push(data[i]);
-        } else if (data[i][target].search(directWordsPattern) + 1) {//<-if search target is part of string
+        } else if (iTarget.search(directWordsPattern) + 1) {//<-if search target is part of string
             directWordsArr.push(data[i]);
-        } else if (data[i][target].search(withinPattern) + 1) {//<-if search target is part of word in string
+        } else if (iTarget.search(withinPattern) + 1) {//<-if search target is part of word in string
             withinArr.push(data[i]);
-        } else if (data[i][target].search(multiWordsInlinePattern) + 1) {//<-if search target is not one word, but inline
+        } else if (iTarget.search(multiWordsInlinePattern) + 1) {//<-if search target is not one word, but inline
             multiWordsInlineArr.push(data[i]);
-        } else if (data[i][target].search(multiWordsPatterns[0]) + 1) {//<-if search target is not one word, not inline
+        } else if (iTarget.search(multiWordsPatterns[0]) + 1) {//<-if search target is not one word, not inline
             var temporalityArr = multiWordsPatterns.slice();
             searchMultiWords(data[i], temporalityArr);
         }
