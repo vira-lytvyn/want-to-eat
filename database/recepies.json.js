@@ -2,7 +2,7 @@ var data = [
     {
         "id": 0,
         "title": "Chocolate Hazelnut Buns",
-        "authors": "Puddy, Flickety, Teresa, Krystle",
+        "authors": ["Puddy", "Flickety", "Teresa", "Krystle"],
         "picture": "http://pad3.whstatic.com/images/thumb/9/99/Buns4.JPG/180px-Buns4.JPG",
         "description": "We are all familiar with buns: Ball of bread, with a somewhat bland taste. Chocolate Hazelnut buns, a fusion of bread and dessert, are bound to impress.",
         "ingredients": [
@@ -70,7 +70,7 @@ var data = [
     {
         "id": 1,
         "title": "Starbucks Lemon Loaf",
-        "authors": "Susan Turnwell, General Rommel, Cindy, Krystle",
+        "authors": ["Susan Turnwell", "General Rommel", "Cindy", "Krystle"],
         "picture": "http://pad1.whstatic.com/images/thumb/f/f0/Make-Starbucks-Lemon-Loaf-Step-9.jpg/670px-Make-Starbucks-Lemon-Loaf-Step-9.jpg",
         "description": "You might have a special place in your heart for the delicious pastries at Starbucks, but you don't have to go there to enjoy this one.",
         "ingredients": [
