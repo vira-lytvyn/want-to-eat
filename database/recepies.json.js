@@ -1433,7 +1433,7 @@ var data = [
         "description": "Tofu is a useful alternative to meat for those who are vegetarian/vegan or just for those who like the flavor and texture of tofu. These fried tofu stick appetizers are so good that even the wariest of guests will want to try them! These go well with the honey mustard dipping sauce, so the recipe for that is included as well.",
         "ingredients": [
             "1 block of firm or extra-firm tofu", "2 tbsp chili sauce or sweet chili sauce", "1 tbsp soya sauce",
-            "2 tbsp corn starch", "1 cup fresh breadcrumbs" , "Salt and pepper to taste", "3 tbsp honey",
+            "2 tbsp corn starch", "1 cup fresh breadcrumbs" , "3 tbsp honey",
             "1 tbsp Dijon mustard", "1 tsp soya sauce", "Salt and pepper to taste"
         ],
         "rate": 93,
@@ -1796,9 +1796,9 @@ var data = [
         "ingredients": [
             "2 1/8 pint (1 liter) chicken broth", "3 tablespoons peanut oil", "1 1/3 ounces (40 ml) rice wine",
             "3 shallots (sliced)", "2 garlic cloves (crushed)" , "1 carrot (chopped)", "2 centimeters ginger (chopped)",
-            "1 green chilli (chopped)", "2 tablespoons soy sauce", "2 packages of instant ramen noodles",
+            "1 green chili (chopped)", "2 tablespoons soy sauce", "2 packages of instant ramen noodles",
             "1 chicken breast", "Handful of coriander sprigs", "1/2 spring onion (peeled and sliced)",
-            "1/4 red pepper (sliced)", "1 tablespoon chilli oil", "Few slices of cucumber", "Salt and pepper"
+            "1/4 red pepper (sliced)", "1 tablespoon chili oil", "Few slices of cucumber", "Salt and pepper"
         ],
         "rate": 69,
         "category": "pasta",
@@ -1807,7 +1807,7 @@ var data = [
             {
                 "id": 1,
                 "name": "Heat the peanut oil in a heated saucepan.",
-                "description": "Add the shallots, ginger, garlic, carrots, and chilli and stir gently."
+                "description": "Add the shallots, ginger, garlic, carrots, and chili and stir gently."
             },
             {
                 "id": 2,
@@ -1832,7 +1832,7 @@ var data = [
             {
                 "id": 6,
                 "name": "Serve the noodles and broth in bowls.",
-                "description": "Cut the chicken into slices (against the grain) and place a few chicken slices in the bowls. Garnish the bowls with cucumber, red pepper, spring onions, and coriander. Top everything with chilli oil."
+                "description": "Cut the chicken into slices (against the grain) and place a few chicken slices in the bowls. Garnish the bowls with cucumber, red pepper, spring onions, and coriander. Top everything with chili oil."
             },
             {
                 "id": 7,
@@ -2584,7 +2584,7 @@ var data = [
             "", "", "", "",
             "", "", ""
         ],
-        "rate": 00,
+        "rate": 0,
         "category": "",
         "vegetarian": false,
         "steps": [
