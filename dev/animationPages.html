@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= utf-8" />
+    <title>test</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        p{margin: 0; padding: 0}
+        .first{
+            position: relative;
+            width: auto;
+            background: cornflowerblue;
+            margin: 0;
+            padding: 0 0 0 0;
+        }
+        .main{
+
+            border: 2px solid #000000;
+            width: 500px;
+            min-height: 1000px;
+            margin: 40px auto 0;
+            padding: 0 0 20px 0;
+        }
+            .main ul li{
+                margin: 10px 0 5px;
+            }
+            .main h1{
+                text-align: center;
+            }
+            .main input[type = button]{
+                text-align: center;
+            }
+        .second{
+            position: relative;
+            width: auto;
+            background: #2ea06a;
+            display: none;
+        }
+
+        .third{
+            position: relative;
+            width: auto;
+            background: #c5dfed;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="b">
+    <div class="first" id="first">
+        <p>1</p>
+        <div class="main">
+            <h1>Hi!</h1>
+            <ul>
+                <li>1.</li>
+                <li>2.</li>
+                <li>3.</li>
+                <li><input type="checkbox" name=""/>3</li>
+                <li><input type="checkbox" name=""/>1</li>
+                <li><input type="checkbox" name=""/>2</li>
+            </ul>
+            <input type="button" onclick="animate('first', 'second', 700)" value="go">
+        </div>
+    </div>
+
+    <div class="second" id="second">
+        <p>2</p>
+        <div class="main">
+            <h1>Hi!</h1>
+            <ul>
+                <li><input type="checkbox" name=""/>1</li>
+                <li><input type="checkbox" name=""/>2</li>
+                <li><input type="checkbox" name=""/>3</li>
+                <li><input type="checkbox" name=""/>1</li>
+                <li><input type="checkbox" name=""/>2</li>
+                <li><input type="checkbox" name=""/>3</li>
+                <li><input type="checkbox" name=""/>1</li>
+                <li><input type="checkbox" name=""/>2</li>
+                <li><input type="checkbox" name=""/>3</li>
+                <li><input type="checkbox" name=""/>1</li>
+                <li><input type="checkbox" name=""/>2</li>
+                <li><input type="checkbox" name=""/>3</li>
+                <li><input type="checkbox" name=""/>1</li>
+                <li><input type="checkbox" name=""/>2</li>
+                <li><input type="checkbox" name=""/>3</li>
+                <li><input type="checkbox" name=""/>1</li>
+                <li><input type="checkbox" name=""/>2</li>
+
+            </ul>
+            <input type="button" onclick="animate('second', 'third', 1100)" value="go">
+
+        </div>
+    </div>
+
+    <div class="third" id="third">
+        <p>3</p>
+        <div class="main">
+            <h1>Hi!</h1>
+            <ul>
+                <li>1.</li>
+                <li>2.</li>
+                <li>3.</li>
+            </ul>
+            <input type="button" onclick="animate2('third', 'first', 900)" value="go">
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+    var myWidth = window.innerWidth;
+    var myHeight = window.innerHeight;
+    var first, second, third;
+
+    first = document.getElementById('first');
+//    first.style.height = myHeight + 'px';
+
+    second = document.getElementById('second');
+//    second.style.height = myHeight +500 + 'px';
+
+    third = document.getElementById('third');
+//    third.style.height = myHeight + 'px';
+
+
+//    var body = document.getElementById('b');
+//    body.appendChild(third);
+//    console.log(first.style.height);
+//
+//    var intervalIndex = myHeight/3;
+//    function move(){
+//        second.style.display = 'block';
+//        inter = setInterval('go()', 150);
+//
+//    }
+//    function go(){
+//        if(intervalIndex < myHeight){
+//            window.scroll(0, intervalIndex );
+//        }else{
+//            window.scroll(0, myHeight);
+//            first.style.display = 'none';
+//            clearInterval(inter);
+//            window.scroll(0, 0);
+//        }
+//        intervalIndex += myHeight/3;
+//    }
+//    function move2(){
+//        height = second.style.height.split('px');
+//        step = height[0]/4;
+//        console.log(step);
+//
+//        intervalIndex = step;
+//        third.style.display = 'block';
+//        inter = setInterval('go2()', 150);
+//
+//    }
+//    function go2(){
+//        if(intervalIndex < height[0]){
+//            window.scroll(0, intervalIndex );
+//            console.log(intervalIndex);
+//        }else{
+//            window.scroll(0, height[0]);
+//            console.log(intervalIndex);
+//            second.style.display = 'none';
+//            clearInterval(inter);
+//            window.scroll(0, 0);
+//        }
+//        intervalIndex += step;
+//    }
+
+    function animate(objectStart, objectEnd, time) {
+        var boxStart = document.getElementById(objectStart);
+        var boxHeight = boxStart.clientHeight;
+        var startPosition = scrollY;
+        var boxEnd = document.getElementById(objectEnd);
+        boxEnd.style.display = 'block';
+        var frameRate = 0.06; // 60 frame per second
+        var frame = 0;
+        var delta = boxHeight / time / frameRate;
+        var handle = setInterval(function() {
+            frame++;
+            var value = startPosition + delta * frame;
+            scroll(0, value);
+            if (value >= boxHeight) {
+                boxStart.style.display = 'none';
+                scroll(0, 0);
+                clearInterval(handle);
+            }
+        }, 1 / frameRate);
+    }
+
+    function animate2(objectStart, objectEnd, time) {
+        var boxStart = document.getElementById(objectStart);
+        var boxHeight = boxStart.clientHeight;
+        var startPosition = scrollY;
+        console.log(boxHeight, scrollY);
+        var boxEnd = document.getElementById(objectEnd);
+
+        var b = document.getElementById('b');
+        var fakeBoxEnd = boxEnd.cloneNode(true);
+        fakeBoxEnd.style.display = 'block';
+        b.appendChild(fakeBoxEnd);
+        console.log(fakeBoxEnd);
+
+        var frameRate = 0.06; // 60 frame per second
+        var frame = 0;
+        var delta = boxHeight / time / frameRate;
+        var handle = setInterval(function() {
+            frame++;
+            var value = startPosition + delta * frame;
+            scroll(0, value);
+            if (value >= boxHeight) {
+                boxStart.style.display = 'none';
+                fakeBoxEnd.style.display = 'none';
+                b.removeChild(fakeBoxEnd);
+                console.log(fakeBoxEnd, 'del');
+                boxEnd.style.display = 'block';
+                scroll(0, 0);
+                clearInterval(handle);
+            }
+        }, 1 / frameRate);
+    }
+
+
+
+</script>
+</body>
+</html>
