@@ -6,7 +6,9 @@
 var clientIngredients;
 var clientCategory;
 
-function selectCategory(id){
+function selectCategory(){
+    var divId = this.id;
+
     var form = document.getElementById('category_form');
     var categories = form.getElementsByTagName('div');//select all div(categories)
 
@@ -14,7 +16,7 @@ function selectCategory(id){
         categories[i].style.display = 'none';
     }
 
-    var category = document.getElementById(id);
+    var category = document.getElementById(divId + 'Ingredients');
     category.style.display = 'block';//makes visible the selected block(by id)
 
     var button = document.getElementById('getRecipe');
@@ -28,7 +30,7 @@ function selectCategory(id){
             }
         }
         clientIngredients = ingredients;
-        clientCategory = id;
+        clientCategory = divId;
         console.log(clientIngredients, clientCategory);
     };
 }
@@ -51,24 +53,26 @@ function makeRequest() {
     xhr.send();
 }
 
-function createDOMforCategories(json, location) {
+function createDOMforCategories(json) {
     console.log(json);
-    var form = document.getElementById('category_form');
     var spanRadioButtons = document.getElementById('radioButtons');
 
     for(var cIndex = 0, jsonLng = json.length; cIndex < jsonLng; cIndex++) {
         var radioButton = document.createElement('input');
-        var spanCategoryName = document.createElement('span');
+        var categoryLabel = document.createElement('label');
 
         radioButton.type = 'radio';
         radioButton.className = 'categoryRadio';
         radioButton.name = 'choice';
-        radioButton.value = 'cat' + json[cIndex].id;
+        radioButton.id = json[cIndex].name;
+        radioButton.value = json[cIndex].name + 'Category';
+        attachReaction('click', radioButton, selectCategory);
 
-        spanCategoryName.innerHTML = json[cIndex].name;
+        categoryLabel.innerHTML = json[cIndex].name;
+        categoryLabel.setAttribute('for', json[cIndex].name);
 
         spanRadioButtons.appendChild(radioButton);
-        spanRadioButtons.appendChild(spanCategoryName);
+        spanRadioButtons.appendChild(categoryLabel);
 
         crtCheckboxForCategories(json[cIndex], 'category_form');
     }
@@ -80,21 +84,21 @@ function crtCheckboxForCategories(category, location) {
     var divCategory = document.createElement('div');//create category Div
 
     divCategory.className = 'ingredients_div';
-    divCategory.id = 'cat_' + category.id;
+    divCategory.id = category.name + 'Ingredients';
     divCategory.innerHTML = '<h3>' + category.name + '</h3>';
 
     for(var chIndex = 0, catLng = category.ingredients.length; chIndex < catLng; chIndex++) {
-        var spanDiv = document.createElement('span');
-        spanDiv.className = 'ingredient';
+        var label = document.createElement('label');
+        label.className = 'ingredient';
 
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.name = category.ingredients[chIndex];
 
-        spanDiv.appendChild(checkbox);
-        spanDiv.innerHTML += category.ingredients[chIndex];//add name ingredient
+        label.appendChild(checkbox);
+        label.innerHTML += category.ingredients[chIndex];//add name ingredient
 
-        divCategory.appendChild(spanDiv);
+        divCategory.appendChild(label);
     }
 
     form.appendChild(divCategory);//add div to Form

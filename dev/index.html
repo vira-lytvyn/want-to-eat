@@ -7,89 +7,20 @@
     </head>
     <body>
         <img src="img/logo.jpg" class="logo main primary" id="logo">
-        <input type="button" id="getWeather" value="Get Weather" onclick="serchByIngridients();">
-        <p>
-        test
-        </p>
-        <input type="button" value="Vira1"/>
-        <input type="button" value="Vira2"/>
         <input type="search" placeholder="enter dish or author name..." id="search"/>
         <input type="button" value="search" onclick="searchBy()" />
 
-
         <!--add by JohnnyRevolver -->
         <section id="section2">
-
             <h2>Choose category</h2>
             <form action="" method="get" id="category_form">
-            <span class="radioButtons" id="radioButtons">
-                <input type="radio" class="categoryRadio" name="choice" value="c1" onclick="selectCategory('cat1')"/><span>Cat.1</span>
-                <input type="radio" class="categoryRadio" name="choice" value="c2" onclick="selectCategory('cat2')"/><span>Cat.2</span>
-                <input type="radio" class="categoryRadio" name="choice" value="c3" onclick="selectCategory('cat3')"/><span>Cat.3</span>
-                <input type="radio" class="categoryRadio" name="choice" value="c4" onclick="selectCategory('cat4')"/><span>Cat.4</span>
-            </span>
+                <span class="radioButtons" id="radioButtons">
 
-                <div class="ingredients_div" id="cat1">
-                    <h3>Category 1</h3>
-                    <span class="ingredient"><input type="checkbox" name="1"/>1</span>
-                    <span class="ingredient"><input type="checkbox" name="2"/>2</span>
-                    <span class="ingredient"><input type="checkbox" name="3"/>3</span>
-                    <span class="ingredient"><input type="checkbox" name="4"/>4</span>
-                    <span class="ingredient"><input type="checkbox" name="5"/>5</span>
-                    <span class="ingredient"><input type="checkbox" name="6"/>6</span>
-                    <span class="ingredient"><input type="checkbox" name="7"/>7</span>
-                    <span class="ingredient"><input type="checkbox" name="8"/>8</span>
-                    <span class="ingredient"><input type="checkbox" name="9"/>9</span>
-                    <span class="ingredient"><input type="checkbox" name="10"/>10</span>
-                </div>
-
-                <div class="ingredients_div" id="cat2">
-                    <h3>Category 2</h3>
-                    <span class="ingredient"><input type="checkbox" name="1"/>1</span>
-                    <span class="ingredient"><input type="checkbox" name="2"/>2</span>
-                    <span class="ingredient"><input type="checkbox" name="3"/>3</span>
-                    <span class="ingredient"><input type="checkbox" name="4"/>4</span>
-                    <span class="ingredient"><input type="checkbox" name="5"/>5</span>
-                    <span class="ingredient"><input type="checkbox" name="6"/>6</span>
-                    <span class="ingredient"><input type="checkbox" name="7"/>7</span>
-                    <span class="ingredient"><input type="checkbox" name="8"/>8</span>
-                    <span class="ingredient"><input type="checkbox" name="9"/>9</span>
-                    <span class="ingredient"><input type="checkbox" name="10"/>10</span>
-                </div>
-
-                <div class="ingredients_div" id="cat3">
-                    <h3>Category 3</h3>
-                    <span class="ingredient"><input type="checkbox" name="1"/>1</span>
-                    <span class="ingredient"><input type="checkbox" name="2"/>2</span>
-                    <span class="ingredient"><input type="checkbox" name="3"/>3</span>
-                    <span class="ingredient"><input type="checkbox" name="4"/>4</span>
-                    <span class="ingredient"><input type="checkbox" name="5"/>5</span>
-                    <span class="ingredient"><input type="checkbox" name="6"/>6</span>
-                    <span class="ingredient"><input type="checkbox" name="7"/>7</span>
-                    <span class="ingredient"><input type="checkbox" name="8"/>8</span>
-                    <span class="ingredient"><input type="checkbox" name="9"/>9</span>
-                    <span class="ingredient"><input type="checkbox" name="10"/>10</span>
-                </div>
-
-                <div class="ingredients_div" id="cat4">
-                    <h3>Category 4</h3>
-                    <span class="ingredient"><input type="checkbox" name="1"/>1</span>
-                    <span class="ingredient"><input type="checkbox" name="2"/>2</span>
-                    <span class="ingredient"><input type="checkbox" name="3"/>3</span>
-                    <span class="ingredient"><input type="checkbox" name="4"/>4</span>
-                    <span class="ingredient"><input type="checkbox" name="5"/>5</span>
-                    <span class="ingredient"><input type="checkbox" name="6"/>6</span>
-                    <span class="ingredient"><input type="checkbox" name="7"/>7</span>
-                    <span class="ingredient"><input type="checkbox" name="8"/>8</span>
-                    <span class="ingredient"><input type="checkbox" name="9"/>9</span>
-                    <span class="ingredient"><input type="checkbox" name="10"/>10</span>
-                </div>
-
-                <input type="button" class="getRecipeButton" id="getRecipe" value="Show recipes"/>
-
+                </span>
             </form>
+            <input type="button" class="getRecipeButton" id="getRecipe" value="Show recipes"/>
         </section>
-
+        <script src="js/general.js" type="text/javascript"></script>
         <script src="../database/recipes.json.js" type="text/javascript"></script>
         <script src="js/searchBy.js" type="text/javascript"></script>
         <script src="js/sortBy.js" type="text/javascript"></script>
