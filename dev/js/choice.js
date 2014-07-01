@@ -32,6 +32,7 @@ function selectCategory(){
         clientIngredients = ingredients;
         clientCategory = divId;
         console.log(clientIngredients, clientCategory);
+        searchRecipes();
     };
 }
 
