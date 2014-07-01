@@ -49,10 +49,8 @@ function searchByTarget(target, value) {
 
     for (i = 0; i < data.length; i++) {//<-search loop
         if (typeof data[i][target] === 'object') {
-            console.log('object');
             iTarget = data[i][target].join(' ');
         } else {
-            console.log('string');
             iTarget = data[i][target];
         }
 
