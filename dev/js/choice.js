@@ -19,7 +19,7 @@ function selectCategory(){
     var category = document.getElementById(divId + 'Ingredients');
     category.style.display = 'block';//makes visible the selected block(by id)
 
-    var button = document.getElementById('getRecipe');
+    var button = document.getElementById('getRecipes');
 
     button.onclick = function(){//button onclick function
         var checkbox = category.getElementsByTagName('input');//selected all inputs
