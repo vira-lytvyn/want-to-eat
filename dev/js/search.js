@@ -1,48 +1,32 @@
-/**
- * Created by 1 on 21.06.2014.
- */
-
 function searchRecipes(){
-    console.log(clientIngredients, clientCategory);
     var allRecipesInCategory = searchByCategory(clientCategory);
-    var minRecipesCount = 3;
-    var resultArr = allRecipesInCategory;
-    for (var i = 0; i < clientIngredients.length; i++) {
-        console.log(resultArr);
-        var temporaryArr = searchThroughIngredients(resultArr, clientIngredients[i]);
-        if (temporaryArr.length < minRecipesCount) {
-            console.log(temporaryArr);
-            break;
-        } else {
-            resultArr = temporaryArr;
-        }
-    }
+    var resultArr = sortBy('weigth', calculateWeight(allRecipesInCategory, clientIngredients)); // move the 'heaviest' recipe up
     console.log(resultArr);
 }
 
 function searchByCategory (category) {
-    console.log(category);
     var arr = [];
     for (var i = 0; i < data.length; i++) {
        if (data[i].category.indexOf(category) !== -1) {
+           data[i].weigth = 0; // set 'weigth' property to each recipe from selected category
            arr.push(data[i]);
        }
     }
     return arr;
 }
 
-function searchThroughIngredients(recipes, ingredient){
-    console.log(recipes);
-    var newArr = [];
+function calculateWeight(recipes, ingredients){
+    var resultArray = [];
     for (var i = 0; i < recipes.length; i++) {
-        console.log(recipes);
-        var temporaryIngredientsArray = recipes[i].ingredients;
-        for (var j = 0; j < temporaryIngredientsArray.length; j++) {
-            if (temporaryIngredientsArray[j].indexOf(ingredient) !== -1) {
-                newArr.push(recipes[i]);
-                break;
+        var currentRecipeIngredients = recipes[i].ingredients.join();
+        for (var j = 0; j < ingredients.length; j++) {
+            if (currentRecipeIngredients.indexOf(ingredients[j]) !== -1) {
+                recipes[i].weigth += 1; // increase weight of recipe if it contains more ingredients
             }
         }
+        if (recipes[i].weigth !== 0) {
+            resultArray.push(recipes[i]); // push recipe to result array if it contains at least one ingredient
+        }
     }
-    return newArr;
+    return resultArray;
 }

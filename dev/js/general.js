@@ -33,5 +33,5 @@ function sortBy(target, data) {
     } else {
         console.log('Error: bad type of target!');
     }
-    console.log(data);
+    return data;
 }
