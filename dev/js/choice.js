@@ -19,6 +19,23 @@ function selectCategory(){
     var category = document.getElementById(divId + 'Ingredients');
     category.style.display = 'block';//makes visible the selected block(by id)
 
+//some effect animation-------------------------------------
+    var labels = category.getElementsByClassName('ingredient');
+    for(var ii = 0; ii < labels.length; ii++){
+        labels[ii].style.display = 'none';
+    }
+    ii = 0;
+    var stop = setInterval(function(){
+        labels[ii].style.display = 'block';
+        ii++;
+        if(ii >= labels.length){
+            clearInterval(stop);
+        }
+    }, 45);
+
+//-----------------------------------------------------------
+
+
     var button = document.getElementById('getRecipes');
 
     button.onclick = function(){//button onclick function
