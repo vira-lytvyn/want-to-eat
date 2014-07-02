@@ -55,6 +55,7 @@ function buildFinalRecipe(currentRecipe) {
 
     //->start of ingredients block
     var ingredients = document.getElementById('ingredients');
+    ingredients.innerHTML = '';
     for (i = 0; i < currentRecipe.ingredients.length; i ++) {
         ingredients.innerHTML += '<li>' + currentRecipe.ingredients[i] + '</li>';
     }
@@ -62,17 +63,19 @@ function buildFinalRecipe(currentRecipe) {
 
     //->start of steps block
     var steps = document.getElementById('steps');
+    steps.innerHTML = '';
     for (i = 0; i < currentRecipe.steps.length; i ++) {
         steps.innerHTML += '<li><span>' + currentRecipe.steps[i].name + '</span><br/><span>' + currentRecipe.steps[i].description + '</span></li>';
     }
     var li = steps.getElementsByTagName('li');
     for (i = 0; i < li.length; i ++) {
-        li[i].firstChild.style.fontWeight = 'bold';
+        li[i].lastChild.style.fontStyle = 'italic';
     }
     //X end of steps block
 
     //->start of tips block
     var tips = document.getElementById('tips');
+    tips.innerHTML = '';
     for (i = 0; i < currentRecipe.tips.length; i++) {
         tips.innerHTML += '<li>' + currentRecipe.tips[i] + '</li>';
     }
