@@ -74,7 +74,3 @@ function genrateRecipeItem(recipe) {
 
     return recipeItem;
 }
-
-document.body.appendChild(genrateRecipeItem(data[5]));
-document.body.appendChild(genrateRecipeItem(data[1]));
-document.body.appendChild(genrateRecipeItem(data[16]));

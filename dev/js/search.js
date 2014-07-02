@@ -1,7 +1,16 @@
 function searchRecipes(){
     var allRecipesInCategory = searchByCategory(clientCategory);
     var resultArr = sortBy('weigth', calculateWeight(allRecipesInCategory, clientIngredients)); // move the 'heaviest' recipe up
+    showSearchResult(0, resultArr);
     console.log(resultArr);
+}
+
+function showSearchResult(position, array) {
+    var showStep = 3;
+    var container = document.getElementById('searchResult');
+    for (var i = position; i < position + showStep; i++) {
+        container.appendChild(genrateRecipeItem(array[i]));
+    }
 }
 
 function searchByCategory (category) {
