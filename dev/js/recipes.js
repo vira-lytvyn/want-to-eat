@@ -25,6 +25,7 @@ function buildFinalRecipe(currentRecipe) {
 
     var authors = document.getElementById('authors');
     authors.style.display = 'none';
+    authors.innerHTML = '';
     for (i = 0; i < currentRecipe.authors.length; i++) {
         var authorButt = document.createElement('input');
         authorButt.type = 'button';
