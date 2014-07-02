@@ -61,9 +61,12 @@ function buildFinalRecipe(currentRecipe) {
         ingCheck.type = 'checkbox';
 
         var ingLi = document.createElement('li');
-        ingLi.innerHTML = currentRecipe.ingredients[i];
-        ingLi.style.fontWeight = 'bold';
-        ingLi.insertBefore(ingCheck, ingLi.firstChild);
+        var ingLabel = document.createElement('label');
+        ingLabel.innerHTML = currentRecipe.ingredients[i];
+        ingLabel.style.fontWeight = 'bold';
+        ingLabel.style.cursor = 'pointer';
+        ingLabel.insertBefore(ingCheck, ingLabel.firstChild);
+        ingLi.appendChild(ingLabel);
         ingredients.appendChild(ingLi);
 
         ingCheck.onchange = function() {
