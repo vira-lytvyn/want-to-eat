@@ -1,0 +1,9 @@
+# Sass #
+.sass-cache
+
+# Grunt #
+/build/
+/node_modules/
+
+# IDE settings #
+.idea
