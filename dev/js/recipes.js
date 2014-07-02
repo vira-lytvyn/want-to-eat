@@ -57,7 +57,24 @@ function buildFinalRecipe(currentRecipe) {
     var ingredients = document.getElementById('ingredients');
     ingredients.innerHTML = '';
     for (i = 0; i < currentRecipe.ingredients.length; i ++) {
-        ingredients.innerHTML += '<li>' + currentRecipe.ingredients[i] + '</li>';
+        var ingCheck = document.createElement('input');
+        ingCheck.type = 'checkbox';
+
+        var ingLi = document.createElement('li');
+        ingLi.innerHTML = currentRecipe.ingredients[i];
+        ingLi.style.fontWeight = 'bold';
+        ingLi.insertBefore(ingCheck, ingLi.firstChild);
+        ingredients.appendChild(ingLi);
+
+        ingCheck.onchange = function() {
+            if(this.checked) {
+                this.parentNode.style.fontWeight = '';
+                this.parentNode.style.fontStyle = 'italic';
+            } else {
+                this.parentNode.style.fontWeight = 'bold';
+                this.parentNode.style.fontStyle = '';
+            }
+        }
     }
     //X end of ingredients block
 
