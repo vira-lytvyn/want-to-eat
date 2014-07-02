@@ -26,6 +26,7 @@ body {
     width: 44%;
     float: left;
     height: 40px;
+    text-overflow: ellipsis;
 }
 
 .sub-blocks {
@@ -35,6 +36,7 @@ body {
 
 .main-blocks img {
     float: right;
+    width: 300px;
 }
 
 #ingredients {

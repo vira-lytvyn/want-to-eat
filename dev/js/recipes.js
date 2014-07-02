@@ -19,18 +19,18 @@ function buildRecipeDetail(id) {
     //X end of header block
 
     //->start of info block
-    var author = document.createElement('a');
-    author.className = 'main-blocks info';
-    author.id = 'author';
-    author.innerHTML = 'author: ' + currentRecipe.author;
-    author.onclick = function() {
-          alert('search by author ' + currentRecipe.author);
+    var authors = document.createElement('a');
+    authors.className = 'main-blocks info';
+    authors.id = 'authors';
+    authors.innerHTML = 'authors: ' + currentRecipe.authors;
+    authors.onclick = function() {
+          alert('search by author ' + currentRecipe.authors);
     };
-    recipe.appendChild(author);
+    recipe.appendChild(authors);
 
     var rank = document.createElement('div');
     rank.className = 'main-blocks info';
-    rank.innerHTML = 'social rank: ' + currentRecipe.social_rank;
+    rank.innerHTML = 'social rank: ' + currentRecipe.rate;
     recipe.appendChild(rank);
     //X end of info block
 
