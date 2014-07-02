@@ -42,3 +42,56 @@ div.ingredients_div h3{
     display: block;
     margin: 30px auto;
 }
+
+/*recipe item start*/
+.recipeItem {
+    border: 1px solid black;
+    margin: 5px auto;
+    width: 600px;
+}
+
+.general-info {
+    border: 1px solid darkorange;
+    padding: 0 1%;
+    }
+
+.general-info .title {
+    display: inline-block;
+    width: 70%;
+    }
+
+.buttonDesc {
+    width: 25%;
+    height: 50px;
+    font-size: 30px;
+}
+
+.detail-info {
+    border: 1px solid yellow;
+    padding: 5px 1%;
+    }
+
+.detail-info:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.infoImg {
+    width: 49%;
+    float: left;
+    }
+
+.info-text {
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+}
+
+.detailButton {
+    width: 100%;
+}
+/*recipe item end*/
