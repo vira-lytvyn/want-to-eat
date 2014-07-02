@@ -125,6 +125,10 @@ div.ingredients_div h3{
   cursor: pointer;
 }
 
+#ingredients {
+  list-style: none;
+}
+
 #source {
   display: block;
   border: 1px solid black;
