@@ -1,123 +1,102 @@
+function buildFinalRecipe(currentRecipe) {
+    var i;
 
+    //->start of header block
+    var image = document.getElementById('finalImg');
+    image.src = currentRecipe.picture;
 
+    var title = document.getElementById('finalTitle');
+    title.innerHTML = currentRecipe.title;
+    //X end of header block
 
-//function buildRecipeDetail(id) {
-//    var currentRecipe = data[id];
-//
-//    var recipe = document.createElement('div');
-//    recipe.id = 'doneRecipe';
-//
-//    //->start of header block
-//    var header = document.createElement('div');
-//    header.className = 'main-blocks';
-//    recipe.appendChild(header);
-//
-//    var image = document.createElement('img');
-//    image.src = currentRecipe.picture;
-//    header.appendChild(image);
-//
-//    var title = document.createElement('h1');
-//    title.innerHTML = currentRecipe.title;
-//    header.appendChild(title);
-//    //X end of header block
-//
-//    //->start of info block
-//    var authors = document.createElement('a');
-//    authors.className = 'main-blocks info';
-//    authors.id = 'authors';
-//    authors.innerHTML = 'authors: ' + currentRecipe.authors;
-//    authors.onclick = function() {
-//          alert('search by author ' + currentRecipe.authors);
-//    };
-//    recipe.appendChild(authors);
-//
-//    var rank = document.createElement('div');
-//    rank.className = 'main-blocks info';
-//    rank.innerHTML = 'social rank: ' + currentRecipe.rate;
-//    recipe.appendChild(rank);
-//    //X end of info block
-//
-//    //->start of ingredients block
-//    var ingredients = document.createElement('div');
-//    ingredients.className = 'main-blocks';
-//    ingredients.id = 'ingredients';
-//
-//    var ingTitle = document.createElement('div');
-//    ingTitle.innerHTML = 'ingredients you need to...';
-//    ingTitle.id = 'ingTitle';
-//    ingTitle.onclick = function() {
-//        if (ingList.style.display == 'none') {
-//            ingList.style.display = 'block';
-//        } else {
-//            ingList.style.display = 'none';
-//        }
-//    };
-//    ingredients.appendChild(ingTitle);
-//
-//    var ingList = document.createElement('ol');
-//    ingList.id = 'ingList';
-//    ingList.className = 'sub-blocks';
-//    ingList.style.display = 'none';
-//    var ingData = currentRecipe.ingredients;
-//    for (var i = 0; i < ingData.length; i++) {
-//        ingList.innerHTML += '<li>' + ingData[i] + '</li>';
-//    }
-//    ingredients.appendChild(ingList);
-//
-//    recipe.appendChild(ingredients);
-//    //->X end of ingredients block
-//
-//    //->start of description block
-//    var description = document.createElement('div');
-//    description.className = 'main-blocks';
-//
-//    var descText = document.createElement('p');
-//    descText.innerHTML = currentRecipe.description;
-//    description.appendChild(descText);
-//
-//    var mealCat = document.createElement('span');
-//    mealCat.id = 'mealCat';
-//    mealCat.innerHTML = currentRecipe.category;
-//    description.appendChild(mealCat);
-//
-//    var mealType = document.createElement('span');
-//    mealType.id = 'mealType';
-//    mealType.innerHTML = currentRecipe.type_of_meal;
-//    description.appendChild(mealType);
-//
-//    var time = document.createElement('p');
-//    time.innerHTML = 'added: ' + currentRecipe.added;
-//    description.appendChild(time);
-//
-//    recipe.appendChild(description);
-//    //->X end of description block
-//
-//    //->start of links block
-//    var source = document.createElement('a');
-//    source.className = 'main-blocks';
-//    source.href = currentRecipe.source_url;
-//    source.id = 'source';
-//    source.innerHTML = 'Source';
-//    recipe.appendChild(source);
-//
-//    var save = document.createElement('input');
-//    save.value = 'save';
-//    save.type = 'button';
-//    save.className = 'main-blocks button';
-//    recipe.appendChild(save);
+    //->start of info block
+    var showAuthors = document.getElementById('showAuthors');
+    showAuthors.innerHTML = 'authors: ' + currentRecipe.authors.join(', ');
+    showAuthors.onclick = function() {
+          if (authors.style.display == 'none') {
+              authors.style.display = 'block';
+          } else {
+              authors.style.display = 'none';
+          }
+    };
+
+    var rank = document.getElementById('rank');
+    rank.innerHTML = 'social rank: ' + currentRecipe.rate;
+
+    var authors = document.getElementById('authors');
+    authors.style.display = 'none';
+    for (i = 0; i < currentRecipe.authors.length; i++) {
+        var authorButt = document.createElement('input');
+        authorButt.type = 'button';
+        authorButt.value = currentRecipe.authors[i];
+        authors.appendChild(authorButt);
+        authorButt.onclick = function() {
+            console.log(searchByTarget('authors', this.value));
+        };
+    }
+    //X end of info block
+
+    //->start of description block
+    var description = document.getElementById('description');
+    description.innerHTML = currentRecipe.description;
+
+    var category = description.nextSibling;
+    category.innerHTML = currentRecipe.category;
+    category.style.background = 'green';
+
+    var vegetarian = category.nextSibling;
+    if(currentRecipe.vegetarian) {
+        vegetarian.innerHTML = 'vegetarian: yes';
+    } else {
+        vegetarian.innerHTML = 'vegetarian: no';
+    }
+    vegetarian.style.background = 'yellow';
+    //X end of description block
+
+    //->start of ingredients block
+    var ingredients = document.getElementById('ingredients');
+    ingredients.innerHTML = '';
+    for (i = 0; i < currentRecipe.ingredients.length; i ++) {
+        ingredients.innerHTML += '<li>' + currentRecipe.ingredients[i] + '</li>';
+    }
+    //X end of ingredients block
+
+    //->start of steps block
+    var steps = document.getElementById('steps');
+    steps.innerHTML = '';
+    for (i = 0; i < currentRecipe.steps.length; i ++) {
+        steps.innerHTML += '<li><span>' + currentRecipe.steps[i].name + '</span><br/><span>' + currentRecipe.steps[i].description + '</span></li>';
+    }
+    var li = steps.getElementsByTagName('li');
+    for (i = 0; i < li.length; i ++) {
+        li[i].lastChild.style.fontStyle = 'italic';
+    }
+    //X end of steps block
+
+    //->start of tips block
+    var tips = document.getElementById('tips');
+    tips.innerHTML = '';
+    for (i = 0; i < currentRecipe.tips.length; i++) {
+        tips.innerHTML += '<li>' + currentRecipe.tips[i] + '</li>';
+    }
+    //X end of tips block
+
+    //->start of save block
+    var source = document.getElementById('source');
+    source.innerHTML = 'Source';
+    source.href = currentRecipe.source_url;
+
+    var save = document.getElementById('save');
 //    attachReaction('click', save, createCookie('recipe_' + id, id, 7));
-//
-//    var share = document.createElement('input');
-//    share.value = 'share by e-mail';
-//    share.type = 'button';
-//    share.className = 'main-blocks button';
-//    share.onclick = function (){
-//        alert('send E-mail');
-//    };
-//    recipe.appendChild(share);
-//    //->X end of links block
-//
-//    document.getElementById('placeHolder').appendChild(recipe);
-//}
-//
-//buildRecipeDetail(5);
+
+    var send = document.getElementById('sendBy');
+    send.onclick = function() {
+       alert('send e-mail');
+    };
+    //X end of save block
+}
+
+buildFinalRecipe(data[10]);
+
+
+

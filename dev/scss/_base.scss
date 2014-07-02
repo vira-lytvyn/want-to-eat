@@ -97,4 +97,53 @@ div.ingredients_div h3{
 /*recipe item end*/
 
 /*final recipe start*/
+#finalRecipe {
+  width: 600px;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+
+#finalRecipe>div {
+  border: 1px solid black;
+}
+
+#finalImg {
+  border: 1px solid black;
+  width: 99.5%;
+  margin-bottom: -5px;
+}
+
+.sub-blocks {
+  border: 1px solid black;
+  width: 49%;
+  float: left;
+  height: 60px;
+}
+
+#showAuthors,
+#finalRecipe input{
+  cursor: pointer;
+}
+
+#source {
+  display: block;
+  border: 1px solid black;
+  height: 60px;
+}
+
+#source {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
 /*final recipe end*/
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}

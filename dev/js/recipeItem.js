@@ -67,7 +67,7 @@ function genrateRecipeItem(recipe) {
     detailButton.value = 'Detail';
     infoText.appendChild(detailButton);
     detailButton.onclick = function() {
-        alert('go to id ' + recipe.id +  ' final recipe section');
+        buildFinalRecipe(recipe);
     };
     //X end of text block
     //X end of detail info block
