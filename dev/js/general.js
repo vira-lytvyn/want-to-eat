@@ -35,3 +35,9 @@ function sortBy(target, data) {
     }
     return data;
 }
+
+function clearElementContent(element) {
+    while (element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
+}
