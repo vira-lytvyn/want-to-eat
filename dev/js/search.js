@@ -1,4 +1,5 @@
 function searchRecipes(){
+    animationPages('CategoriesSection', 'searchResult', 900);
     var allRecipesInCategory = searchByCategory(clientCategory);
     var resultArr = sortBy('weigth', calculateWeight(allRecipesInCategory, clientIngredients)); // move the 'heaviest' recipe up
     showSearchResult(0, resultArr);

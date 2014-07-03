@@ -1,4 +1,6 @@
 function buildFinalRecipe(currentRecipe) {
+    animationPages('searchResult', 'finalRecipe',900);
+
     var i;
 
     //->start of header block
@@ -118,7 +120,6 @@ function buildFinalRecipe(currentRecipe) {
     //X end of save block
 }
 
-buildFinalRecipe(data[10]);
 
 
 
