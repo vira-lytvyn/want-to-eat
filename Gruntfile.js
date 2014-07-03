@@ -69,6 +69,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['copy', 'concat', 'uglify', 'sass']);
-    grunt.registerTask('sync', ['watch']);
-
 };
