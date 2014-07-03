@@ -8,6 +8,7 @@ function searchRecipes(){
 function showSearchResult(position, array) {
     var showStep = 3;
     var container = document.getElementById('searchResult');
+    clearElementContent(container);
     for (var i = position; i < position + showStep; i++) {
         container.appendChild(genrateRecipeItem(array[i]));
     }
