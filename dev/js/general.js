@@ -68,3 +68,27 @@ function clearElementContent(element) {
         element.removeChild(element.firstChild);
     }
 }
+
+//added by Volodya - new animation function
+//how it work:
+//_________obj__num__num____str____str___
+//1. move(test, 100, 1000, 'left', 'px');
+//2. move(test, 100, 1000, 'width', '%');
+
+function move(elem, to, duration, property, perOrPx) {
+    var start = new Date;
+
+    var step = function(prog) {
+        elem.style[property] = to*prog + perOrPx;
+    }
+
+    function paint() {
+        var progress = (new Date - start) / duration;
+        if (progress > 1) progress = 1;
+        step(progress);
+        if (progress == 1) clearInterval(timer);
+    }
+
+    var timer = setInterval(paint, 10);
+
+}
