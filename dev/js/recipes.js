@@ -118,7 +118,3 @@ function buildFinalRecipe(currentRecipe) {
     };
     //X end of save block
 }
-
-
-
-
