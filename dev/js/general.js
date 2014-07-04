@@ -33,23 +33,6 @@ function animationPages(objectStart, objectEnd, time) {
     }, 1 / frameRate);
 }
 
-function sortBy(target, data) {
-    if (typeof data[0][target] === 'number') {
-        data.sort(function (a, b) {
-            return b[target] - a[target];
-        });
-    } else if (typeof data[0][target] === 'string') {
-        data.sort(function (a, b) {
-            if (a[target] < b[target]) return -1;
-            if (a[target] > b[target]) return 1;
-            return 0;
-        });
-    } else {
-        console.log('Error: bad type of target!');
-    }
-    return data;
-}
-
 function clearElementContent(element) {
     while (element.firstChild) {
         element.removeChild(element.firstChild);
@@ -68,4 +51,34 @@ function animate(object, property, start_value, end_value, time) {
             clearInterval(handle);
         }
     }, 1 / frame_rate);
+}
+
+function sortBy(target, data) {
+    if (typeof data[0][target] === 'number') {
+        data.sort(function (a, b) {
+            return b[target] - a[target];
+        });
+    } else if (typeof data[0][target] === 'string') {
+        data.sort(function (a, b) {
+            if (a[target] < b[target]) return -1;
+            if (a[target] > b[target]) return 1;
+            return 0;
+        });
+    } else {
+        console.log('Error: bad type of target!');
+    }
+    return data;
+}
+
+function addSortEvent (array) {
+    var filterBox = document.getElementById('filter-box');
+    filterBox.children[0].onclick = function() {
+        var resultArr = sortBy('rate', array);
+        showSearchResult(0, resultArr);
+    };
+
+    filterBox.children[1].onclick = function() {
+        var resultArr = sortBy('title', array);
+        showSearchResult(0, resultArr);
+    };
 }

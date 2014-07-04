@@ -162,7 +162,13 @@ div.ingredients_div h3 {
   width: 49%;
   float: left;
   height: 60px;
+  margin-left: 3px;
 }
+
+.sub-blocks[type="button"] {
+  margin-left: 4px;
+}
+
 #searchResult {
   display: none;
 }
@@ -188,6 +194,21 @@ div.ingredients_div h3 {
   color: black;
 }
 /*final recipe end*/
+
+/*filter-box*/
+#filter-box {
+  width: 100%;
+}
+
+#filter-box>input[type="button"] {
+  border: 1px solid black;
+  width: 49%;
+  cursor: pointer;
+  float: left;
+  height: 60px;
+  margin-left: 4px;
+}
+/*filter-box*/
 
 .clearfix:after {
   content: ".";
