@@ -1,18 +1,18 @@
 function searchRecipes(){
-    animationPages('CategoriesSection', 'searchResult', 900);
     var allRecipesInCategory = searchByCategory(clientCategory);
     var resultArr = sortBy('weigth', calculateWeight(allRecipesInCategory, clientIngredients)); // move the 'heaviest' recipe up
-    showSearchResult(0, resultArr);
+    showSearchResult(0, resultArr, 'ingredientsSection');
     console.log(resultArr);
 }
 
-function showSearchResult(position, array) {
+function showSearchResult(position, array, sectionFrom) {
     var showStep = 3;
-    var container = document.getElementById('searchResult');
+    var container = document.getElementById('recipes');
     clearElementContent(container);
     for (var i = position; i < position + showStep; i++) {
         container.appendChild(genrateRecipeItem(array[i]));
     }
+    animationPages(sectionFrom, 'searchResult', 900);
 }
 
 function searchByCategory (category) {

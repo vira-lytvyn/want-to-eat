@@ -119,7 +119,7 @@ function crtCheckboxForCategories(category, location) {
         divCategory.appendChild(label);
     }
 
-    ingredientsSection.insertBefore(divCategory, ingredientsSection.firstChild);//add div to ingredientsSection
+    ingredientsSection.appendChild(divCategory);//add div to ingredientsSection
 }
 
 makeRequest();

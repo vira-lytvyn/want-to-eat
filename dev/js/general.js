@@ -5,19 +5,6 @@ function attachReaction (event, element, func) {
         return element.addEventListener(event, func, false);
     }
 }
-function animate(object, property, start_value, end_value, time) {
-    var frame_rate = 0.06; // 60 frame per second
-    var frame = 0;
-    var delta = (end_value - start_value) / time / frame_rate;
-    var handle = setInterval(function() {
-        frame++;
-        var value = start_value + delta * frame;
-        object.style[property] = value + "px";
-        if (value == end_value) {
-            clearInterval(handle);
-        }
-    }, 1 / frame_rate);
-}
 
 function animationPages(objectStart, objectEnd, time) {
     var boxStart = document.getElementById(objectStart);
