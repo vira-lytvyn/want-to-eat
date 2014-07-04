@@ -35,7 +35,6 @@ function buildFinalRecipe(currentRecipe) {
         authors.appendChild(authorButt);
         authorButt.onclick = function() {
             showSearchResult(0, searchByTarget('authors', this.value));
-            console.log(searchByTarget('authors', this.value));
         };
     }
     //X end of info block
