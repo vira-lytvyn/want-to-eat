@@ -71,21 +71,22 @@ function clearElementContent(element) {
 
 //added by Volodya - new animation function
 //how it work:
-//_________obj__num__num____str____str___
-//1. move(test, 100, 1000, 'left', 'px');
-//2. move(test, 100, 1000, 'width', '%');
+//__________obj__num__num____str____str___str__
+//1.  move(test, 100, 1000, 'left', 'px', up);
+//2.1 move(test, 100, 1000, 'width', '%', up);
+//2.2 move(test, 0,   1000, 'width', '%', down);
 
-function move(elem, to, duration, property, perOrPx) {
+function move(elem, to, duration, property, perOrPx, upOrDown) {
     var start = new Date;
 
     var step = function(prog) {
         elem.style[property] = to*prog + perOrPx;
-    }
+    };
 
     function paint() {
         var progress = (new Date - start) / duration;
         if (progress > 1) progress = 1;
-        step(progress);
+        upOrDown == 'up' ? step(progress) : step(1 - progress);
         if (progress == 1) clearInterval(timer);
     }
 
