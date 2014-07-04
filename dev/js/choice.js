@@ -7,10 +7,11 @@ var clientIngredients;
 var clientCategory;
 
 function selectCategory(){
+    animationPages('categoriesSection', 'ingredientsSection', 900);
     var divId = this.id;
 
-    var form = document.getElementById('category_form');
-    var categories = form.getElementsByTagName('div');//select all div(categories)
+    var ingredientsSection = document.getElementById('ingredientsSection');
+    var categories = ingredientsSection.getElementsByTagName('div');//select all div(categories)
 
     for(var i = 0, l = categories.length; i < l; i++) {//assigns the value of all 'none'
         categories[i].style.display = 'none';
@@ -72,7 +73,6 @@ function makeRequest() {
 }
 
 function createDOMforCategories(json) {
-    console.log(json);
     var spanRadioButtons = document.getElementById('radioButtons');
 
     for(var cIndex = 0, jsonLng = json.length; cIndex < jsonLng; cIndex++) {
@@ -92,13 +92,13 @@ function createDOMforCategories(json) {
         spanRadioButtons.appendChild(radioButton);
         spanRadioButtons.appendChild(categoryLabel);
 
-        crtCheckboxForCategories(json[cIndex], 'category_form');
+        crtCheckboxForCategories(json[cIndex], 'ingredientsSection');
     }
 
 }
 
 function crtCheckboxForCategories(category, location) {
-    var form = document.getElementById(location);
+    var ingredientsSection = document.getElementById(location);
     var divCategory = document.createElement('div');//create category Div
 
     divCategory.className = 'ingredients_div';
@@ -119,7 +119,7 @@ function crtCheckboxForCategories(category, location) {
         divCategory.appendChild(label);
     }
 
-    form.appendChild(divCategory);//add div to Form
+    ingredientsSection.insertBefore(divCategory, ingredientsSection.firstChild);//add div to ingredientsSection
 }
 
 makeRequest();
