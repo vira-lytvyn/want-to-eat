@@ -33,16 +33,26 @@ function searchBy() {
 
     var searchBox = document.getElementById('search-box');
 
-    var byAuthor = searchBox.children[2];
-    byAuthor.onclick = function() {
-        showSearchResult(0, authorArr, 'startPage');
+    var byAuthor = searchBox.children[2];//<-byAuthor button
+    byAuthor.onclick = function () {
+        return false;
     };
+    if (authorArr.length != 0) {
+        byAuthor.onclick = function () {
+            showSearchResult(0, authorArr, 'startPage');
+        };
+    }
     byAuthor.value = 'by author: finded:' + authorArr.length;
 
-    var byName = searchBox.children[3];
-    byName.onclick = function() {
-        showSearchResult(0, nameArr, 'startPage');
+    var byName = searchBox.children[3];//<-byTitle button
+    byName.onclick = function () {
+        return false;
     };
+    if (nameArr.length != 0) {
+        byName.onclick = function () {
+            showSearchResult(0, nameArr, 'startPage');
+        };
+    }
     byName.value = 'by dish title: finded:' + nameArr.length;
 
     console.log(new Date/1000 - time);
