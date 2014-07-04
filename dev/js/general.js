@@ -70,12 +70,6 @@ function clearElementContent(element) {
 }
 
 //added by Volodya - new animation function
-//how it work:
-//__________obj__num__num____str____str___str__
-//1.  move(test, 100, 1000, 'left', 'px', up);
-//2.1 move(test, 100, 1000, 'width', '%', up);
-//2.2 move(test, 0,   1000, 'width', '%', down);
-
 function move(elem, to, duration, property, perOrPx, upOrDown) {
     var start = new Date;
 
