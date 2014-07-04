@@ -68,22 +68,3 @@ function clearElementContent(element) {
         element.removeChild(element.firstChild);
     }
 }
-
-//added by Volodya - new animation function
-function move(elem, to, duration, property, perOrPx, upOrDown) {
-    var start = new Date;
-
-    var step = function(prog) {
-        elem.style[property] = to*prog + perOrPx;
-    };
-
-    function paint() {
-        var progress = (new Date - start) / duration;
-        if (progress > 1) progress = 1;
-        upOrDown == 'up' ? step(progress) : step(1 - progress);
-        if (progress == 1) clearInterval(timer);
-    }
-
-    var timer = setInterval(paint, 10);
-
-}
