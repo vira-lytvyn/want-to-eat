@@ -8,8 +8,12 @@
     <body>
         <section id="startPage">
             <img src="img/logo.jpg" class="logo main primary" id="logo">
-            <input type="search" placeholder="enter dish or author's name..." id="search"/>
-            <input type="button" value="search" onclick="searchBy()" />
+            <div id="search-box" class="clearfix">
+                <input type="button" value="search" onclick="showSearchField()" id = "search-but" />
+                <input type="search" placeholder="enter dish or author's name..." id="search"/>
+                <input type="button" value="by author" class="search-by" />
+                <input type="button" value="by dish title" class="search-by" />
+            </div>
         </section>
 
         <section id="CategoriesSection">

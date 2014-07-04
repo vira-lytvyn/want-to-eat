@@ -1,6 +1,21 @@
 /**
  * Created by admin on 21.06.2014.
  */
+//**************************seach button function*****************************
+function showSearchField() {
+    var search = document.getElementById('search');
+    search.focus();
+
+    search.oninput = searchBy;
+//    var timer;
+//    search.oninput =function() {
+//        clearTimeout(timer);
+//        timer = setTimeout('searchBy()', 1000);
+//    };
+
+    var button = document.getElementById('search-but');
+    animate(button, 'height', 100, 0, 1000);
+}
 
 //**************************main search function*****************************
 function searchBy() {
@@ -8,13 +23,27 @@ function searchBy() {
     var search = document.getElementById('search');
     var value = search.value;
 
-    var nameArr = searchByTarget('title', value);
     var authorArr = searchByTarget('authors', value);
+    var nameArr = searchByTarget('title', value);
 
-    console.log('by name');
-    console.log(nameArr);
     console.log('by author');
     console.log(authorArr);
+    console.log('by name');
+    console.log(nameArr);
+
+    var searchBox = document.getElementById('search-box');
+
+    var byAuthor = searchBox.children[2];
+    byAuthor.onclick = function() {
+        showSearchResult(0, authorArr);
+    };
+    byAuthor.value = 'by author: finded:' + authorArr.length;
+
+    var byName = searchBox.children[3];
+    byName.onclick = function() {
+        showSearchResult(0, nameArr);
+    };
+    byName.value = 'by dish title: finded:' + nameArr.length;
 
     console.log(new Date/1000 - time);
 }
