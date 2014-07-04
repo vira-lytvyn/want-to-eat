@@ -9,7 +9,9 @@ function showSearchResult(position, array, sectionFrom) {
     var container = document.getElementById('recipes');
     clearElementContent(container);
     for (var i = position; i < position + showStep; i++) {
-        container.appendChild(genrateRecipeItem(array[i]));
+        if (array[i]) {
+            container.appendChild(genrateRecipeItem(array[i]));
+        }
     }
     if (sectionFrom) {
         animationPages(sectionFrom, 'searchResult', 900);
