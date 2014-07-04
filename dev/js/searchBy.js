@@ -35,13 +35,13 @@ function searchBy() {
 
     var byAuthor = searchBox.children[2];
     byAuthor.onclick = function() {
-        showSearchResult(0, authorArr);
+        showSearchResult(0, authorArr, 'startPage');
     };
     byAuthor.value = 'by author: finded:' + authorArr.length;
 
     var byName = searchBox.children[3];
     byName.onclick = function() {
-        showSearchResult(0, nameArr);
+        showSearchResult(0, nameArr, 'startPage');
     };
     byName.value = 'by dish title: finded:' + nameArr.length;
 
