@@ -13,8 +13,9 @@ function showSearchField() {
 //        timer = setTimeout('searchBy()', 1000);
 //    };
 
-    var button = document.getElementById('search-but');
-    animate(button, 'height', 100, 0, 1000);
+    var searchBox = document.querySelector('.search-box');
+    searchBox.style.display = 'block';
+//    animate(searchBox, 'top', 0, -60, 200);
 }
 
 //**************************main search function*****************************

@@ -27,7 +27,7 @@ function selectCategory(){
     }
     ii = 0;
     var stop = setInterval(function(){
-        labels[ii].style.display = 'block';
+        labels[ii].style.display = 'inline-block';
         ii++;
         if(ii >= labels.length){
             clearInterval(stop);
@@ -76,6 +76,9 @@ function createDOMforCategories(json) {
     var spanRadioButtons = document.getElementById('radioButtons');
 
     for(var cIndex = 0, jsonLng = json.length; cIndex < jsonLng; cIndex++) {
+        var categoryBlock = document.createElement('div');
+        categoryBlock.className = 'category-item wrapper-div';
+
         var radioButton = document.createElement('input');
         var categoryLabel = document.createElement('label');
 
@@ -89,8 +92,9 @@ function createDOMforCategories(json) {
         categoryLabel.innerHTML = json[cIndex].name;
         categoryLabel.setAttribute('for', json[cIndex].name);
 
-        spanRadioButtons.appendChild(radioButton);
-        spanRadioButtons.appendChild(categoryLabel);
+        categoryBlock.appendChild(radioButton);
+        categoryBlock.appendChild(categoryLabel);
+        spanRadioButtons.appendChild(categoryBlock);
 
         crtCheckboxForCategories(json[cIndex], 'ingredientsSection');
     }
@@ -101,13 +105,13 @@ function crtCheckboxForCategories(category, location) {
     var ingredientsSection = document.getElementById(location);
     var divCategory = document.createElement('div');//create category Div
 
-    divCategory.className = 'ingredients_div';
+    divCategory.className = 'ingredients_div wrapper';
     divCategory.id = category.name + 'Ingredients';
     divCategory.innerHTML = '<h3>' + category.name + '</h3>';
 
     for(var chIndex = 0, catLng = category.ingredients.length; chIndex < catLng; chIndex++) {
         var label = document.createElement('label');
-        label.className = 'ingredient';
+        label.className = 'ingredient wrapper-div';
 
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
