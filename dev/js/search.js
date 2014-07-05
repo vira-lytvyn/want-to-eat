@@ -7,16 +7,27 @@ function searchRecipes(){
 function showSearchResult(position, array, sectionFrom) {
     var showStep = 3;
     var container = document.getElementById('recipes');
+    var i;
     clearElementContent(container);
-    for (var i = position; i < position + showStep; i++) {
-        if (array[i]) {
-            container.appendChild(genrateRecipeItem(array[i]));
+
+    if (!('new' in array)) {
+        for (i = position; i < position + showStep; i++) {
+            if (array[i]) {
+                container.appendChild(genrateRecipeItem(array[i]));
+            }
+        }
+        addSortEvent(array);
+    } else {
+        for (i = position; i < position + showStep; i++) {
+            if (array.new[i]) {
+                container.appendChild(genrateRecipeItem(array.new[i]));
+            }
         }
     }
+
     if (sectionFrom) {
         animationPages(sectionFrom, 'searchResult', 900);
     }
-    addSortEvent(array);
 }
 
 function searchByCategory (category) {
