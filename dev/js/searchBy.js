@@ -3,6 +3,9 @@
  */
 //**************************seach button function*****************************
 function showSearchField() {
+    var searchBox = document.querySelector('.search-box');
+    searchBox.style.display = 'block';
+
     var search = document.getElementById('search');
     search.focus();
 
@@ -12,10 +15,6 @@ function showSearchField() {
 //        clearTimeout(timer);
 //        timer = setTimeout('searchBy()', 1000);
 //    };
-
-    var searchBox = document.querySelector('.search-box');
-    searchBox.style.display = 'block';
-//    animate(searchBox, 'top', 0, -60, 200);
 }
 
 //**************************main search function*****************************
