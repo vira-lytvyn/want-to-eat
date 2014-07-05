@@ -112,9 +112,9 @@ function buildFinalRecipe(currentRecipe) {
     var save = document.getElementById('save');
 //    attachReaction('click', save, createCookie('recipe_' + id, id, 7));
 
-    var send = document.getElementById('sendBy');
-    send.onclick = function() {
-       alert('send e-mail');
-    };
+//    var send = document.getElementById('sendBy');
+//    send.onclick = function() {
+//       alert('send e-mail');
+//    };
     //X end of save block
 }
