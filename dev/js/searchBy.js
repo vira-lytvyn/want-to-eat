@@ -34,7 +34,7 @@ function searchBy() {
 
     var searchBox = document.getElementById('search-box');
 
-    var byAuthor = searchBox.children[2];//<-byAuthor button
+    var byAuthor = searchBox.children[1];//<-byAuthor button
     byAuthor.onclick = function () {
         return false;
     };
@@ -45,7 +45,7 @@ function searchBy() {
     }
     byAuthor.value = 'by author: finded:' + authorArr.length;
 
-    var byName = searchBox.children[3];//<-byTitle button
+    var byName = searchBox.children[2];//<-byTitle button
     byName.onclick = function () {
         return false;
     };

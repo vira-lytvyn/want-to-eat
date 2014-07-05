@@ -25,6 +25,7 @@ function genrateRecipeItem(recipe) {
     //X end of general info block
 
     function showDetail() {
+        console.log('helloWorld');
         if (detailInfo.style.display == 'none') {
             detailInfo.style.display = 'block';
             buttonDesc.value = 'Info     ⇑';

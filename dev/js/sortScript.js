@@ -37,7 +37,7 @@ function addSortEvent (array) {
         var coords = document.getElementById('scroll').getBoundingClientRect();
         function moveAt() {
             self.style.left = event.clientX - coords.left - 100 +'px';
-            if (parseInt(self.style.left) > 400) self.style.left = '400px';
+            if (parseInt(self.style.left) > coords.right - 200) self.style.left = coords.right - 200 + 'px';
             if (parseInt(self.style.left) < 0) self.style.left = '0px';
         }
 
@@ -53,9 +53,9 @@ function addSortEvent (array) {
                 showSearchResult(0, findByVegetarian(array));
                 self.style.background = 'yellowgreen';
                 self.value = 'vegetarian: yes!';
-                self.onmousedown = function() {
-                    return false;
-                };
+//                self.onmousedown = function() {
+//                    return false;
+//                };
             } else {
                 self.style.left = '0';
             }
