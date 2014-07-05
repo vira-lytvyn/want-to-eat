@@ -46,10 +46,10 @@ function addSortEvent (array) {
         function moveAt() {
             trumb.style.left = event.clientX - coords.left - trumb.clientWidth / 2 + 'px';
             if (parseInt(trumb.style.left) > scroll.clientWidth - trumb.clientWidth) {//<-ban for going beyond the end line
-                trumb.style.left = scroll.clientWidth - trumb.clientWidth - 1 + 'px';
+                trumb.style.left = scroll.clientWidth - trumb.clientWidth - 1 + 'px';//1 px to enter next if statment
             }
             if (parseInt(trumb.style.left) < 0) {//<-ban for going beyond the start line
-                trumb.style.left = 1 + 'px';
+                trumb.style.left = 1 + 'px';//1 px to enter next if statment
             }
         }
 
