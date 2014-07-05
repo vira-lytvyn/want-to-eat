@@ -15,11 +15,7 @@ function buildFinalRecipe(currentRecipe) {
     var showAuthors = document.getElementById('showAuthors');
     showAuthors.innerHTML = 'authors: ' + currentRecipe.authors.join(', ');
     showAuthors.onclick = function() {
-          if (authors.style.display == 'none') {
-              authors.style.display = 'block';
-          } else {
-              authors.style.display = 'none';
-          }
+        showHide(authors);
     };
 
     var rank = document.getElementById('rank');
@@ -59,6 +55,12 @@ function buildFinalRecipe(currentRecipe) {
     //->start of ingredients block
     var ingredients = document.getElementById('ingredients');
     ingredients.innerHTML = '';
+    ingredients.style.display = 'none';
+    ingredients.previousElementSibling.style.cursor = 'pointer';
+    ingredients.previousElementSibling.onclick = function() {
+        showHide(ingredients);
+    };
+
     for (i = 0; i < currentRecipe.ingredients.length; i ++) {
         var ingCheck = document.createElement('input');
         ingCheck.type = 'checkbox';
@@ -82,7 +84,6 @@ function buildFinalRecipe(currentRecipe) {
             }
         }
 
-
         ingCheck.onchange = function() {
             if(this.checked) {
                 this.parentNode.style.fontWeight = '';
@@ -98,6 +99,12 @@ function buildFinalRecipe(currentRecipe) {
     //->start of steps block
     var steps = document.getElementById('steps');
     steps.innerHTML = '';
+    steps.style.display = 'none';
+    steps.previousElementSibling.style.cursor = 'pointer';
+    steps.previousElementSibling.onclick = function() {
+        showHide(steps);
+    };
+
     for (i = 0; i < currentRecipe.steps.length; i ++) {
         steps.innerHTML += '<li><span>' + currentRecipe.steps[i].name + '</span><br/><span>' + currentRecipe.steps[i].description + '</span></li>';
     }
@@ -110,6 +117,12 @@ function buildFinalRecipe(currentRecipe) {
     //->start of tips block
     var tips = document.getElementById('tips');
     tips.innerHTML = '';
+    tips.style.display = 'none';
+    tips.previousElementSibling.style.cursor = 'pointer';
+    tips.previousElementSibling.onclick = function() {
+        showHide(tips);
+    };
+
     for (i = 0; i < currentRecipe.tips.length; i++) {
         tips.innerHTML += '<li>' + currentRecipe.tips[i] + '</li>';
     }
@@ -128,4 +141,12 @@ function buildFinalRecipe(currentRecipe) {
 //       alert('send e-mail');
 //    };
     //X end of save block
+
+    function showHide(hiddenBlock) {
+        if (hiddenBlock.style.display == 'none') {
+            hiddenBlock.style.display = 'block';
+        } else {
+            hiddenBlock.style.display = 'none';
+        }
+    }
 }
