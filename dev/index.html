@@ -8,20 +8,24 @@
     <body>
         <!--Home page content below -->
         <section id="startPage">
-            <img src="img/logo.jpg" class="logo single-line" id="logo">
-            <div class="single-line">
-                <input type="button" class="button" id="cookBook" value="cook book">
-                <div id="search-box" class="clearfix">
-                    <input type="button" value="search" onclick="showSearchField()" id = "search-but" />
-                    <input type="search" placeholder="enter dish or author's name..." id="search"/>
-                    <input type="button" value="by author" class="search-by" />
-                    <input type="button" value="by dish title" class="search-by" />
-                </div>
+            <div class="single-line logo">
+                <img src="img/logo.jpg" class="logo">
             </div>
-            <nav class="single-line main-menu">
-                <input type="button" class="menu-step" value="choose category">
-                <input type="button" class="menu-step" value="mark components">
-                <input type="button" class="menu-step" value="choose recipe">
+            <div class="single-line hidable-buttons clearfix">
+                <input type="button" class="button half-screen" id="cookBook" value="cook book">
+                <input type="button" value="search" onclick="showSearchField()" class="button half-screen" id = "search-but" />
+            </div>
+            <div id="search-box" class="clearfix single-line search-box">
+                <input type="search" placeholder="enter dish or author's name..." id="search" class="search-input"/>
+                <input type="button" value="by author" class="search-by button half-screen" />
+                <input type="button" value="by dish title" class="search-by button half-screen" />
+            </div>
+            <nav class="single-line main-menu wrapper">
+                <input type="button" class="menu-step button wrapper-div active" value="home">
+                <input type="button" class="menu-step button wrapper-div" value="choose category"
+                       onclick="animationPages('startPage', 'categoriesSection', 900);">
+                <input type="button" class="menu-step button wrapper-div" value="mark components">
+                <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe" disabled>
             </nav>
             <input type="button" class="single-line button button-join" value="join"
                    onclick="animationPages('startPage', 'categoriesSection', 900);">
@@ -30,35 +34,43 @@
 
         <!--Categories page content below -->
         <section id="categoriesSection">
-            <nav class="single-line main-menu">
-                <input type="button" class="menu-step" value="choose category">
-                <input type="button" class="menu-step" value="mark components">
-                <input type="button" class="menu-step" value="choose recipe">
+            <nav class="single-line main-menu wrapper">
+                <input type="button" class="menu-step button wrapper-div" value="home"
+                       onclick="animationPages('categoriesSection', 'startPage', 900);">
+                <input type="button" class="menu-step button wrapper-div active" value="choose category">
+                <input type="button" class="menu-step button wrapper-div" value="mark components"
+                        onclick="animationPages('categoriesSection', 'ingredientsSection', 900);">
+                <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe" disabled>
             </nav>
-            <span class="radioButtons" id="radioButtons"></span>
-            <input type="button" id="allCategories" value="Categories?... wtf... I'm staaarving!!!">
+            <div class="radioButtons wrapper" id="radioButtons"></div>
+            <input type="button" id="allCategories" class="button single-line" value="Categories?... wtf... I'm staaarving!!!"
+                   onclick="animationPages('categoriesSection', 'ingredientsSection', 900);">
         </section>
         <!--Categories page content above -->
 
         <!--Ingredients page content below -->
         <section id="ingredientsSection">
-            <nav class="single-line main-menu">
-                <input type="button" class="menu-step" value="choose category"
-                       onclick="animationPages('ingredientsSection', 'categoriesSection', 900);">
-                <input type="button" class="menu-step" value="mark components">
-                <input type="button" class="menu-step" value="choose recipe" id="getRecipes" onclick="searchRecipes();">
+            <nav class="single-line main-menu wrapper">
+                <input type="button" class="menu-step button wrapper-div" value="home"
+                       onclick="animationPages('ingredientsSection', 'startPage', 900);">
+                <input type="button" class="menu-step button wrapper-div" value="choose category"
+                       onclick="animationPages('ingredientsSection', 'categoriesSection', 900);">>
+                <input type="button" class="menu-step button wrapper-div active" value="mark components">
+                <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe" id="getRecipes" onclick="searchRecipes();">
             </nav>
         </section>
         <!--Ingredients page content above -->
 
         <!--Search results page content below -->
         <section id="searchResult">
-            <nav class="single-line main-menu">
-                <input type="button" class="menu-step" value="choose category"
+            <nav class="single-line main-menu wrapper">
+                <input type="button" class="menu-step button wrapper-div" value="home"
+                       onclick="animationPages('searchResult', 'startPage', 900);">
+                <input type="button" class="menu-step button wrapper-div" value="choose category"
                        onclick="animationPages('searchResult', 'categoriesSection', 900);">
-                <input type="button" class="menu-step" value="mark components"
+                <input type="button" class="menu-step button wrapper-div" value="mark components"
                        onclick="animationPages('searchResult', 'ingredientsSection', 900);">
-                <input type="button" class="menu-step" value="choose recipe">
+                <input type="button" class="menu-step button wrapper-div active" value="choose recipe">
             </nav>
             <div class="single-line clearfix" id="filter-box">
                 <input type="button" value="Sort by rate">
@@ -76,9 +88,19 @@
 
         <!--Detail recipe page content below -->
         <section id="finalRecipe">
+            <nav class="single-line main-menu wrapper">
+                <input type="button" class="menu-step button wrapper-div" value="home"
+                       onclick="animationPages('finalRecipe', 'startPage', 900);">
+                <input type="button" class="menu-step button wrapper-div" value="choose category"
+                       onclick="animationPages('finalRecipe', 'categoriesSection', 900);">
+                <input type="button" class="menu-step button wrapper-div" value="mark components"
+                       onclick="animationPages('finalRecipe', 'ingredientsSection', 900);">
+                <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe"
+                       onclick="animationPages('finalRecipe', 'searchResult', 900);">
+            </nav>
             <nav class="single-line main-menu">
                 <input type="button" class="menu-step" value="choose category"
-                       onclick="animationPages('finalRecipe', 'searchResult', 900);">
+                       >
                 <input type="button" class="menu-step" value="mark components">
                 <input type="button" class="menu-step" value="choose recipe">
             </nav>
