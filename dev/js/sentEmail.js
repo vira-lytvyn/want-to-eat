@@ -4,9 +4,8 @@
 
 function EmailRequestConstructor () {
     console.log('test1');
-    this.rootUrl = 'https://api.sendgrid.com/api/mail.send.json';
-    this.api_user  = 'tangerines-team';
-    this.api_key  = 'tangerine2014' ;
+    this.rootUrl = 'https://mandrillapp.com/api/1.0/messages/send.json';
+    this.key  = 'h4MHieHtpFv7UTWP5oQs6w' ;
 }
 
 EmailRequestConstructor.prototype.sendRequest = function (params, onresult, onerror) {
@@ -16,8 +15,7 @@ EmailRequestConstructor.prototype.sendRequest = function (params, onresult, oner
     if (params == null) {
         params = {};
     }
-    params.api_key = this.api_key;
-    params.api_user = this.api_user;
+    params.key = this.key;
     params = JSON.stringify(params);
     request = new XMLHttpRequest();
     request.open('POST', this.rootUrl);
@@ -59,18 +57,24 @@ EmailRequestConstructor.prototype.sendRequest = function (params, onresult, oner
 var myRequest = new EmailRequestConstructor();
 console.log('test0');
 var testEmailObj = {
-    to: 'baterfluy@gmail.com',
-    toname: 'Vira',
-    subject: 'Example_Subject',
-    text: 'testingtextbody',
-    from: 'tangerines.epam@gmail.com'
+    message: {
+        'from_email': 'tangerines.epam@gmail.com',
+        'to': [
+            {
+                'email': 'baterfluy@gmail.com',
+                'name': 'Vira',
+                'type': 'to'
+            },
+            {
+                'email': 'RECIPIENT_NO_2@EMAIL.HERE',
+                'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
+                'type': 'to'
+            }
+        ],
+        'autotext': 'true',
+        'subject': 'Example_Subject',
+        'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML! testingtextbody'
+    }
 };
-//    \api_user=your_sendgrid_username&
-// api_key=your_sendgrid_password&
-// to=destination@example.com&
-// toname=Destination&
-// subject=Example_Subject&
-// text=testingtextbody&
-// from=info@domain.com
 
 myRequest.sendRequest(testEmailObj);
