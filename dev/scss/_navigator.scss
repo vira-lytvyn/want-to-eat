@@ -1,0 +1,14 @@
+.main-menu {
+
+}
+.menu-step {
+  &:hover, &:active {
+    background-color: #999;
+  }
+  &.active {
+    background-color: #666;
+  }
+  &.disabled {
+    background-color: #ccc;
+  }
+}
