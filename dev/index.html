@@ -128,25 +128,36 @@
             <a href="" id="source"></a>
             <div class="clearfix">
                 <input type="button" value="Save" class="sub-blocks" id="save" />
-                <input type="button" value="Send by e-mail" class="sub-blocks" id="sendBy" />
+                <input type="button" value="Send by e-mail" class="sub-blocks" id="sendBy"
+                       onclick="animationPages('finalRecipe', 'sendRecipeByEmail', 900);"/>
             </div>
         </section>
         <!--Detail recipe page content above -->
 
         <!--Sent by email form content below -->
-        <!--<section id="sendRecipeByEmail">-->
-            <!--<form name="sendRecipe" method="post">-->
-                <!--<label for="articleName">Article caption</label>-->
-                <!--<input type="text" disabled name="articleName" value="" id="articleName">-->
-                <!--<label for="senderEmail">Your email</label>-->
-                <!--<input type="email" name="senderEmail" id="senderEmail">-->
-                <!--<label for="recipientsEmails">Recipients email</label>-->
-                <!--<input type="email" multiple name="recipientsEmails" id="recipientsEmails">-->
-                <!--<label for="comment">Message</label>-->
-                <!--<textarea name="comment" id="comment" rows="3"></textarea>-->
-                <!--<input type="submit" value="Submit">-->
-            <!--</form>-->
-        <!--</section>-->
+        <section id="sendRecipeByEmail">
+            <nav class="single-line main-menu wrapper">
+                <input type="button" class="menu-step button wrapper-div" value="home"
+                       onclick="animationPages('sendRecipeByEmail', 'startPage', 900);">
+                <input type="button" class="menu-step button wrapper-div" value="choose category"
+                       onclick="animationPages('sendRecipeByEmail', 'categoriesSection', 900);">
+                <input type="button" class="menu-step button wrapper-div" value="mark components"
+                       onclick="animationPages('sendRecipeByEmail', 'ingredientsSection', 900);">
+                <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe"
+                       onclick="animationPages('sendRecipeByEmail', 'searchResult', 900);">
+            </nav>
+            <form name="sendRecipe" method="post">
+                <label for="articleName">Article caption</label>
+                <input type="text" disabled name="articleName" value="" id="articleName">
+                <label for="senderEmail">Your email</label>
+                <input type="email" name="senderEmail" id="senderEmail">
+                <label for="recipientsEmails">Recipients email</label>
+                <input type="email" multiple name="recipientsEmails" id="recipientsEmails">
+                <label for="comment">Message</label>
+                <textarea name="comment" id="comment" rows="3"></textarea>
+                <input type="button" value="Submit" onclick="myRequest.sendRequest(testEmailObj);">
+            </form>
+        </section>
         <!--Sent by email form content below -->
 
         <script src="../database/recipes.json.js" type="text/javascript"></script>
