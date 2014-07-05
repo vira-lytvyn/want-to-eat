@@ -10,6 +10,7 @@ function showSearchField() {
     search.focus();
 
     search.oninput = searchBy;
+
 //    var timer;
 //    search.oninput =function() {
 //        clearTimeout(timer);
