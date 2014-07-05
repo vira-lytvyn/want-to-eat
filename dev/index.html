@@ -140,8 +140,8 @@
                 <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe"
                        onclick="animationPages('sendRecipeByEmail', 'searchResult', 900);">
             </nav>
-            <form name="sendRecipe" method="post">
-                <label for="articleName">Article caption</label>
+            <form name="sendRecipe" method="post" class="form send-email">
+                <label for="articleName" class="label-block single-line">Article caption</label>
                 <input type="text" disabled name="articleName" value="" id="articleName">
                 <label for="senderEmail">Your email</label>
                 <input type="email" name="senderEmail" id="senderEmail">
@@ -149,7 +149,8 @@
                 <input type="email" multiple name="recipientsEmails" id="recipientsEmails">
                 <label for="comment">Message</label>
                 <textarea name="comment" id="comment" rows="3"></textarea>
-                <input type="button" value="Submit" onclick="myRequest.sendRequest(testEmailObj);">
+                <!--<input type="button" value="Submit" onclick="myRequest.sendRequest(testEmailObj);">-->
+                <input type="button" value="Submit">
             </form>
         </section>
         <!--Sent by email form content below -->
