@@ -72,6 +72,14 @@ function buildFinalRecipe(currentRecipe) {
         ingLi.appendChild(ingLabel);
         ingredients.appendChild(ingLi);
 
+        for (var j = 0; j < clientIngredients.length; j++) {
+            if (currentRecipe.ingredients[i].indexOf(clientIngredients[j]) !== -1) {
+                ingCheck.checked = true;
+                ingCheck.parentNode.style.fontWeight = '';
+                ingCheck.parentNode.style.fontStyle = 'italic';
+            }
+        }
+
         ingCheck.onchange = function() {
             if(this.checked) {
                 this.parentNode.style.fontWeight = '';
