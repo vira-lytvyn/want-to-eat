@@ -1,0 +1,43 @@
+input[type='text'],
+input[type='email'],
+textarea {
+    padding: 5px 10px;
+    height: $button-height / 2;
+}
+
+textarea {
+    resize: none;
+    height: $button-height / 2 * 3;
+}
+
+    :required {
+        box-shadow: 0 0 1px 1px #fa0;
+        background-color: #fff;
+        border: none;
+    }
+
+    :required:valid{
+        box-shadow: 0 0 1px 1px #3f8;
+        border: none;
+    }
+
+    :invalid{
+  //    background-color: rgba(255, 80, 80, 0.1);
+    }
+
+    input:focus:invalid {
+        box-shadow: 0 0 1px 1px #f55;
+        border: none;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+    }
+
+.label-block{
+    margin: 15px 0px 5px 0px;
+    font-weight: bold;
+    line-height: 20px;
+    cursor: pointer;
+    display: block;
+}
