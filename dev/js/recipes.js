@@ -80,7 +80,7 @@ function buildFinalRecipe(currentRecipe) {
             for (var j = 0; j < clientIngredients.length; j++) {
                 if (currentRecipe.ingredients[i].indexOf(clientIngredients[j]) !== -1) {
                     ingCheck.checked = true;
-                    ingCheck.parentNode.style.fontWeight = 'bold';
+                    ingCheck.parentNode.style.color = 'rgba(255, 255, 255, 0.5)';
                 }
             }
         }
