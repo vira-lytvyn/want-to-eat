@@ -1,18 +1,18 @@
 [
     {
         "ingredients": [
+            "cheese",
             "egg",
             "milk",
-            "cheese",
-            "oil",
-            "noodles",
-            "sauce",
             "mushroom",
+            "oil",
+            "pepper",
+            "butter",
+            "sauce",
+            "tomato",
             "onion",
             "garlic",
-            "chili",
-            "tomato",
-            "pepper"
+            "meat"
         ],
         "id": 0,
         "name": "all"
