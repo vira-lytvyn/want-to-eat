@@ -2,15 +2,15 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: firebrick;
+  background: rgb(128, 165, 199);
   clear: both;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 10px 10px 0 10px;
 }
 .category-item, .ingredient {
   border-radius: 3px;
   width: 47%;
-  background: white;
+  background: rgb(238, 200, 151);
   display: inline-block;
   font-size: 12px;
   text-align: center;
