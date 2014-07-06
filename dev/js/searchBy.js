@@ -4,7 +4,12 @@
 //**************************seach button function*****************************
 function showSearchField() {
     var searchBox = document.querySelector('.search-box');
-    searchBox.style.display = 'block';
+
+    if (getComputedStyle(searchBox).display == 'none') {
+        searchBox.style.display = 'block';
+    } else {
+        searchBox.style.display = 'none';
+    }
 
     var search = document.getElementById('search');
     search.focus();
