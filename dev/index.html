@@ -88,6 +88,7 @@
 
         <!--Detail recipe page content below -->
         <section id="finalRecipe">
+            <input type="hidden" value='{"id":18,"title":"Bowl of Chicken Soup","authors":["MA","BR","Lillian May","Ivica"],"picture":"http://pad3.whstatic.com/images/thumb/b/b7/Make-a-Bowl-of-Chicken-Soup-Intro.jpg/670px-Make-a-Bowl-of-Chicken-Soup-Intro.jpg","description":"A bowl of chicken stock and noodles is a great, quick meal if you are sick or are in no time to cook another meal. The stock can soothe your throat if you are suffering with a cold.","ingredients":["A package of egg noodles","1 teaspoon chicken stock (bouillon granules)","Various spices [optional]","Spring onions (green onions) [optional]"],"rate":63,"category":"soups","vegetarian":false,"steps":[{"id":1,"name":"Warm up the water in the saucepan and get the stock ready.","description":""},{"id":2,"name":"Put in one teaspoon of chicken stock (granules) in the boiling water.","description":"If the water turns a deep yellow it is ready for the noodles. If not put in some extra stock."},{"id":3,"name":"Add herbs and spices, if using.","description":""},{"id":4,"name":"Add the noodles.","description":""},{"id":5,"name":"Wait 5 minutes with the stove on high.","description":"If it starts to boil over turn it down to a low boil or simmer."},{"id":6,"name":"Cook until the noodles are tender.","description":""},{"id":7,"name":"When ready pour into bowl and serve with spring onions on top.","description":""},{"id":8,"name":"Finished.","description":""}],"tips":["A good guide is to use about 1 cup egg noodles, depending on size, for every cup of liquid."],"source_url":"http://www.wikihow.com/Make-a-Bowl-of-Chicken-Soup","weigth":1}' id="chosenRecipe">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
                        onclick="animationPages('finalRecipe', 'startPage', 900);">
@@ -143,19 +144,19 @@
                 <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe"
                        onclick="animationPages('sendRecipeByEmail', 'searchResult', 900);">
             </nav>
-            <form name="sendRecipe" class="form send-email">
-                <label for="articleName" class="label-block single-line">Article caption</label>
+            <form name="sendRecipe" class="form send-email clearfix" onsubmit="sendRecipeMail();">
+                <label for="articleName" class="label-block single-line">Subject</label>
                 <input type="text" disabled name="articleName" value="" id="articleName" class="single-line">
                 <label for="senderEmail" class="label-block single-line">Your email</label>
-                <input type="email" name="senderEmail" id="senderEmail" required class="single-line">
+                <input type="email" name="senderEmail" id="senderEmail" class="single-line">
                 <label for="recipientsEmails" class="label-block single-line">Recipients email</label>
-                <input type="email" multiple name="recipientsEmails" id="recipientsEmails" required class="single-line">
+                <input type="email" multiple name="recipientsEmails" id="recipientsEmails" class="single-line">
                 <label for="comment" class="label-block single-line">Message</label>
-                <textarea name="comment" id="comment" rows="3" required class="single-line"></textarea>
+                <textarea name="comment" id="comment" rows="3" class="single-line"></textarea>
                 <!--<input type="button" value="Submit" onclick="myRequest.sendRequest(testEmailObj);">-->
                 <input type="button" value="Cancel" class="half-screen button"
                        onclick="animationPages('sendRecipeByEmail', 'finalRecipe', 900);">
-                <input type="button" value="Submit" class="half-screen button" onclick="sendRecipeMail();">
+                <input type="submit" value="Submit" class="half-screen button">
             </form>
         </section>
         <!--Sent by email form content below -->
