@@ -26,6 +26,7 @@ function buildFinalRecipe(currentRecipe) {
     authors.innerHTML = '';
     for (i = 0; i < currentRecipe.authors.length; i++) {
         var authorButt = document.createElement('input');
+        authorButt.className = 'navigationButtons search-authors';
         authorButt.type = 'button';
         authorButt.value = currentRecipe.authors[i];
         authors.appendChild(authorButt);
@@ -67,8 +68,9 @@ function buildFinalRecipe(currentRecipe) {
 
         var ingLi = document.createElement('li');
         var ingLabel = document.createElement('label');
+        ingLabel.className = 'navigationButtons';
         ingLabel.innerHTML = currentRecipe.ingredients[i];
-        ingLabel.style.fontWeight = 'bold';
+        ingLabel.style.color = 'rgb(255, 255, 255)';
         ingLabel.style.cursor = 'pointer';
         ingLabel.insertBefore(ingCheck, ingLabel.firstChild);
         ingLi.appendChild(ingLabel);
@@ -78,19 +80,16 @@ function buildFinalRecipe(currentRecipe) {
             for (var j = 0; j < clientIngredients.length; j++) {
                 if (currentRecipe.ingredients[i].indexOf(clientIngredients[j]) !== -1) {
                     ingCheck.checked = true;
-                    ingCheck.parentNode.style.fontWeight = '';
-                    ingCheck.parentNode.style.fontStyle = 'italic';
+                    ingCheck.parentNode.style.fontWeight = 'bold';
                 }
             }
         }
 
         ingCheck.onchange = function() {
             if(this.checked) {
-                this.parentNode.style.fontWeight = '';
-                this.parentNode.style.fontStyle = 'italic';
+                this.parentNode.style.color = 'rgba(255, 255, 255, 0.5)';
             } else {
-                this.parentNode.style.fontWeight = 'bold';
-                this.parentNode.style.fontStyle = '';
+                this.parentNode.style.color = 'rgb(255, 255, 255)';
             }
         }
     }
@@ -110,7 +109,7 @@ function buildFinalRecipe(currentRecipe) {
     }
     var li = steps.getElementsByTagName('li');
     for (i = 0; i < li.length; i ++) {
-        li[i].lastChild.style.fontStyle = 'italic';
+        li[i].firstChild.style.fontWeight = 'bold';
     }
     //X end of steps block
 
