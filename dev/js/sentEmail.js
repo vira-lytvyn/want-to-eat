@@ -3,7 +3,6 @@
  */
 
 function EmailRequestConstructor () {
-    console.log('test1');
     this.rootUrl = 'https://mandrillapp.com/api/1.0/messages/send.json';
     this.key  = 'h4MHieHtpFv7UTWP5oQs6w' ;
 }
@@ -54,7 +53,7 @@ EmailRequestConstructor.prototype.sendRequest = function (params, onresult, oner
     return request.send(params);
 };
 
-var myRequest = new EmailRequestConstructor();
+//var myRequest = new EmailRequestConstructor();
 console.log('test0');
 var testEmailObj = {
     message: {
@@ -77,4 +76,12 @@ var testEmailObj = {
     }
 };
 
-myRequest.sendRequest(testEmailObj);
+//myRequest.sendRequest(testEmailObj);
+
+function fillEmailObj(recipeObj) {
+
+}
+
+function sendRecipe() {
+    console.log('test');
+}
