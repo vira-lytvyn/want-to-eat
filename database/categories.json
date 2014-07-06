@@ -1,146 +1,164 @@
 [
-  {
-    "ingredients": [
-      "olive oil",
-      "sauce",
-      "cheese",
-      "mushrooms",
-      "pepper",
-      "tomatoes",
-      "tofu",
-      "onions",
-      "garlic",
-      "beef",
-      "lemon",
-      "oranges"
-    ], 
-    "id": 0, 
-    "name": "salads"
-  }, 
-  {
-    "ingredients": [
-      "bouillon",
-      "spices",
-      "noodles",
-      "chicken",
-      "onion",
-      "parsley",
-      "garlic",
-      "celery",
-      "pepper",
-      "mushrooms",
-      "beans",
-      "oil"
-    ], 
-    "id": 1, 
-    "name": "soups"
-  }, 
-  {
-    "ingredients": [
-      "dough",
-      "cheese",
-      "vegetable",
-      "sauce",
-      "meat",
-      "tomato",
-      "mushrooms",
-      "bacon",
-      "pepperoni",
-      "sausages",
-      "spices",
-      "olives"
-    ], 
-    "id": 2, 
-    "name": "pizza"
-  }, 
-  {
-    "ingredients": [
-      "bread",
-      "butter",
-      "cheese",
-      "sauce",
-      "turkey",
-      "mayonnaise",
-      "tomato",
-      "parsley",
-      "pepper",
-      "lettuce",
-      "salad",
-      "garlic"
-    ], 
-    "id": 3, 
-    "name": "sandwiches"
-  }, 
-  {
-    "ingredients": [
-      "egg",
-      "milk",
-      "powder",
-      "cheese",
-      "butter",
-      "sugar",
-      "chocolate",
-      "cream",
-      "cookie",
-      "vanilla",
-      "cocoa",
-      "oil"
-    ], 
-    "id": 4, 
-    "name": "desserts"
-  }, 
-  {
-    "ingredients": [
-      "flour",
-      "sugar",
-      "butter",
-      "milk",
-      "egg",
-      "cocoa",
-      "chocolate",
-      "powder",
-      "lemon",
-      "oil",
-      "vanilla",
-      "nuts"
-    ], 
-    "id": 5, 
-    "name": "baking"
-  },
-  {
-    "ingredients": [
-      "noodles",
-      "cheese",
-      "sauce",
-      "mushrooms",
-      "egg",
-      "oil",
-      "tofu",
-      "onion",
-      "chili",
-      "rice",
-      "butter",
-      "parsley"
-    ],
-    "id": 6,
-    "name": "hot meals"
-  },
-  {
-    "ingredients": [
-      "egg",
-      "milk",
-      "cheese",
-      "oil",
-      "noodles",
-      "sauce",
-      "mushrooms",
-      "onion",
-      "garlic",
-      "chili",
-      "tomato",
-      "pepper"
-    ],
-    "id": 7,
-    "name": "pasta"
-  }
+    {
+        "ingredients": [
+            "egg",
+            "milk",
+            "cheese",
+            "oil",
+            "noodles",
+            "sauce",
+            "mushroom",
+            "onion",
+            "garlic",
+            "chili",
+            "tomato",
+            "pepper"
+        ],
+        "id": 0,
+        "name": "all"
+    },
+    {
+        "ingredients": [
+            "olive oil",
+            "sauce",
+            "cheese",
+            "mushroom",
+            "pepper",
+            "tomatoes",
+            "tofu",
+            "onions",
+            "garlic",
+            "beef",
+            "lemon",
+            "oranges"
+        ],
+        "id": 1,
+        "name": "salads"
+    },
+    {
+        "ingredients": [
+            "bouillon",
+            "spices",
+            "noodles",
+            "chicken",
+            "onion",
+            "parsley",
+            "garlic",
+            "celery",
+            "pepper",
+            "mushroom",
+            "beans",
+            "oil"
+        ],
+        "id": 2,
+        "name": "soups"
+    },
+    {
+        "ingredients": [
+            "dough",
+            "cheese",
+            "vegetable",
+            "sauce",
+            "meat",
+            "tomato",
+            "mushroom",
+            "bacon",
+            "pepperoni",
+            "sausages",
+            "spices",
+            "olives"
+        ],
+        "id": 3,
+        "name": "pizza"
+    },
+    {
+        "ingredients": [
+            "bread",
+            "butter",
+            "cheese",
+            "sauce",
+            "turkey",
+            "mayonnaise",
+            "tomato",
+            "parsley",
+            "pepper",
+            "lettuce",
+            "salad",
+            "garlic"
+        ],
+        "id": 4,
+        "name": "sandwiches"
+    },
+    {
+        "ingredients": [
+            "egg",
+            "milk",
+            "powder",
+            "cheese",
+            "butter",
+            "sugar",
+            "chocolate",
+            "cream",
+            "cookie",
+            "vanilla",
+            "cocoa",
+            "oil"
+        ],
+        "id": 5,
+        "name": "desserts"
+    },
+    {
+        "ingredients": [
+            "flour",
+            "sugar",
+            "butter",
+            "milk",
+            "egg",
+            "cocoa",
+            "chocolate",
+            "powder",
+            "lemon",
+            "oil",
+            "vanilla",
+            "nuts"
+        ],
+        "id": 6,
+        "name": "baking"
+    },
+    {
+        "ingredients": [
+            "noodles",
+            "cheese",
+            "sauce",
+            "mushroom",
+            "egg",
+            "oil",
+            "tofu",
+            "onion",
+            "chili",
+            "rice",
+            "butter",
+            "parsley"
+        ],
+        "id": 7,
+        "name": "hot meals"
+    },
+    {
+        "ingredients": [
+            "egg",
+            "milk",
+            "cheese",
+            "oil",
+            "noodles",
+            "sauce",
+            "mushroom",
+            "onion",
+            "garlic",
+            "chili",
+            "tomato",
+            "pepper"
+        ],
+        "id": 8,
+        "name": "pasta"
+    }
 ]
