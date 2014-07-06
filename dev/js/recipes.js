@@ -12,6 +12,7 @@ function buildFinalRecipe(currentRecipe) {
 
     var title = document.getElementById('finalTitle');
     title.innerHTML = currentRecipe.title;
+    document.getElementById('articleName').setAttribute('value', currentRecipe.title);
     //X end of header block
 
     //->start of info block
