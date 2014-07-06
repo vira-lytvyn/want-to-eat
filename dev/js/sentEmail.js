@@ -7,8 +7,7 @@ function EmailRequestConstructor () {
     this.key  = 'h4MHieHtpFv7UTWP5oQs6w' ;
 }
 
-EmailRequestConstructor.prototype.sendRequest = function (params, onresult, onerror) {
-    console.log('test2');
+EmailRequestConstructor.prototype.sendRequest = function (params) {
     var request,
         _this = this;
     if (params == null) {
@@ -20,14 +19,12 @@ EmailRequestConstructor.prototype.sendRequest = function (params, onresult, oner
     request.open('POST', this.rootUrl);
     request.setRequestHeader('Content-Type', 'application/json');
     request.onreadystatechange = function() {
-        console.log('test3');
         var response;
         if (request.readyState !== 4) {
             return;
         }
         response = JSON.parse(request.responseText);
         if (response == null) {
-            console.log('test4');
             response = {
                 status: 'error',
                 name: 'GeneralError',
@@ -35,31 +32,36 @@ EmailRequestConstructor.prototype.sendRequest = function (params, onresult, oner
             };
         }
         if (request.status !== 200) {
-            if (onerror) {
-                console.log('error', response);
-                return onerror(response);
-            } else {
-                console.log('error', response);
-                return _this.onerror(response);
-            }
+            return _this.onError(response);
         } else {
-            console.log('result', response);
-            if (onresult) {
-                console.log('result', response);
-                return onresult(response);
-            }
+            return _this.showAnswer(response);
         }
     };
     return request.send(params);
 };
 
-EmailRequestConstructor.prototype.onError = function () {
-    alert('Sorry, some error occurrence. Please, try again.')
+EmailRequestConstructor.prototype.onError = function (response) {
+    var message = response.message || response || 'Sorry, some error has occurrence. Please, try again.';
+    alert(message);
 };
 
-EmailRequestConstructor.prototype.onSuccess = function () {
-    if (!confirm('Your message was successfully sent to recipients. \nWould you like to send this recipe again?')) {
-        animationPages('sendRecipeByEmail', 'finalRecipe', 900);
+EmailRequestConstructor.prototype.showAnswer = function (response) {
+    var recipients = [];
+    var invalid = [];
+    for (var i = 0; i < response.length; i++) {
+        if (response[i].status === 'sent') {
+            recipients.push(response[i].email);
+        } else {
+            invalid.push(response[i].email);
+        }
+    }
+    if (invalid.length) {
+        this.onError('Sorry, some error has occurrence with sending email to ' + invalid.join(', ') + '. Please, try again.');
+    }
+    if (recipients.length) {
+        if (!confirm('Your message was successfully sent to ' + recipients.join(', ') + '. \nWould you like to send this recipe again?')) {
+            animationPages('sendRecipeByEmail', 'finalRecipe', 900);
+        }
     }
 };
 
@@ -95,7 +97,7 @@ function sendRecipeMail() {
             'html': generateEmailContent(object, form.comment.value)
         }
     };
-    emailRequest.sendRequest(emailObj, emailRequest.onSuccess(), emailRequest.onError());
+    emailRequest.sendRequest(emailObj);
 }
 
 function generateEmailContent(obj, message) {
