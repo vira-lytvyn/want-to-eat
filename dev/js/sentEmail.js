@@ -53,6 +53,16 @@ EmailRequestConstructor.prototype.sendRequest = function (params, onresult, oner
     return request.send(params);
 };
 
+EmailRequestConstructor.prototype.onError = function () {
+    alert('Sorry, some error occurrence. Please, try again.')
+};
+
+EmailRequestConstructor.prototype.onSuccess = function () {
+    if (!confirm('Your message was successfully sent to recipients. \nWould you like to send this recipe again?')) {
+        animationPages('sendRecipeByEmail', 'finalRecipe', 900);
+    }
+};
+
 var emailRequest = new EmailRequestConstructor();
 
 function sendRecipeMail() {
@@ -85,7 +95,7 @@ function sendRecipeMail() {
             'html': generateEmailContent(object, form.comment.value)
         }
     };
-    emailRequest.sendRequest(emailObj);
+    emailRequest.sendRequest(emailObj, emailRequest.onSuccess(), emailRequest.onError());
 }
 
 function generateEmailContent(obj, message) {
