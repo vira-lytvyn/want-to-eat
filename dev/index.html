@@ -148,12 +148,11 @@
                 <label for="articleName" class="label-block single-line">Subject</label>
                 <input type="text" disabled name="articleName" value="" id="articleName" class="single-line">
                 <label for="senderEmail" class="label-block single-line">Your email</label>
-                <input type="email" name="senderEmail" id="senderEmail" class="single-line">
+                <input type="email" name="senderEmail" id="senderEmail" required class="single-line">
                 <label for="recipientsEmails" class="label-block single-line">Recipients email</label>
-                <input type="email" multiple name="recipientsEmails" id="recipientsEmails" class="single-line">
+                <input type="email" multiple name="recipientsEmails" id="recipientsEmails" required class="single-line">
                 <label for="comment" class="label-block single-line">Message</label>
                 <textarea name="comment" id="comment" rows="3" class="single-line"></textarea>
-                <!--<input type="button" value="Submit" onclick="myRequest.sendRequest(testEmailObj);">-->
                 <input type="button" value="Cancel" class="half-screen button"
                        onclick="animationPages('sendRecipeByEmail', 'finalRecipe', 900);">
                 <input type="submit" value="Submit" class="half-screen button">
