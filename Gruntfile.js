@@ -40,6 +40,9 @@ module.exports = function(grunt) {
             }
         },
         watch: {
+            options: {
+                livereload: true
+            },
             html: {
                 files: ['dev/*.html'],
                 tasks: ['copy:main']
