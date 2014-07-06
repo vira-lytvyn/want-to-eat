@@ -35,21 +35,21 @@ function addSortEvent (array) {
 
     /*slider*/
     var trumb = document.getElementById('trumb');
-    var scroll = document.getElementById('scroll');
-    scroll.onselectstart = function() {//<-ban for text selection in slider
+    var slider = document.getElementById('slider');
+    slider.onselectstart = function() {//<-ban for text selection in slider
         return false;
     };
 
     trumb.onmousedown = function() {
-        var coords = scroll.getBoundingClientRect();
+        var coords = slider.getBoundingClientRect();
 
         function moveAt() {
             trumb.style.left = event.clientX - coords.left - trumb.clientWidth / 2 + 'px';
-            if (parseInt(trumb.style.left) > scroll.clientWidth - trumb.clientWidth) {//<-ban for going beyond the end line
-                trumb.style.left = scroll.clientWidth - trumb.clientWidth - 1 + 'px';//1 px to enter next if statment
+            if (parseInt(trumb.style.left) > slider.clientWidth - trumb.clientWidth) {//<-ban for going beyond the end line
+                trumb.style.left = slider.clientWidth - trumb.clientWidth - 2 + 'px';//1 px to enter next if statment
             }
             if (parseInt(trumb.style.left) < 0) {//<-ban for going beyond the start line
-                trumb.style.left = 1 + 'px';//1 px to enter next if statment
+                trumb.style.left = 2 + 'px';//1 px to enter next if statment
             }
         }
 
@@ -58,22 +58,22 @@ function addSortEvent (array) {
         window.onmouseup = function() {
             document.onmousemove = trumb.onmouseup = null;
 
-            if (parseInt(trumb.style.left) != scroll.clientWidth - trumb.clientWidth && parseInt(trumb.style.left) != '0') {
+            if (parseInt(trumb.style.left) != slider.clientWidth - trumb.clientWidth && parseInt(trumb.style.left) != '0') {
                 var arr;
-                if (parseInt(trumb.style.left) > scroll.clientWidth / 2 - trumb.clientWidth / 2) {
+                if (parseInt(trumb.style.left) > slider.clientWidth / 2 - trumb.clientWidth / 2) {
                     arr = findByVegetarian(array);
                     showSearchResult(0, arr);
-                    trumb.style.left = scroll.clientWidth - trumb.clientWidth + 'px';
-                    trumb.style.background = 'yellowgreen';
+                    trumb.style.left = slider.clientWidth - trumb.clientWidth + 'px';
+                    trumb.style.background = 'rgb(154, 205, 50)';
                     trumb.value = 'vegetarian: yes!';
-                    scroll.children[1].innerHTML = '<- slide to unvegetarinize';
+                    slider.children[1].innerHTML = '<<< slide <<<';
                 } else {
                     arr = findByVegetarian(array);
                     showSearchResult(0, arr.old);
                     trumb.style.left = '0';
-                    trumb.style.background = 'red';
+                    trumb.style.background = 'rgb(233, 55, 55)';
                     trumb.value = 'vegetarian: no!';
-                    scroll.children[1].innerHTML = 'slide to vegetarinize ->';
+                    slider.children[1].innerHTML = '>>> slide >>>';
                 }
             }
         }

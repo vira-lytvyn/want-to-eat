@@ -43,8 +43,8 @@ function fixPlusAnimate() {
     animationPages('finalRecipe', 'searchResult', 900);
 
     var trumb = document.getElementById('trumb');
-    var scroll = document.getElementById('scroll');
+    var slider = document.getElementById('slider');
     if (trumb.value === 'vegetarian: yes!') {
-        trumb.style.left = scroll.clientWidth - trumb.clientWidth + 'px';
+        trumb.style.left = slider.clientWidth - trumb.clientWidth + 'px';
     }
 }

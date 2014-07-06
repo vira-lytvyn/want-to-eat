@@ -20,7 +20,7 @@ function genrateRecipeItem(recipe) {
     buttonDesc.className = 'buttonDesc button';
     buttonDesc.style.bottom = '4px';
     buttonDesc.type = 'button';
-    buttonDesc.value = 'Info     ⇓';
+    buttonDesc.value = '⇓     Info     ⇓';
     generalInfo.appendChild(buttonDesc);
     buttonDesc.onclick = showDetail;
     //X end of general info block
@@ -28,17 +28,17 @@ function genrateRecipeItem(recipe) {
     function showDetail() {
         if (detailInfo.style.display == 'none') {
             detailInfo.style.display = 'block';
-            buttonDesc.value = 'Info     ⇑';
+            buttonDesc.value = '⇑     Info     ⇑';
         } else {
             detailInfo.style.display = 'none';
-            buttonDesc.value = 'Info     ⇓';
+            buttonDesc.value = '⇓     Info     ⇓';
         }
 
     }
 
     //->start of detail info block
     var detailInfo = document.createElement('div');
-    detailInfo.className = 'detail-info';
+    detailInfo.className = 'detail-info clearfix';
     detailInfo.style.display = 'none';
     recipeItem.appendChild(detailInfo);
 

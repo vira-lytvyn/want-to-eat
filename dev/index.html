@@ -43,8 +43,8 @@
                 <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe" disabled>
             </nav>
             <div class="radioButtons wrapper" id="radioButtons"></div>
-            <input type="button" id="allCategories" class="button single-line" value="Categories?... wtf... I'm staaarving!!!"
-                   onclick="animationPages('categoriesSection', 'ingredientsSection', 900);">
+            <!--<input type="button" id="allCategories" class="button single-line" value="Categories?... wtf... I'm staaarving!!!"-->
+                   <!--onclick="animationPages('categoriesSection', 'ingredientsSection', 900);">-->
         </section>
         <!--Categories page content above -->
 
@@ -73,12 +73,12 @@
                 <input type="button" class="menu-step button wrapper-div active" value="choose recipe">
             </nav>
             <div class="single-line clearfix" id="filter-box">
-                <input type="button" class="navigationButtons" value="Sort by rate">
-                <input type="button" class="navigationButtons" value="Sort by title">
+                <input type="button" class="navigationButtons sub-blocks" value="Sort by rate">
+                <input type="button" class="navigationButtons sub-blocks" value="Sort by title">
             </div>
-            <div id="scroll">
+            <div id="slider">
                 <input id="trumb" type="button" value="vegetarian: no!"/>
-                <span>slide to vegetarinize -></span>
+                <span id="slider-text">>>> slide >>></span>
             </div>
             <div id="recipes">
 
@@ -104,30 +104,32 @@
                 <h1 id="finalTitle"></h1>
             </div>
             <div class="clearfix">
-                <div id="showAuthors" class="sub-blocks"></div>
-                <div id="rank" class="sub-blocks"></div>
+                <input type="button" class="sub-blocks navigationButtons" id="showAuthors" />
+                <input type="button" class="sub-blocks navigationButtons" id="rank" />
             </div>
             <div id="authors"></div>
             <div>
-                <p id="description"></p><span></span><span></span>
+                <p id="description"></p>
+                <span class="medallions"></span>
+                <span class="medallions"></span>
             </div>
             <div>
-                <div><h2>Ingredients you need to...</h2></div>
+                <h2 class="button recipe-but ing-head">Ingredients you need to...</h2>
                 <ul id="ingredients"></ul>
             </div>
             <div>
-                <div><h2>Step by step</h2></div>
+                <h2 class="button recipe-but">Step by step</h2>
                 <ol id="steps"></ol>
             </div>
             <div>
-                <div><h2>Some tips here</h2></div>
+                <h2 class="button recipe-but">Some tips here</h2>
                 <ul id="tips"></ul>
             </div>
-            <a href="" id="source"></a>
+            <a href="" id="source" class="button recipe-but"></a>
             <div class="clearfix">
-                <input type="button" value="Save" class="sub-blocks" id="save" />
-                <input type="button" value="Send by e-mail" class="sub-blocks" id="sendBy"
-                       onclick="animationPages('finalRecipe', 'sendRecipeByEmail', 900);"/>
+                <input type="button" value="Save" class="sub-blocks navigationButtons" id="save" />
+                <input type="button" value="Send by e-mail" class="sub-blocks navigationButtons" id="sendBy"
+                       onclick="animationPages('finalRecipe', 'sendRecipeByEmail', 900);" />
             </div>
         </section>
         <!--Detail recipe page content above -->
