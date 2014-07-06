@@ -3,6 +3,9 @@ function buildFinalRecipe(currentRecipe) {
 
     var i;
 
+    var chosenRecipe = document.querySelector('#chosenRecipe');
+    chosenRecipe.setAttribute('value', JSON.stringify(currentRecipe));
+
     //->start of header block
     var image = document.getElementById('finalImg');
     image.src = currentRecipe.picture;
