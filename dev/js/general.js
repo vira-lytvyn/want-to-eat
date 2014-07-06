@@ -44,5 +44,7 @@ function fixPlusAnimate() {
 
     var trumb = document.getElementById('trumb');
     var scroll = document.getElementById('scroll');
-    trumb.style.left = scroll.clientWidth - trumb.clientWidth + 'px';
+    if (trumb.value === 'vegetarian: yes!') {
+        trumb.style.left = scroll.clientWidth - trumb.clientWidth + 'px';
+    }
 }
