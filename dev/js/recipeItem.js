@@ -17,7 +17,8 @@ function genrateRecipeItem(recipe) {
     generalInfo.appendChild(title);
 
     var buttonDesc = document.createElement('input');
-    buttonDesc.className = 'buttonDesc';
+    buttonDesc.className = 'buttonDesc button';
+    buttonDesc.style.bottom = '4px';
     buttonDesc.type = 'button';
     buttonDesc.value = 'Info     ⇓';
     generalInfo.appendChild(buttonDesc);
@@ -62,7 +63,7 @@ function genrateRecipeItem(recipe) {
     infoText.appendChild(detailPar);
 
     var detailButton = document.createElement('input');
-    detailButton.className = 'detailButton';
+    detailButton.className = 'detailButton navigationButtons';
     detailButton.type = 'button';
     detailButton.value = 'Detail';
     infoText.appendChild(detailButton);
