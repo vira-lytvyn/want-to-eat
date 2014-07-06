@@ -46,10 +46,10 @@ function addSortEvent (array) {
         function moveAt() {
             trumb.style.left = event.clientX - coords.left - trumb.clientWidth / 2 + 'px';
             if (parseInt(trumb.style.left) > scroll.clientWidth - trumb.clientWidth) {//<-ban for going beyond the end line
-                trumb.style.left = scroll.clientWidth - trumb.clientWidth - 1 + 'px';//1 px to enter next if statment
+                trumb.style.left = scroll.clientWidth - trumb.clientWidth - 2 + 'px';//1 px to enter next if statment
             }
             if (parseInt(trumb.style.left) < 0) {//<-ban for going beyond the start line
-                trumb.style.left = 1 + 'px';//1 px to enter next if statment
+                trumb.style.left = 2 + 'px';//1 px to enter next if statment
             }
         }
 
@@ -64,16 +64,16 @@ function addSortEvent (array) {
                     arr = findByVegetarian(array);
                     showSearchResult(0, arr);
                     trumb.style.left = scroll.clientWidth - trumb.clientWidth + 'px';
-                    trumb.style.background = 'yellowgreen';
+                    trumb.style.background = 'rgb(154, 205, 50)';
                     trumb.value = 'vegetarian: yes!';
-                    scroll.children[1].innerHTML = '<- slide to unvegetarinize';
+                    scroll.children[1].innerHTML = '<<< slide <<<';
                 } else {
                     arr = findByVegetarian(array);
                     showSearchResult(0, arr.old);
                     trumb.style.left = '0';
-                    trumb.style.background = 'red';
+                    trumb.style.background = 'rgb(233, 55, 55)';
                     trumb.value = 'vegetarian: no!';
-                    scroll.children[1].innerHTML = 'slide to vegetarinize ->';
+                    scroll.children[1].innerHTML = '>>> slide >>>';
                 }
             }
         }

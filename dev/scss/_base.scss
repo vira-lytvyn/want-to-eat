@@ -1,7 +1,6 @@
 $base-bg-color: #ccc;
 $tablet-section-width: 760px;
 $mobile-section-width: 320px;
-
 $logo-color: #DCECFD;
 $button-height: 60px;
 
@@ -12,6 +11,7 @@ $button-height: 60px;
   position: relative;
 }
 
+/*main start*/
 body{
     overflow: hidden;
     padding: 0;
@@ -35,41 +35,16 @@ section {
     width: 100%;
     &.logo {
         background: $logo-color;
+        max-height: 110px;
+        text-align: center;
+        height: 100%;
     }
-}
-.logo {
-    max-height: 110px;
-    text-align: center;
-    height: 100%;
-}
-
-.button {
-    height: $button-height;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
 }
 
 .half-screen {
     display: inline-block;
     width: 50%;
     float: left;
-}
-
-/*search-box*/
-//#search-box {
-//  width: 600px;
-//  margin: 0 auto;
-//  border: 1px solid black;
-//  position: relative;
-//}
-
-#search-but {
-//  width: 100%;
-//  height: 100px;
-//  position: absolute;
-//  border: none;
-
 }
 
 .search-input {
@@ -80,81 +55,57 @@ section {
     position: relative;
     display: none;
 }
+/*main end*/
 
-//.search-by {
-//  height: 70px;
-//  float: left;
-//  cursor: pointer;
-//}
-/*search-box*/
+/*filter-box*/
+#scroll {
+  height: $button-height;
+  background: white;
+  border: 1px solid black;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 20px;
+}
 
-/*Categories*/
-//#categoriesSection {
-//  padding: 0;
-//  margin: 0 auto 0;
-//  width: auto;
-//  max-width: 600px;
-//  min-height: 400px;
-//  border: 1px solid black;
-//}
-//#categoriesSection h2 {
-//  text-align: center;
-//}
-//.categoryRadio {
-//  margin-left: 50px ;
-//}
-//
-//div.ingredients_div {
-//  margin: 20px 0 0 0;
-//  display: none;
-//}
+#trumb {
+  background: rgb(233, 55, 55);
+  width: 33%;
+  height: 58px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-shadow: 0px 2px 3px rgba(150, 150, 150, 1);
+  font-size: 16px;
+}
 
-//div.ingredients_div h3 {
-//  text-align: center;
-//}
-
-//.ingredients_div .ingredient {
-//  display: block;
-//  width: 100px;
-//  margin: 15px auto 10px;
-//
-//}
+#scroll-text {
+  top: 19px;
+}
+/*filter-box*/
 
 /*recipe item start*/
 .recipeItem {
   border: 1px solid black;
   margin: 5px auto;
-//  width: 600px;
 }
 
 .general-info {
   background: rgb(135, 185, 248);
   box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.6);
   padding: 0 1%;
-}
-
-.general-info .title {
-  display: inline-block;
-  width: 70%;
+  .title {
+    display: inline-block;
+    width: 70%;
+  }
 }
 
 .buttonDesc {
   width: 25%;
-  height: 50px;
-  font-size: 30px;
 }
 
 .detail-info {
   padding: 5px 1%;
-}
-
-.detail-info:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
 }
 
 .infoImg {
@@ -175,93 +126,55 @@ section {
 /*recipe item end*/
 
 /*final recipe start*/
-//#finalRecipe {
-//  width: 600px;
-//  display: none;
-//  margin: 5px auto;
-//  border: 1px solid black;
-//}
-
-#finalRecipe>div {
-  border: 1px solid black;
-}
-
 #finalImg {
-  border: 1px solid black;
+  border-radius: 5px;
   width: 100%;
-  margin-bottom: -5px;
+  margin-top: 5px;
 }
 
-.sub-blocks {
-  border: 1px solid black;
-  width: 49%;
-  float: left;
-  height: 60px;
-  margin-left: 3px;
+#finalTitle {
+  margin-left: 10px;
 }
 
-.sub-blocks[type="button"] {
-  margin-left: 4px;
-}
-
-#showAuthors,
-#finalRecipe input{
-  cursor: pointer;
+#description {
+  margin-left: 5px;
 }
 
 #ingredients {
   list-style: none;
 }
 
-#source {
-  display: block;
-  border: 1px solid black;
-  height: 60px;
+.medallions {
+  margin-left: 5px;
+  padding: 7px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  text-shadow: -1px 1px 3px rgba(150, 150, 150, 1);
 }
 
-#source {
-  text-align: center;
-  font-size: 40px;
-  text-decoration: none;
-  color: black;
-}
-/*final recipe end*/
-
-/*filter-box*/
-#filter-box {
-  width: 100%;
-}
-
-#filter-box>input[type="button"] {
+.sub-blocks {
   border: 1px solid black;
   width: 49%;
-  cursor: pointer;
   float: left;
-  height: 60px;
-  margin-left: 4px;
-}
-
-#scroll {
-//  width: 600px;
-  height: $button-height;
-  background: white;
-  border: 1px solid black;
-  margin: 20px 0;
-  text-align: center;
-  font-size: 20px;
-}
-
-#trumb {
-  background: red;
-  width: 33%;
-  height: 58px;
-  position: absolute;
-  left: 0;
-  z-index: 100;
   cursor: pointer;
+  height: 60px;
+  margin: 5px 0 0 5px;
 }
 
-/*filter-box*/
+.button.recipe-but {
+  text-align: center;
+  font-size: 36px;
+  display: block;
+  padding-top: 5px;
+  font-weight: normal;
+  margin-top: 5px;
+  &.ing-head {
+    margin-top: 15px;
+  }
+}
+/*final recipe end*/
 
 .clearfix:after {
   content: ".";
@@ -277,11 +190,8 @@ section {
 .navigationButtons {
   border: 1px solid #000000;
   background: #65a9d7;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-  background: -o-linear-gradient(top, #3e779d, #65a9d7);
   padding: 12px 24px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -306,16 +216,11 @@ section {
   background: #1b435e;
 }
 
-
 .button {
   border: 1px solid black;
-
   background: #69c972;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2f9429), to(#69c972));
   background: -webkit-linear-gradient(top, #2f9429, #69c972);
   background: -moz-linear-gradient(top, #2f9429, #69c972);
-  background: -ms-linear-gradient(top, #2f9429, #69c972);
-  background: -o-linear-gradient(top, #2f9429, #69c972);
   padding: 11.5px 23px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -329,12 +234,17 @@ section {
   font-family: Georgia, Serif;
   text-decoration: none;
   vertical-align: middle;
+  height: $button-height;
+  cursor: pointer;
+  margin: 0;
 }
+
 .button:hover {
   border-top-color: #1d8f24;
   background: #1d8f24;
   color: #ccc;
 }
+
 .button:active {
   border-top-color: #1b5c1d;
   background: #1b5c1d;

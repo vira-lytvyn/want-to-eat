@@ -13,13 +13,13 @@ function buildFinalRecipe(currentRecipe) {
 
     //->start of info block
     var showAuthors = document.getElementById('showAuthors');
-    showAuthors.innerHTML = 'authors: ' + currentRecipe.authors.join(', ');
+    showAuthors.value = 'authors: ' + currentRecipe.authors.join(', ');
     showAuthors.onclick = function() {
         showHide(authors);
     };
 
     var rank = document.getElementById('rank');
-    rank.innerHTML = 'social rank: ' + currentRecipe.rate;
+    rank.value = 'social rank: ' + currentRecipe.rate;
 
     var authors = document.getElementById('authors');
     authors.style.display = 'none';
@@ -39,11 +39,11 @@ function buildFinalRecipe(currentRecipe) {
     var description = document.getElementById('description');
     description.innerHTML = currentRecipe.description;
 
-    var category = description.nextSibling;
+    var category = description.nextElementSibling;
     category.innerHTML = currentRecipe.category;
-    category.style.background = 'green';
+    category.style.background = 'rgb(255, 187, 11)';
 
-    var vegetarian = category.nextSibling;
+    var vegetarian = category.nextElementSibling;
     if(currentRecipe.vegetarian) {
         vegetarian.innerHTML = 'vegetarian: yes';
     } else {
