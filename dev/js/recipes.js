@@ -3,12 +3,16 @@ function buildFinalRecipe(currentRecipe) {
 
     var i;
 
+    var chosenRecipe = document.querySelector('#chosenRecipe');
+    chosenRecipe.setAttribute('value', JSON.stringify(currentRecipe));
+
     //->start of header block
     var image = document.getElementById('finalImg');
     image.src = currentRecipe.picture;
 
     var title = document.getElementById('finalTitle');
     title.innerHTML = currentRecipe.title;
+    document.getElementById('articleName').setAttribute('value', currentRecipe.title);
     //X end of header block
 
     //->start of info block
