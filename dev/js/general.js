@@ -1,6 +1,4 @@
 var data = []; // declare empty data array as global variable to be enable from all places of the site
-var requestTime = 0;
-console.log(data);
 function attachReaction (event, element, func) {
     if (element.attachEvent) {
         return element.attachEvent('on'+event, func);
