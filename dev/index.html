@@ -50,6 +50,7 @@
 
         <!--Ingredients page content below -->
         <section id="ingredientsSection">
+            <input type="hidden" id="selectedIngredients" value="">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
                        onclick="animationPages('ingredientsSection', 'startPage', 900);">
@@ -88,7 +89,7 @@
 
         <!--Detail recipe page content below -->
         <section id="finalRecipe">
-            <input type="hidden" value='{"id":18,"title":"Bowl of Chicken Soup","authors":["MA","BR","Lillian May","Ivica"],"picture":"http://pad3.whstatic.com/images/thumb/b/b7/Make-a-Bowl-of-Chicken-Soup-Intro.jpg/670px-Make-a-Bowl-of-Chicken-Soup-Intro.jpg","description":"A bowl of chicken stock and noodles is a great, quick meal if you are sick or are in no time to cook another meal. The stock can soothe your throat if you are suffering with a cold.","ingredients":["A package of egg noodles","1 teaspoon chicken stock (bouillon granules)","Various spices [optional]","Spring onions (green onions) [optional]"],"rate":63,"category":"soups","vegetarian":false,"steps":[{"id":1,"name":"Warm up the water in the saucepan and get the stock ready.","description":""},{"id":2,"name":"Put in one teaspoon of chicken stock (granules) in the boiling water.","description":"If the water turns a deep yellow it is ready for the noodles. If not put in some extra stock."},{"id":3,"name":"Add herbs and spices, if using.","description":""},{"id":4,"name":"Add the noodles.","description":""},{"id":5,"name":"Wait 5 minutes with the stove on high.","description":"If it starts to boil over turn it down to a low boil or simmer."},{"id":6,"name":"Cook until the noodles are tender.","description":""},{"id":7,"name":"When ready pour into bowl and serve with spring onions on top.","description":""},{"id":8,"name":"Finished.","description":""}],"tips":["A good guide is to use about 1 cup egg noodles, depending on size, for every cup of liquid."],"source_url":"http://www.wikihow.com/Make-a-Bowl-of-Chicken-Soup","weigth":1}' id="chosenRecipe">
+            <input type="hidden" value='' id="chosenRecipe">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
                        onclick="animationPages('finalRecipe', 'startPage', 900);">
