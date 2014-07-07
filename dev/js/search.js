@@ -1,8 +1,19 @@
 function searchRecipes(){
+    var selected = detectCheckedIngredients();
     requestForData();
-    var allRecipesInCategory = searchByCategory(clientCategory);
-    var resultArr = sortBy('weigth', calculateWeight(allRecipesInCategory, clientIngredients)); // move the 'heaviest' recipe up
+    var allRecipesInCategory = searchByCategory(selected.category);
+    var resultArr = sortBy('weigth', calculateWeight(allRecipesInCategory, selected.ingredients)); // move the 'heaviest' recipe up
     showSearchResult(0, resultArr, 'ingredientsSection');
+}
+
+function detectCheckedIngredients() {
+    var selectedCategory = document.querySelector('input[name="category"]:checked').id;
+    var checkboxes = document.querySelectorAll('#' + selectedCategory + 'Ingredients input[type="checkbox"]:checked');
+    var ingredients = [];
+    for(var i = 0, l = checkboxes.length; i < l; i++) {
+        ingredients.push(checkboxes[i].name);
+    }
+    return {category: selectedCategory, ingredients: ingredients};
 }
 
 function showSearchResult(position, array, sectionFrom) {
