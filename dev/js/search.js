@@ -22,41 +22,35 @@ function detectCheckedIngredients() {
 }
 
 function SearchResults(data, sectionId) {
-    var _countOfVisibleRecipes;
-    this.getCount = function() {
-        return _countOfVisibleRecipes;
-    };
-    this.setCount = function(currentCount) {
-        _countOfVisibleRecipes = currentCount + 3;
-    };
+    var _this = this;
     this.container = document.getElementById('recipes');
     this.step = 3;
     this.show = function (position) {
         var i;
-        if (!('new' in this.data)) {
-            for (i = position; i < position + this.step; i++) {
-                if (this.data[i]) {
-                    this.container.appendChild(genrateRecipeItem(this.data[i]));
+        if (!('new' in _this.data)) {
+            for (i = position; i < position + _this.step; i++) {
+                if (_this.data[i]) {
+                    _this.container.appendChild(genrateRecipeItem(_this.data[i]));
                 }
             }
-            addSortEvent(this.data);
+            addSortEvent(_this.data);
         } else {
-            for (i = position; i < position + this.step; i++) {
-                if (this.data.new[i]) {
-                    this.container.appendChild(genrateRecipeItem(this.data.new[i]));
+            for (i = position; i < position + _this.step; i++) {
+                if (_this.data.new[i]) {
+                    _this.container.appendChild(genrateRecipeItem(_this.data.new[i]));
                 }
             }
         }
     };
     this.clear = function () {
-        while (this.container.firstChild) {
-            this.container.removeChild(this.container.firstChild);
+        while (_this.container.firstChild) {
+            _this.container.removeChild(_this.container.firstChild);
         }
     };
     this.init = function(){
-        var _this = this;
         _this.data = data;
         _this.section = sectionId;
+        _this.count = 0;
         _this.clear();
         if (_this.section) {
             animationPages(_this.section, 'searchResult', 900);
@@ -64,15 +58,9 @@ function SearchResults(data, sectionId) {
         _this.show(0);
     };
     this.loadMore = function (){
-        console.log(this);
-        this.setCount(this.getCount());
-        this.show(this.getCount());
-    }
-}
-
-function clearElementContent(container){
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
+        console.log(_this);
+        _this.count += _this.step;
+        _this.show(_this.count);
     }
 }
 
