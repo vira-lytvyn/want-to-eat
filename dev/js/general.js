@@ -36,6 +36,33 @@ function animationPages(objectStart, objectEnd, time) {
     }, 1 / frameRate);
 }
 
+function animationPagesBack(objectStart, objectEnd, time) {
+    var boxStart = document.getElementById(objectStart);
+    var boxEnd = document.getElementById(objectEnd);
+    var startPosition = scrollY;
+    boxEnd.style.display = 'block';
+
+    var route = boxEnd.clientHeight + startPosition;
+
+    scroll(0, route);
+
+    var frameRate = 0.06; // 60 frame per second
+    var frame = 0;
+    var delta = route / time / frameRate;
+
+    var handle = setInterval(function() {
+        frame++;
+        var value = route - delta * frame;
+        scroll(0, value);
+        if (value <= 0) {
+            boxStart.style.display = 'none';
+            scroll(0, 0);
+            clearInterval(handle);
+        }
+    }, 1 / frameRate);
+}
+
+
 function clearElementContent(element) {
     while (element.firstChild) {
         element.removeChild(element.firstChild);
@@ -43,7 +70,7 @@ function clearElementContent(element) {
 }
 
 function fixPlusAnimate() {
-    animationPages('finalRecipe', 'searchResult', 900);
+    animationPagesBack('finalRecipe', 'searchResult', 900);
 
     var trumb = document.getElementById('trumb');
     var slider = document.getElementById('slider');

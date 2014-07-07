@@ -36,7 +36,7 @@
         <section id="categoriesSection">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
-                       onclick="animationPages('categoriesSection', 'startPage', 900);">
+                       onclick="animationPagesBack('categoriesSection', 'startPage', 900);">
                 <input type="button" class="menu-step button wrapper-div active" value="choose category">
                 <input type="button" class="menu-step button wrapper-div" value="mark components"
                         onclick="animationPages('categoriesSection', 'ingredientsSection', 900);">
@@ -52,9 +52,9 @@
         <section id="ingredientsSection">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
-                       onclick="animationPages('ingredientsSection', 'startPage', 900);">
+                       onclick="animationPagesBack('ingredientsSection', 'startPage', 900);">
                 <input type="button" class="menu-step button wrapper-div" value="choose category"
-                       onclick="animationPages('ingredientsSection', 'categoriesSection', 900);">>
+                       onclick="animationPagesBack('ingredientsSection', 'categoriesSection', 900);">>
                 <input type="button" class="menu-step button wrapper-div active" value="mark components">
                 <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe" id="getRecipes" onclick="searchRecipes();">
             </nav>
@@ -65,11 +65,11 @@
         <section id="searchResult">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
-                       onclick="animationPages('searchResult', 'startPage', 900);">
+                       onclick="animationPagesBack('searchResult', 'startPage', 900);">
                 <input type="button" class="menu-step button wrapper-div" value="choose category"
-                       onclick="animationPages('searchResult', 'categoriesSection', 900);">
+                       onclick="animationPagesBack('searchResult', 'categoriesSection', 900);">
                 <input type="button" class="menu-step button wrapper-div" value="mark components"
-                       onclick="animationPages('searchResult', 'ingredientsSection', 900);">
+                       onclick="animationPagesBack('searchResult', 'ingredientsSection', 900);">
                 <input type="button" class="menu-step button wrapper-div active" value="choose recipe">
             </nav>
             <div class="single-line clearfix" id="filter-box">
@@ -91,11 +91,11 @@
             <input type="hidden" value='' id="chosenRecipe">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
-                       onclick="animationPages('finalRecipe', 'startPage', 900);">
+                       onclick="animationPagesBack('finalRecipe', 'startPage', 900);">
                 <input type="button" class="menu-step button wrapper-div" value="choose category"
-                       onclick="animationPages('finalRecipe', 'categoriesSection', 900);">
+                       onclick="animationPagesBack('finalRecipe', 'categoriesSection', 900);">
                 <input type="button" class="menu-step button wrapper-div" value="mark components"
-                       onclick="animationPages('finalRecipe', 'ingredientsSection', 900);">
+                       onclick="animationPagesBack('finalRecipe', 'ingredientsSection', 900);">
                 <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe"
                        onclick="fixPlusAnimate()">
             </nav>
@@ -138,13 +138,13 @@
         <section id="sendRecipeByEmail">
             <nav class="single-line main-menu wrapper">
                 <input type="button" class="menu-step button wrapper-div" value="home"
-                       onclick="animationPages('sendRecipeByEmail', 'startPage', 900);">
+                       onclick="animationPagesBack('sendRecipeByEmail', 'startPage', 900);">
                 <input type="button" class="menu-step button wrapper-div" value="choose category"
-                       onclick="animationPages('sendRecipeByEmail', 'categoriesSection', 900);">
+                       onclick="animationPagesBack('sendRecipeByEmail', 'categoriesSection', 900);">
                 <input type="button" class="menu-step button wrapper-div" value="mark components"
-                       onclick="animationPages('sendRecipeByEmail', 'ingredientsSection', 900);">
+                       onclick="animationPagesBack('sendRecipeByEmail', 'ingredientsSection', 900);">
                 <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe"
-                       onclick="animationPages('sendRecipeByEmail', 'searchResult', 900);">
+                       onclick="animationPagesBack('sendRecipeByEmail', 'searchResult', 900);">
             </nav>
             <form name="sendRecipe" class="form send-email clearfix" onsubmit="sendRecipeMail();">
                 <label for="articleName" class="label-block single-line">Subject</label>
@@ -156,7 +156,7 @@
                 <label for="comment" class="label-block single-line">Message</label>
                 <textarea name="comment" id="comment" rows="3" class="single-line"></textarea>
                 <input type="button" value="Cancel" class="half-screen button"
-                       onclick="animationPages('sendRecipeByEmail', 'finalRecipe', 900);">
+                       onclick="animationPagesBack('sendRecipeByEmail', 'finalRecipe', 900);">
                 <input type="submit" value="Submit" class="half-screen button">
             </form>
         </section>
