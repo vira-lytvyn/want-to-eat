@@ -33,11 +33,6 @@ function searchBy() {
     var authorArr = searchByTarget('authors', value);
     var nameArr = searchByTarget('title', value);
 
-    console.log('by author');
-    console.log(authorArr);
-    console.log('by name');
-    console.log(nameArr);
-
     var searchBox = document.getElementById('search-box');
 
     var byAuthor = searchBox.children[1];//<-byAuthor button
