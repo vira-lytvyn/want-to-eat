@@ -56,7 +56,7 @@ function createDOMforCategories(json) {
 
     for(var cIndex = 0, jsonLng = json.length; cIndex < jsonLng; cIndex++) {
         var categoryBlock = document.createElement('div');
-        categoryBlock.className = 'category-item wrapper-div';
+        categoryBlock.className = json[cIndex].name === 'all' ? 'category-item wrapper-div all-categories' :  'category-item wrapper-div';
 
         var radioButton = document.createElement('input');
         var categoryLabel = document.createElement('label');
