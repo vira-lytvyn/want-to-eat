@@ -1,3 +1,7 @@
+/**
+ * Created by Volodya on 28.06.2014.
+ */
+
 function buildFinalRecipe(currentRecipe) {
     animationPages('searchResult', 'finalRecipe',900);
 

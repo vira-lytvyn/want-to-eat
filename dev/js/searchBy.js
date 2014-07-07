@@ -1,5 +1,5 @@
 /**
- * Created by admin on 21.06.2014.
+ * Created by Volodya on 21.06.2014.
  */
 //**************************seach button function*****************************
 function showSearchField() {

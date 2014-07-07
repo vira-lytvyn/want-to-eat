@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 02.07.2014.
+ * Created by Volodya on 02.07.2014.
  */
 
 function genrateRecipeItem(recipe) {
