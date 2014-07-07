@@ -98,3 +98,5 @@ function requestForData () {
         requestTime = setTimeout(getRecipesFromJson(), 3000); // setting time out to 3 seconds
     }
 }
+
+requestForData();

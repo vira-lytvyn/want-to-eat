@@ -1,5 +1,6 @@
 function searchRecipes(){
     var selected = detectCheckedIngredients();
+//    requestForData();
     var allRecipes = selected.category === 'all' ? data : searchByCategory(selected.category);
     var resultArr = calculateWeight(allRecipes, selected.ingredients); // calculate occurrence frequency of ingredients in recipe
     resultArr = sortBy('weigth', resultArr); // move the 'heaviest' recipe up
