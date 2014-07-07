@@ -35,12 +35,7 @@ function animationPages(objectStart, objectEnd, time) {
         }
     }, 1 / frameRate);
 
-    //added by Volodya for some fixes in my code
-    var trumb = document.getElementById('trumb');
-    var slider = document.getElementById('slider');
-    if (trumb.value === 'vegetarian: yes!') {
-        trumb.style.left = slider.clientWidth - trumb.clientWidth + 'px';
-    }
+    fixSlider();
 }
 
 function animationPagesBack(objectStart, objectEnd, time) {
@@ -68,7 +63,10 @@ function animationPagesBack(objectStart, objectEnd, time) {
         }
     }, 1 / frameRate);
 
-    //added by Volodya for some fixes in my code
+    fixSlider();
+}
+
+function fixSlider() {
     var trumb = document.getElementById('trumb');
     var slider = document.getElementById('slider');
     if (trumb.value === 'vegetarian: yes!') {
