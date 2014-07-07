@@ -1,4 +1,4 @@
-var data = [
+[
     {
         "id": 0,
         "title": "Chocolate Hazelnut Buns",
@@ -2640,4 +2640,4 @@ var data = [
         ],
         "source_url": ""
     }
-];
+]
