@@ -14,7 +14,8 @@ function searchRecipes(){
 function detectCheckedIngredients() {
     var selectedCategory = document.querySelector('input[name="category"]:checked') || '';
     if (selectedCategory) {
-        var checkboxes = document.querySelectorAll('#' + selectedCategory.id + 'Ingredients input[type="checkbox"]:checked');
+        selectedCategory = selectedCategory.id;
+        var checkboxes = document.querySelectorAll('#' + selectedCategory + 'Ingredients input[type="checkbox"]:checked');
         var ingredients = [];
         for(var i = 0, l = checkboxes.length; i < l; i++) {
             ingredients.push(checkboxes[i].name);
@@ -62,8 +63,6 @@ function SearchResults(data, sectionId) {
         _this.show(0);
     };
     this.loadMore = function (){
-        console.log(_this);
-        console.log(this);
         _this.count += _this.step;
         if (_this.count >= _this.data.length) {
             this.style.display = 'none';
