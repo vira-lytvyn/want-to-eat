@@ -54,7 +54,7 @@ function selectCategory(){
     };
 }
 
-function makeRequest() {
+function generateCategoriesControls() {
     var xhr = new XMLHttpRequest();
     var url = '../database/categories.json';
     xhr.open('GET', url, true);
@@ -126,4 +126,4 @@ function crtCheckboxForCategories(category, location) {
     ingredientsSection.appendChild(divCategory);//add div to ingredientsSection
 }
 
-makeRequest();
+generateCategoriesControls();
