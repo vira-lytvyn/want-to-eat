@@ -83,11 +83,9 @@ function getRecipesFromJson () {
     request.onreadystatechange =  function () {
         if (request.readyState != 4)  return ; //return if not complete
         if (request.status != 200) {  //check request status
-            clearTimeout(requestTime);
             alert('Error ' + request.status + ': ' + request.statusText);
             return ;
         }
-        clearTimeout(requestTime);
         processRecipeRequest(request.responseText);  // process result
     };
     request.send();
@@ -99,7 +97,7 @@ function processRecipeRequest (arr) {
 
 function requestForData () {
     if (!data.length) {
-        requestTime = setTimeout(getRecipesFromJson(), 3000); // setting time out to 3 seconds
+        getRecipesFromJson();
     }
 }
 
