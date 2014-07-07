@@ -84,9 +84,10 @@ function buildFinalRecipe(currentRecipe) {
         ingLi.appendChild(ingLabel);
         ingredients.appendChild(ingLi);
 
-        if (clientIngredients) {
-            for (var j = 0; j < clientIngredients.length; j++) {
-                if (currentRecipe.ingredients[i].indexOf(clientIngredients[j]) !== -1) {
+        var selected = detectCheckedIngredients();
+        if (selected.ingredients) {
+            for (var j = 0; j < selected.ingredients.length; j++) {
+                if (currentRecipe.ingredients[i].indexOf(selected.ingredients[j]) !== -1) {
                     ingCheck.checked = true;
                     ingCheck.parentNode.style.color = 'rgba(255, 255, 255, 0.5)';
                 }

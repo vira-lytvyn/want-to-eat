@@ -3,9 +3,6 @@
  * choose category and ingredients
  */
 
-var clientIngredients;
-var clientCategory;
-
 function selectCategory(){
     animationPages('categoriesSection', 'ingredientsSection', 900);
     var divId = this.id;
@@ -33,25 +30,7 @@ function selectCategory(){
             clearInterval(stop);
         }
     }, 45);
-
 //-----------------------------------------------------------
-
-
-    var button = document.getElementById('getRecipes');
-
-    button.onclick = function(){//button onclick function
-        var checkbox = category.getElementsByTagName('input');//selected all inputs
-        var ingredients = [];
-        for(var i = 0, l = checkbox.length; i < l; i++) {//if checkbox.checked is true - push 'name(ingredient)' in arr
-            if(checkbox[i].checked === true) {
-                ingredients.push(checkbox[i].name);
-            }
-        }
-        clientIngredients = ingredients;
-        clientCategory = divId;
-        console.log(clientIngredients, clientCategory);
-        searchRecipes();
-    };
 }
 
 function generateCategoriesControls() {
@@ -84,7 +63,7 @@ function createDOMforCategories(json) {
 
         radioButton.type = 'radio';
         radioButton.className = 'categoryRadio';
-        radioButton.name = 'choice';
+        radioButton.name = 'category';
         radioButton.id = json[cIndex].name;
         radioButton.value = json[cIndex].name + 'Category';
         attachReaction('click', radioButton, selectCategory);
