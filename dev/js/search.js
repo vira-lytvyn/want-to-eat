@@ -68,6 +68,7 @@ function SearchResults(data, sectionId) {
             this.style.display = 'none';
             _this.show(_this.data.length);
         } else {
+            this.style.display = 'inline-block';
             _this.show(_this.count);
         }
     }
