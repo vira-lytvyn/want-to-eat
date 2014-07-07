@@ -45,11 +45,11 @@ module.exports = function(grunt) {
             },
             html: {
                 files: ['dev/*.html'],
-                tasks: ['copy:main']
+                tasks: ['newer:copy:main']
             },
             scripts: {
                 files: ['dev/js/*.js'],
-                tasks: ['concat', 'uglify']
+                tasks: ['newer:concat', 'uglify']
             },
             style: {
                 files: ['dev/scss/*.scss'],
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
             },
             images: {
                 files: ['dev/img/**/*.{jpg,png,gif}'],
-                tasks: ['copy:icons']
+                tasks: ['newer:copy:icons']
             }
         }
     });
@@ -70,6 +70,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-newer');
 
     grunt.registerTask('default', ['copy', 'concat', 'uglify', 'sass']);
 };
