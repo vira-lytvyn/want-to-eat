@@ -1,8 +1,9 @@
 function searchRecipes(){
     var selected = detectCheckedIngredients();
     requestForData();
-    var allRecipesInCategory = searchByCategory(selected.category);
-    var resultArr = sortBy('weigth', calculateWeight(allRecipesInCategory, selected.ingredients)); // move the 'heaviest' recipe up
+    var allRecipes = selected.category === 'all' ? data : searchByCategory(selected.category);
+    var resultArr = calculateWeight(allRecipes, selected.ingredients); // calculate occurrence frequency of ingredients in recipe
+    resultArr = sortBy('weigth', resultArr); // move the 'heaviest' recipe up
     showSearchResult(0, resultArr, 'ingredientsSection');
 }
 
@@ -59,7 +60,11 @@ function calculateWeight(recipes, ingredients){
         var currentRecipeIngredients = recipes[i].ingredients.join();
         for (var j = 0; j < ingredients.length; j++) {
             if (currentRecipeIngredients.indexOf(ingredients[j]) !== -1) {
-                recipes[i].weigth += 1; // increase weight of recipe if it contains more ingredients
+                if (recipes[i].weigth) {
+                    recipes[i].weigth += 1; // increase weight of recipe if it contains more ingredients
+                } else {
+                    recipes[i].weigth = 1;
+                }
             }
         }
         if (recipes[i].weigth !== 0) {
