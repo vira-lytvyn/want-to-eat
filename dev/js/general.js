@@ -1,3 +1,6 @@
+var data = []; // declare empty data array as global variable to be enable from all places of the site
+var requestTime = 0;
+console.log(data);
 function attachReaction (event, element, func) {
     if (element.attachEvent) {
         return element.attachEvent('on'+event, func);
@@ -46,5 +49,32 @@ function fixPlusAnimate() {
     var slider = document.getElementById('slider');
     if (trumb.value === 'vegetarian: yes!') {
         trumb.style.left = slider.clientWidth - trumb.clientWidth + 'px';
+    }
+}
+
+function getRecipesFromJson () {
+//    some loading block showing must star here
+    var request =  new XMLHttpRequest();
+    request.open('GET', '../database/recipes.json', true);
+    request.onreadystatechange =  function () {
+        if (request.readyState != 4)  return ; //return if not complete
+        if (request.status != 200) {  //check request status
+            clearTimeout(requestTime);
+            alert('Error ' + request.status + ': ' + request.statusText);
+            return ;
+        }
+        clearTimeout(requestTime);
+        processRecipeRequest(request.responseText);  // process result
+    };
+    request.send();
+}
+
+function processRecipeRequest (arr) {
+    data = JSON.parse(arr);
+}
+
+function requestForData () {
+    if (!data.length) {
+        requestTime = setTimeout(getRecipesFromJson(), 3000); // setting time out to 3 seconds
     }
 }

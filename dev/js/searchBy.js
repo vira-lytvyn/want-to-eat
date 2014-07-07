@@ -25,6 +25,7 @@ function showSearchField() {
 
 //**************************main search function*****************************
 function searchBy() {
+    requestForData();
     var time = new Date/1000;
     var search = document.getElementById('search');
     var value = search.value;
