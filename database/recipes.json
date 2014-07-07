@@ -567,7 +567,7 @@
             "olive oil spray or any spray of your choice"
         ],
         "rate": 52,
-        "category": "pasta, hot meals",
+        "category": "pasta, garnishes",
         "vegetarian": true,
         "steps": [
             {
@@ -633,7 +633,7 @@
             "2 teaspoons toasted sesame seeds", "Sesame oil, for brushing/cooking"
         ],
         "rate": 50,
-        "category": "hot meals",
+        "category": "garnishes",
         "vegetarian": true,
         "steps": [
             {
@@ -694,7 +694,7 @@
             "1/2 cup vegetable broth", "1/2 cup walnuts or pecans (optional)", "1/2 cup sesame oil", "1/4 cup soy sauce"
         ],
         "rate": 89,
-        "category": "hot meals, baking",
+        "category": "garnishes, baking",
         "vegetarian": true,
         "steps": [
             {
@@ -1380,7 +1380,7 @@
             "Olive oil"
         ],
         "rate": 78,
-        "category": "hot meals, sandwiches",
+        "category": "garnishes, sandwiches",
         "vegetarian": true,
         "steps": [
             {
@@ -1437,7 +1437,7 @@
             "1 tbsp Dijon mustard", "1 tsp soya sauce", "Salt and pepper to taste"
         ],
         "rate": 93,
-        "category": "hot meals",
+        "category": "garnishes",
         "vegetarian": true,
         "steps": [
             {
@@ -2033,7 +2033,7 @@
             "salt and pepper to taste"
         ],
         "rate": 98,
-        "category": "hot meals",
+        "category": "garnishes",
         "vegetarian": false,
         "steps": [
             {
@@ -2082,7 +2082,7 @@
             "Rice", "Butter", "Salt", "2.5 glasses of water"
         ],
         "rate": 50,
-        "category": "hot meals",
+        "category": "garnishes",
         "vegetarian": false,
         "steps": [
             {
@@ -2135,7 +2135,7 @@
             "Fresh spinach plus more cheese and mustard to taste."
         ],
         "rate": 70,
-        "category": "hot meals",
+        "category": "garnishes",
         "vegetarian": true,
         "steps": [
             {
@@ -2200,7 +2200,7 @@
             "1 cup grated cheese", "Few grains red pepper", "1/4 teaspoon salt", "6 slices bread"
         ],
         "rate": 78,
-        "category": "hot meals, sandwiches",
+        "category": "garnishes, sandwiches",
         "vegetarian": false,
         "steps": [
             {
@@ -2339,7 +2339,7 @@
             "Parsley", "Salt and Pepper"
         ],
         "rate": 80,
-        "category": "hot meals, baking",
+        "category": "garnishes, baking",
         "vegetarian": false,
         "steps": [
             {
@@ -2418,7 +2418,7 @@
             "Assorted Varieties of Omelet Ingredients", "1 1/4 c. Milk (or Half & Half)"
         ],
         "rate": 76,
-        "category": "pasta, hot meals, baking",
+        "category": "pasta, garnishes, baking",
         "vegetarian": false,
         "steps": [
             {
@@ -2470,7 +2470,7 @@
             "Leftover pasta", "1 egg per portion of pasta", "salt", "pepper", "olive oil"
         ],
         "rate": 59,
-        "category": "hot meals, pasta",
+        "category": "garnishes, pasta",
         "vegetarian": false,
         "steps": [
             {
@@ -2518,7 +2518,7 @@
             "6 eggs", "Condensed milk", "2 table spoon Milo powder", "1/2 cup water", "Cooking oil"
         ],
         "rate": 72,
-        "category": "hot meals, desserts",
+        "category": "garnishes, desserts",
         "vegetarian": false,
         "steps": [
             {
