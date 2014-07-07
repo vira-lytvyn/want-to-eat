@@ -34,6 +34,13 @@ function animationPages(objectStart, objectEnd, time) {
             clearInterval(handle);
         }
     }, 1 / frameRate);
+
+    //added by Volodya for some fixes in my code
+    var trumb = document.getElementById('trumb');
+    var slider = document.getElementById('slider');
+    if (trumb.value === 'vegetarian: yes!') {
+        trumb.style.left = slider.clientWidth - trumb.clientWidth + 'px';
+    }
 }
 
 function animationPagesBack(objectStart, objectEnd, time) {
@@ -60,11 +67,8 @@ function animationPagesBack(objectStart, objectEnd, time) {
             clearInterval(handle);
         }
     }, 1 / frameRate);
-}
 
-function fixPlusAnimate() {
-    animationPagesBack('finalRecipe', 'searchResult', 900);
-
+    //added by Volodya for some fixes in my code
     var trumb = document.getElementById('trumb');
     var slider = document.getElementById('slider');
     if (trumb.value === 'vegetarian: yes!') {
