@@ -60,7 +60,7 @@ EmailRequestConstructor.prototype.showAnswer = function (response) {
     }
     if (recipients.length) {
         if (!confirm('Your message was successfully sent to ' + recipients.join(', ') + '. \nWould you like to send this recipe again?')) {
-            animationPages('sendRecipeByEmail', 'finalRecipe', 900);
+            animationPagesBack('sendRecipeByEmail', 'finalRecipe', 900);
         }
     }
 };
