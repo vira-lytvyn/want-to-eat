@@ -59,8 +59,14 @@ function SearchResults(data, sectionId) {
     };
     this.loadMore = function (){
         console.log(_this);
+        console.log(this);
         _this.count += _this.step;
-        _this.show(_this.count);
+        if (_this.count >= _this.data.length) {
+            this.style.display = 'none';
+            _this.show(_this.data.length);
+        } else {
+            _this.show(_this.count);
+        }
     }
 }
 
