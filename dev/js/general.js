@@ -62,13 +62,6 @@ function animationPagesBack(objectStart, objectEnd, time) {
     }, 1 / frameRate);
 }
 
-
-function clearElementContent(element) {
-    while (element.firstChild) {
-        element.removeChild(element.firstChild);
-    }
-}
-
 function fixPlusAnimate() {
     animationPagesBack('finalRecipe', 'searchResult', 900);
 
