@@ -41,7 +41,10 @@ function searchBy() {
     };
     if (authorArr.length != 0) {
         byAuthor.onclick = function () {
-            showSearchResult(0, authorArr, 'startPage');
+            var searchByAuthor = new SearchResults(authorArr, 'startPage');
+            searchByAuthor.init();
+            var loadMore = document.querySelector('#loadMoreButton');
+            attachReaction('click', loadMore, searchByAuthor.loadMore);
         };
     }
     byAuthor.value = 'by author: finded:' + authorArr.length;
@@ -52,7 +55,10 @@ function searchBy() {
     };
     if (nameArr.length != 0) {
         byName.onclick = function () {
-            showSearchResult(0, nameArr, 'startPage');
+            var searchByName = new SearchResults(nameArr, 'startPage');
+            searchByName.init();
+            var loadMore = document.querySelector('#loadMoreButton');
+            attachReaction('click', loadMore, searchByName.loadMore);
         };
     }
     byName.value = 'by dish title: finded:' + nameArr.length;

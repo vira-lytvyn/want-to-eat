@@ -25,12 +25,18 @@ function addSortEvent (array) {
     var filterBox = document.getElementById('filter-box');
     filterBox.children[0].onclick = function() {//<-added event for sort by rate
         var resultArr = sortBy('rate', array);
-        showSearchResult(0, resultArr);
+        var searchByRate = new SearchResults(resultArr);
+        searchByRate.init();
+        var loadMore = document.querySelector('#loadMoreButton');
+        attachReaction('click', loadMore, searchByRate.loadMore);
     };
 
     filterBox.children[1].onclick = function() {//<-added event for sort by title
         var resultArr = sortBy('title', array);
-        showSearchResult(0, resultArr);
+        var searchByTitle = new SearchResults(resultArr);
+        searchByTitle.init();
+        var loadMore = document.querySelector('#loadMoreButton');
+        attachReaction('click', loadMore, searchByTitle.loadMore);
     };
 
     /*slider*/
@@ -62,14 +68,22 @@ function addSortEvent (array) {
                 var arr;
                 if (parseInt(trumb.style.left) > slider.clientWidth / 2 - trumb.clientWidth / 2) {
                     arr = findByVegetarian(array);
-                    showSearchResult(0, arr);
+
+                    var searchByVegan = new SearchResults(arr);
+                    searchByVegan.init();
+                    var loadMore = document.querySelector('#loadMoreButton');
+                    attachReaction('click', loadMore, searchByVegan.loadMore);
                     trumb.style.left = slider.clientWidth - trumb.clientWidth + 'px';
                     trumb.style.background = 'rgb(154, 205, 50)';
                     trumb.value = 'vegetarian: yes!';
                     slider.children[1].innerHTML = '<<< slide <<<';
                 } else {
                     arr = findByVegetarian(array);
-                    showSearchResult(0, arr.old);
+
+                    var searchByMeat = new SearchResults(arr.old);
+                    searchByMeat.init();
+                    var loadMore = document.querySelector('#loadMoreButton');
+                    attachReaction('click', loadMore, searchByMeat.loadMore);
                     trumb.style.left = '0';
                     trumb.style.background = 'rgb(233, 55, 55)';
                     trumb.value = 'vegetarian: no!';

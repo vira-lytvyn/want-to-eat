@@ -4,7 +4,11 @@ function searchRecipes(){
     var allRecipes = selected.category === 'all' ? data : searchByCategory(selected.category);
     var resultArr = calculateWeight(allRecipes, selected.ingredients); // calculate occurrence frequency of ingredients in recipe
     resultArr = sortBy('weigth', resultArr); // move the 'heaviest' recipe up
-    showSearchResult(0, resultArr, 'ingredientsSection');
+    var searchByIngredients = new SearchResults(resultArr, 'ingredientsSection');
+    searchByIngredients.init();
+    var loadMore = document.querySelector('#loadMoreButton');
+    attachReaction('click', loadMore, searchByIngredients.loadMore);
+//    showSearchResult(0, resultArr, 'ingredientsSection');
 }
 
 function detectCheckedIngredients() {
@@ -17,29 +21,84 @@ function detectCheckedIngredients() {
     return {category: selectedCategory, ingredients: ingredients};
 }
 
-function showSearchResult(position, array, sectionFrom) {
-    var showStep = 3;
-    var container = document.getElementById('recipes');
-    var i;
-    clearElementContent(container);
+//function showSearchResult(position, array, sectionFrom) {
+//    var showStep = 3;
+//    var container = document.getElementById('recipes');
+//    var i;
+//    clearElementContent(container);
+//
+//    if (!('new' in array)) {
+//        for (i = position; i < position + showStep; i++) {
+//            if (array[i]) {
+//                container.appendChild(genrateRecipeItem(array[i]));
+//            }
+//        }
+//        addSortEvent(array);
+//    } else {
+//        for (i = position; i < position + showStep; i++) {
+//            if (array.new[i]) {
+//                container.appendChild(genrateRecipeItem(array.new[i]));
+//            }
+//        }
+//    }
+//
+//    if (sectionFrom) {
+//        animationPages(sectionFrom, 'searchResult', 900);
+//    }
+//}
 
-    if (!('new' in array)) {
-        for (i = position; i < position + showStep; i++) {
-            if (array[i]) {
-                container.appendChild(genrateRecipeItem(array[i]));
+function SearchResults(data, sectionId) {
+    var _countOfVisibleRecipes;
+    this.getCount = function() {
+        return _countOfVisibleRecipes;
+    };
+    this.setCount = function(currentCount) {
+        _countOfVisibleRecipes = currentCount + 3;
+    };
+    this.container = document.getElementById('recipes');
+    this.step = 3;
+    this.show = function (position) {
+        var i;
+        if (!('new' in this.data)) {
+            for (i = position; i < position + this.step; i++) {
+                if (this.data[i]) {
+                    this.container.appendChild(genrateRecipeItem(this.data[i]));
+                }
+            }
+            addSortEvent(this.data);
+        } else {
+            for (i = position; i < position + this.step; i++) {
+                if (this.data.new[i]) {
+                    this.container.appendChild(genrateRecipeItem(this.data.new[i]));
+                }
             }
         }
-        addSortEvent(array);
-    } else {
-        for (i = position; i < position + showStep; i++) {
-            if (array.new[i]) {
-                container.appendChild(genrateRecipeItem(array.new[i]));
-            }
+    };
+    this.clear = function () {
+        while (this.container.firstChild) {
+            this.container.removeChild(this.container.firstChild);
         }
+    };
+    this.init = function(){
+        var _this = this;
+        _this.data = data;
+        _this.section = sectionId;
+        _this.clear();
+        if (_this.section) {
+            animationPages(_this.section, 'searchResult', 900);
+        }
+        _this.show(0);
+    };
+    this.loadMore = function (){
+        console.log(this);
+        this.setCount(this.getCount());
+        this.show(this.getCount());
     }
+}
 
-    if (sectionFrom) {
-        animationPages(sectionFrom, 'searchResult', 900);
+function clearElementContent(container){
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
     }
 }
 
