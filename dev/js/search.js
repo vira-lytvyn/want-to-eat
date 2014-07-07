@@ -12,13 +12,17 @@ function searchRecipes(){
 }
 
 function detectCheckedIngredients() {
-    var selectedCategory = document.querySelector('input[name="category"]:checked').id;
-    var checkboxes = document.querySelectorAll('#' + selectedCategory + 'Ingredients input[type="checkbox"]:checked');
-    var ingredients = [];
-    for(var i = 0, l = checkboxes.length; i < l; i++) {
-        ingredients.push(checkboxes[i].name);
+    var selectedCategory = document.querySelector('input[name="category"]:checked') || '';
+    if (selectedCategory) {
+        var checkboxes = document.querySelectorAll('#' + selectedCategory.id + 'Ingredients input[type="checkbox"]:checked');
+        var ingredients = [];
+        for(var i = 0, l = checkboxes.length; i < l; i++) {
+            ingredients.push(checkboxes[i].name);
+        }
+        return {category: selectedCategory, ingredients: ingredients};
+    } else {
+        return {};
     }
-    return {category: selectedCategory, ingredients: ingredients};
 }
 
 function SearchResults(data, sectionId) {
