@@ -1,6 +1,5 @@
 function searchRecipes(){
     var selected = detectCheckedIngredients();
-    requestForData();
     var allRecipes = selected.category === 'all' ? data : searchByCategory(selected.category);
     var resultArr = calculateWeight(allRecipes, selected.ingredients); // calculate occurrence frequency of ingredients in recipe
     resultArr = sortBy('weigth', resultArr); // move the 'heaviest' recipe up
@@ -20,32 +19,6 @@ function detectCheckedIngredients() {
     }
     return {category: selectedCategory, ingredients: ingredients};
 }
-
-//function showSearchResult(position, array, sectionFrom) {
-//    var showStep = 3;
-//    var container = document.getElementById('recipes');
-//    var i;
-//    clearElementContent(container);
-//
-//    if (!('new' in array)) {
-//        for (i = position; i < position + showStep; i++) {
-//            if (array[i]) {
-//                container.appendChild(genrateRecipeItem(array[i]));
-//            }
-//        }
-//        addSortEvent(array);
-//    } else {
-//        for (i = position; i < position + showStep; i++) {
-//            if (array.new[i]) {
-//                container.appendChild(genrateRecipeItem(array.new[i]));
-//            }
-//        }
-//    }
-//
-//    if (sectionFrom) {
-//        animationPages(sectionFrom, 'searchResult', 900);
-//    }
-//}
 
 function SearchResults(data, sectionId) {
     var _countOfVisibleRecipes;

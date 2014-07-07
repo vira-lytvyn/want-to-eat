@@ -15,17 +15,10 @@ function showSearchField() {
     search.focus();
 
     search.oninput = searchBy;
-
-//    var timer;
-//    search.oninput =function() {
-//        clearTimeout(timer);
-//        timer = setTimeout('searchBy()', 1000);
-//    };
 }
 
 //**************************main search function*****************************
 function searchBy() {
-    requestForData();
     var time = new Date/1000;
     var search = document.getElementById('search');
     var value = search.value;
