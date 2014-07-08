@@ -3,6 +3,9 @@ function searchRecipes(){
 //    requestForData();
     var allRecipes = selected.category === 'all' ? data : searchByCategory(selected.category);
     var resultArr = calculateWeight(allRecipes, selected.ingredients); // calculate occurrence frequency of ingredients in recipe
+    if (!resultArr.length) {
+        alert('Sorry, there are no one recipe to match you ingredients(( \nPlease, check more ingredients and try again.');
+    }
     resultArr = sortBy('weigth', resultArr); // move the 'heaviest' recipe up
     var searchByIngredients = new SearchResults(resultArr, 'ingredientsSection');
     searchByIngredients.init();
