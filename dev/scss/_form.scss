@@ -11,13 +11,13 @@ textarea {
 }
 
     :required {
-        box-shadow: 0 0 1px 1px #fa0;
+      @include box-shadow(0 0 1px 1px #fa0);
         background-color: #fff;
         border: none;
     }
 
     :required:valid{
-        box-shadow: 0 0 1px 1px #3f8;
+      @include box-shadow(0 0 1px 1px #3f8);
         border: none;
     }
 
@@ -26,7 +26,7 @@ textarea {
     }
 
     input:focus:invalid {
-        box-shadow: 0 0 1px 1px #f55;
+      @include box-shadow(0 0 1px 1px #f55);
         border: none;
     }
 
