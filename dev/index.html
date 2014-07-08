@@ -12,7 +12,7 @@
                 <img src="img/logo.png" class="logo">
             </div>
             <div class="single-line hidable-buttons clearfix">
-                <input type="button" class="button half-screen" id="cookBook" value="cook book">
+                <input type="button" class="button half-screen" id="cookBook" value="cook book" onclick="showCockBook();">
                 <input type="button" value="search" onclick="showSearchField()" class="button half-screen" id = "search-but" />
             </div>
             <div id="search-box" class="clearfix single-line search-box">
@@ -128,7 +128,7 @@
             </div>
             <a href="" id="source" class="button recipe-but"></a>
             <div class="clearfix">
-                <input type="button" value="Save" class="sub-blocks navigationButtons" id="save" />
+                <input type="button" value="Save" class="sub-blocks navigationButtons" id="save" onclick="saveRecipeToLocalStorage();"/>
                 <input type="button" value="Send by e-mail" class="sub-blocks navigationButtons" id="sendBy"
                        onclick="animationPages('finalRecipe', 'sendRecipeByEmail', 900);" />
             </div>

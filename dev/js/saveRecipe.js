@@ -1,42 +1,39 @@
-function checkCookieEnable () {
-    if (!navigator.cookieEnabled) {
-        alert('Please turn Cookie on in Your browser to enable saving recipes');
+function isAnyRecipeSaved() {
+    return !(localStorage.getItem('cockBook') === null);
+}
+
+function saveRecipeToLocalStorage () {
+    var recipe = JSON.parse(document.getElementById('chosenRecipe').value);
+    var savedRecipes = JSON.parse(localStorage.getItem('cockBook')) || [];
+    try {
+        if (savedRecipes.indexOf(recipe) !== -1) {
+            alert('Recipe is already saved in you Cook Book.');
+            return false;
+        } else if (savedRecipes.length >= 10){
+            alert('Sorry, you can save only 10 recipes in your Cook Book. Limit expires. \nYou should clear your Cook Book to save new recipes.');
+            if (confirm('Would you like to delete all saved recipes now?')) {
+                localStorage.removeItem('cockBook');
+            }
+        } else {
+            savedRecipes.push(recipe);
+            localStorage.setItem('cockBook', JSON.stringify(savedRecipes));
+            alert('Recipe was successfully saved. You can view it in your Cook Book.');
+            return true;
+        }
+    } catch(e) {
+        alert('Sorry, there were some errors with saving this recipe in your Cook Book');
         return false;
     }
-    return true;
 }
 
-function createCookie(name,value,days) {
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + ( days * 24 * 60 * 60 * 1000 ) );
-        var expires = "; expires=" + date.toGMTString();
+function showCockBook () {
+    if (isAnyRecipeSaved()) {
+        var savedRecipes = JSON.parse(localStorage.getItem('cockBook'));
+        var cookBook = new SearchResults(savedRecipes, 'startPage');
+        cookBook.init();
+        var loadMore = document.querySelector('#loadMoreButton');
+        attachReaction('click', loadMore, cookBook.loadMore);
+    } else {
+        alert('Sorry, you\'ve saved no one recipe to you Cook Book.');
     }
-    else {
-        var expires = "";
-    }
-    document.cookie = name + "=" + value + expires + "; path=/";
 }
-
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-}
-
-console.log(readCookie("recipe_7"));
-console.log(readCookie("recipe_5"));
-console.log(readCookie("recipe_0"));
-
-function eraseCookie(name) {
-    createCookie(name,"",-1);
-}
-
-eraseCookie("id");
-console.log(readCookie("id"));
-
