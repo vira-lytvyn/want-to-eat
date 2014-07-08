@@ -312,4 +312,12 @@ input.search-authors {
     border-top-color: #1b5c1d;
     @include background-color(#1b5c1d);
   }
+
+  @media screen and (max-width: 560px) {
+    padding-left: 2px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+  }
 }
