@@ -4,13 +4,13 @@
 .menu-step {
   width: 25%;
   &:hover, &:active {
-    @include background-color(#999);
+    @include background-color(#2eb626);
   }
   &.active {
-    @include background-color(#666);
+    @include background-color(#0a820e);
   }
   &.disabled {
-    @include background-color(#ccc);
+    @include background-color(#0a820e);
   }
 }
 
