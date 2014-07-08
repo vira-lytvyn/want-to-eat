@@ -8,13 +8,33 @@
   padding: 10px 10px 0 10px;
 }
 .category-item, .ingredient {
-  border-radius: 3px;
+  border-top: 1px solid #f2cea2;
+  background: #eda956;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6b981), to(#eda956));
+  background: -webkit-linear-gradient(top, #e6b981, #eda956);
+  background: -moz-linear-gradient(top, #e6b981, #eda956);
+  background: -ms-linear-gradient(top, #e6b981, #eda956);
+  background: -o-linear-gradient(top, #e6b981, #eda956);
+  padding: 9px 18px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  -webkit-box-shadow: rgba(0,0,0,1) 2px 2px 5px;
+  -moz-box-shadow: rgba(0,0,0,1) 2px 2px 5px;
+  box-shadow: rgba(0,0,0,1) 2px 2px 5px;
+  text-shadow: rgba(0,0,0,.2) 2px 2px 1px ;
+  color: #000000;
+  font-size: 19px;
+  font-family: Georgia, Serif;
+  text-decoration: none;
+  vertical-align: middle;
+
+
   width: 47%;
-  background: rgb(238, 200, 151);
   display: inline-block;
-  font-size: 12px;
+
   text-align: center;
-  padding: 10px;
+
   margin: 0px 0px 10px 10px;
   zoom: 1;
   cursor: pointer;

@@ -70,8 +70,10 @@ function createDOMforCategories(json) {
 
         categoryLabel.innerHTML = json[cIndex].name;
         categoryLabel.setAttribute('for', json[cIndex].name);
+        categoryLabel.className = 'wrapper-div';
+        categoryLabel.style.width = '100%';
 
-        categoryBlock.appendChild(radioButton);
+        categoryLabel.appendChild(radioButton);
         categoryBlock.appendChild(categoryLabel);
         spanRadioButtons.appendChild(categoryBlock);
 
