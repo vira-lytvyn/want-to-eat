@@ -64,6 +64,7 @@ function createDOMforCategories(json) {
 
         radioButton.type = 'radio';
         radioButton.className = 'categoryRadio';
+        radioButton.style.display = 'none';
         radioButton.name = 'category';
         radioButton.id = json[cIndex].name;
         radioButton.value = json[cIndex].name + 'Category';
@@ -99,6 +100,7 @@ function crtCheckboxForCategories(category, location) {
 
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
+        checkbox.style.display = 'none';
         checkbox.name = category.ingredients[chIndex];
 
         label.appendChild(checkbox);
