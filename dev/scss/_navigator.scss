@@ -13,3 +13,14 @@
     @include background-color(#ccc);
   }
 }
+
+.navigationButtons.main-page {
+
+  @media screen and (max-width: 560px) {
+    padding-left: 2px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+  }
+}
