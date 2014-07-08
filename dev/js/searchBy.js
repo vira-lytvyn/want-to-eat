@@ -56,8 +56,6 @@ function searchBy() {
         };
     }
     byName.value = 'by dish title: fined:' + nameArr.length;
-
-    console.log(new Date/1000 - time);
 }
 
 //***************************search by name************************************

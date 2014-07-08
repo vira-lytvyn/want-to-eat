@@ -55,22 +55,28 @@ function SearchResults(data, sectionId) {
     this.init = function(){
         _this.data = data;
         _this.section = sectionId;
-        _this.count = 0;
+        _this.count = _this.step;
         _this.clear();
         if (_this.section) {
             animationPages(_this.section, 'searchResult', 900);
         }
+        if (_this.checkMore()) {
+            document.querySelector('#loadMoreButton').style.display = 'inline-block';
+        }
         _this.show(0);
     };
     this.loadMore = function (){
-        _this.count += _this.step;
-        if (_this.count >= _this.data.length) {
-            this.style.display = 'none';
-            _this.show(_this.data.length);
-        } else {
+        if (_this.checkMore()) {
             this.style.display = 'inline-block';
             _this.show(_this.count);
+            _this.count += _this.step;
+        } else {
+            this.style.display = 'none';
+            _this.show(_this.data.length);
         }
+    };
+    this.checkMore = function() {
+        return _this.data.length > _this.count
     }
 }
 
