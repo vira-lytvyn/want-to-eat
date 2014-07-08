@@ -119,7 +119,13 @@ function activeDeactivateCheckbox() {
 }
 
 function activeDeactivateRadio() {
-    var radios = document.getElementById('radioButtons');
+    var radios = document.getElementById('radioButtons').children;
+    console.log(radios.children);
+    for(var i = 0; i < radios.length; i++) {
+        radios[i].className = 'category-item wrapper-div';
+        console.log(true);
+    }
+    this.parentNode.className = 'category-item wrapper-div activeCheckboxesAndRadio';
 }
 
 generateCategoriesControls();
