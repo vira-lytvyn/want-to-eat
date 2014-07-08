@@ -41,7 +41,7 @@ function searchBy() {
             attachReaction('click', loadMore, searchByAuthor.loadMore);
         };
     }
-    byAuthor.value = 'by author: finded:' + authorArr.length;
+    byAuthor.value = 'by author: fined:' + authorArr.length;
 
     var byName = searchBox.children[2];//<-byTitle button
     byName.onclick = function () {
@@ -55,7 +55,7 @@ function searchBy() {
             attachReaction('click', loadMore, searchByName.loadMore);
         };
     }
-    byName.value = 'by dish title: finded:' + nameArr.length;
+    byName.value = 'by dish title: fined:' + nameArr.length;
 
     console.log(new Date/1000 - time);
 }
