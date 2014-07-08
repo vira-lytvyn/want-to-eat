@@ -113,11 +113,21 @@ input.load-more {
   .title {
     display: inline-block;
     width: 70%;
+
+    @media screen and (max-width: 400px) {
+      width: 94%;
+      margin: 5px 3%;
+    }
   }
 }
 
-.buttonDesc {
+.buttonDesc.button {
   width: 25%;
+
+  @media screen and (max-width: 400px) {
+    width: 94%;
+    margin: 5px 3% 0;
+  }
 }
 
 .detail-info {
@@ -128,6 +138,13 @@ input.load-more {
   width: 49%;
   border-radius: 5px;
   float: left;
+
+  @media screen and (max-width: 400px) {
+    width: 94%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .info-text {
@@ -137,6 +154,13 @@ input.load-more {
 
   .detailButton {
     width: 100%;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 94%;
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
 /*recipe item end*/
@@ -206,6 +230,11 @@ input.search-authors {
   cursor: pointer;
   height: 60px;
   margin: 5px 0 0 0.7%;
+
+  @media screen and (max-width: 400px) {
+    width: 94%;
+    margin: 5px 3% 0;
+  }
 }
 
 .button.recipe-but {
@@ -218,6 +247,11 @@ input.search-authors {
 
   &.ing-head {
     margin-top: 15px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 24px;
+    padding-top: 14px;
   }
 }
 /*final recipe end*/

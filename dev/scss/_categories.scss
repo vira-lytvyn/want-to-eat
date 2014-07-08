@@ -18,4 +18,9 @@
   margin: 0px 0px 10px 10px;
   zoom: 1;
   cursor: pointer;
+
+  @media screen and (max-width: 400px) {
+    width: 94%;
+    margin: 0 3% 10px;
+  }
 }
