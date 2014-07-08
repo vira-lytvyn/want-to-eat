@@ -58,6 +58,7 @@ function createDOMforCategories(json) {
         var categoryBlock = document.createElement('div');
         categoryBlock.className = json[cIndex].name === 'all' ? 'category-item wrapper-div all-categories' :  'category-item wrapper-div';
 
+
         var radioButton = document.createElement('input');
         var categoryLabel = document.createElement('label');
 
@@ -120,10 +121,8 @@ function activeDeactivateCheckbox() {
 
 function activeDeactivateRadio() {
     var radios = document.getElementById('radioButtons').children;
-    console.log(radios.children);
     for(var i = 0; i < radios.length; i++) {
         radios[i].className = 'category-item wrapper-div';
-        console.log(true);
     }
     this.parentNode.className = 'category-item wrapper-div activeCheckboxesAndRadio';
 }
