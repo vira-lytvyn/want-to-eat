@@ -3,7 +3,7 @@
  * choose category and ingredients
  */
 
-function selectCategory(){
+function selectCategory() {
     animationPages('categoriesSection', 'ingredientsSection', 900);
     var divId = this.id;
 
@@ -19,14 +19,14 @@ function selectCategory(){
 
 //some effect animation-------------------------------------
     var labels = category.getElementsByClassName('ingredient');
-    for(var ii = 0; ii < labels.length; ii++){
+    for(var ii = 0; ii < labels.length; ii++) {
         labels[ii].style.display = 'none';
     }
     ii = 0;
-    var stop = setInterval(function(){
+    var stop = setInterval(function() {
         labels[ii].style.display = 'inline-block';
         ii++;
-        if(ii >= labels.length){
+        if(ii >= labels.length) {
             clearInterval(stop);
         }
     }, 45);
@@ -72,6 +72,7 @@ function createDOMforCategories(json) {
         categoryLabel.setAttribute('for', json[cIndex].name);
         categoryLabel.className = 'wrapper-div';
         categoryLabel.style.width = '100%';
+        attachReaction( 'click', categoryLabel, activeDeactivateRadio);
 
         categoryLabel.appendChild(radioButton);
         categoryBlock.appendChild(categoryLabel);
@@ -93,6 +94,7 @@ function crtCheckboxForCategories(category, location) {
     for(var chIndex = 0, catLng = category.ingredients.length; chIndex < catLng; chIndex++) {
         var label = document.createElement('label');
         label.className = 'ingredient wrapper-div';
+        attachReaction( 'click', label, activeDeactivateCheckbox);
 
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
@@ -105,6 +107,19 @@ function crtCheckboxForCategories(category, location) {
     }
 
     ingredientsSection.appendChild(divCategory);//add div to ingredientsSection
+}
+
+function activeDeactivateCheckbox() {
+    if(this.childNodes[0].checked) {
+        this.className += ' activeCheckboxesAndRadio';
+    } else {
+       this.className = 'ingredient wrapper-div';
+    }
+
+}
+
+function activeDeactivateRadio() {
+    var radios = document.getElementById('radioButtons');
 }
 
 generateCategoriesControls();

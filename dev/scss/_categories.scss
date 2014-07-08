@@ -10,8 +10,11 @@
 .category-item, .ingredient {
   border-top: 1px solid #f2cea2;
   background: #eda956;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6b981), to(#eda956));
   background: -webkit-linear-gradient(top, #e6b981, #eda956);
   background: -moz-linear-gradient(top, #e6b981, #eda956);
+  background: -ms-linear-gradient(top, #e6b981, #eda956);
+  background: -o-linear-gradient(top, #e6b981, #eda956);
   padding: 9px 18px;
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
@@ -31,9 +34,14 @@
   margin: 0px 0px 10px 10px;
   zoom: 1;
   cursor: pointer;
+}
 
-  @media screen and (max-width: 400px) {
-    width: 94%;
-    margin: 0 3% 10px;
-  }
+.activeCheckboxesAndRadio{
+  border-top: 1px solid #93d99b;
+  background: #0a820e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9ef799), to(#0a820e));
+  background: -webkit-linear-gradient(top, #9ef799, #0a820e);
+  background: -moz-linear-gradient(top, #9ef799, #0a820e);
+  background: -ms-linear-gradient(top, #9ef799, #0a820e);
+  background: -o-linear-gradient(top, #9ef799, #0a820e);
 }
