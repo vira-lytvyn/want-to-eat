@@ -63,7 +63,7 @@ function genrateRecipeItem(recipe) {
     infoText.appendChild(detailPar);
 
     var detailButton = document.createElement('input');
-    detailButton.className = 'detailButton navigationButtons';
+    detailButton.className = 'detailButton navigation-button';
     detailButton.type = 'button';
     detailButton.value = 'Detail';
     infoText.appendChild(detailButton);

@@ -34,7 +34,7 @@ function buildFinalRecipe(currentRecipe) {
     authors.innerHTML = '';
     for (i = 0; i < currentRecipe.authors.length; i++) {
         var authorButt = document.createElement('input');
-        authorButt.className = 'navigationButtons search-authors';
+        authorButt.className = 'navigation-button search-authors';
         authorButt.type = 'button';
         authorButt.value = currentRecipe.authors[i];
         authors.appendChild(authorButt);
@@ -79,7 +79,7 @@ function buildFinalRecipe(currentRecipe) {
 
         var ingLi = document.createElement('li');
         var ingLabel = document.createElement('label');
-        ingLabel.className = 'navigationButtons';
+        ingLabel.className = 'navigation-button';
         ingLabel.innerHTML = currentRecipe.ingredients[i];
         ingLabel.style.color = 'rgb(255, 255, 255)';
         ingLabel.style.cursor = 'pointer';

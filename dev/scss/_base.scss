@@ -199,7 +199,7 @@ input.search-authors {
     display: inline-block;
   }
 
-  .navigationButtons {
+  .navigation-button {
     font-size: 16px;
     height: 40px;
     padding-top: 9px;
@@ -262,7 +262,7 @@ input.search-authors {
 
 //create design--------------------------------------------------------
 
-.navigationButtons {
+.navigation-button {
   border: $simple-border;
   @include linear-gradient(#3e779d, #65a9d7);
   padding: 12px 24px;

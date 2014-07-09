@@ -21,11 +21,11 @@
                 <input type="button" value="by dish title" class="search-by button half-screen" />
             </div>
             <nav class="single-line main-menu wrapper">
-                <input type="button" class="menu-step navigationButtons wrapper-div main-page" value="1. Choose category" disabled>
-                <input type="button" class="menu-step navigationButtons wrapper-div main-page" value="2. Mark components"
+                <input type="button" class="menu-step navigation-button wrapper-div main-page" value="1. Choose category" disabled>
+                <input type="button" class="menu-step navigation-button wrapper-div main-page" value="2. Mark components"
                        onclick="animationPages('startPage', 'categoriesSection', 900);" disabled>
-                <input type="button" class="menu-step navigationButtons wrapper-div main-page" value="3. Choose recipe" disabled>
-                <input type="button" class="menu-step navigationButtons wrapper-div main-page" value="4. Enjoy!" disabled>
+                <input type="button" class="menu-step navigation-button wrapper-div main-page" value="3. Choose recipe" disabled>
+                <input type="button" class="menu-step navigation-button wrapper-div main-page" value="4. Enjoy!" disabled>
             </nav>
             <input type="button" class="single-line button button-join" value="join"
                    onclick="animationPages('startPage', 'categoriesSection', 900);">
@@ -73,8 +73,8 @@
                 <input type="button" class="menu-step button wrapper-div active" value="choose recipe">
             </nav>
             <div class="single-line clearfix" id="filter-box">
-                <input type="button" class="navigationButtons sub-blocks" value="Sort by rate">
-                <input type="button" class="navigationButtons sub-blocks" value="Sort by title">
+                <input type="button" class="navigation-button sub-blocks" value="Sort by rate">
+                <input type="button" class="navigation-button sub-blocks" value="Sort by title">
             </div>
             <div id="slider">
                 <input id="trumb" type="button" value="vegetarian: no!"/>
@@ -105,8 +105,8 @@
                 <h1 id="finalTitle"></h1>
             </div>
             <div class="clearfix">
-                <input type="button" class="sub-blocks navigationButtons" id="showAuthors" />
-                <input type="button" class="sub-blocks navigationButtons" id="rank" />
+                <input type="button" class="sub-blocks navigation-button" id="showAuthors" />
+                <input type="button" class="sub-blocks navigation-button" id="rank" />
             </div>
             <div id="authors"></div>
             <div>
@@ -128,8 +128,8 @@
             </div>
             <a href="" id="source" class="button recipe-but"></a>
             <div class="clearfix">
-                <input type="button" value="Save" class="sub-blocks navigationButtons" id="save" onclick="saveRecipeToLocalStorage();"/>
-                <input type="button" value="Send by e-mail" class="sub-blocks navigationButtons" id="sendBy"
+                <input type="button" value="Save" class="sub-blocks navigation-button" id="save" onclick="saveRecipeToLocalStorage();"/>
+                <input type="button" value="Send by e-mail" class="sub-blocks navigation-button" id="sendBy"
                        onclick="animationPages('finalRecipe', 'sendRecipeByEmail', 900);" />
             </div>
         </section>

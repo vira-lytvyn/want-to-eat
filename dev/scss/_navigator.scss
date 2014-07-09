@@ -14,7 +14,7 @@
   }
 }
 
-.navigationButtons.main-page {
+.navigation-button.main-page {
 
   @media screen and (max-width: 560px) {
     padding-left: 2px;
@@ -25,7 +25,7 @@
   }
 }
 
-.navigationButtons.main-page:hover {
+.navigation-button.main-page:hover {
   border-top-color: #28597a;
   background-color: #28597a;
   color: #ccc;
