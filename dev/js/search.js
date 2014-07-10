@@ -6,7 +6,7 @@ function searchRecipes(){
     if (!resultArr.length) {
         alert('Sorry, there are no one recipe to match you ingredients(( \nPlease, check more ingredients and try again.');
     }
-    resultArr = sortBy('weigth', resultArr); // move the 'heaviest' recipe up
+    resultArr = sortBy('weight', resultArr); // move the 'heaviest' recipe up
     var searchByIngredients = new SearchResults(resultArr, 'ingredientsSection');
     searchByIngredients.init();
     var loadMore = document.querySelector('#loadMoreButton');
@@ -87,7 +87,7 @@ function searchByCategory (category) {
     var arr = [];
     for (var i = 0; i < data.length; i++) {
        if (data[i].category.indexOf(category) !== -1) {
-           data[i].weigth = 0; // set 'weigth' property to each recipe from selected category
+           data[i].weight = 0; // set 'weight' property to each recipe from selected category
            arr.push(data[i]);
        }
     }
@@ -100,14 +100,14 @@ function calculateWeight(recipes, ingredients){
         var currentRecipeIngredients = recipes[i].ingredients.join();
         for (var j = 0; j < ingredients.length; j++) {
             if (currentRecipeIngredients.indexOf(ingredients[j]) !== -1) {
-                if (recipes[i].weigth) {
-                    recipes[i].weigth += 1; // increase weight of recipe if it contains more ingredients
+                if (recipes[i].weight) {
+                    recipes[i].weight += 1; // increase weight of recipe if it contains more ingredients
                 } else {
-                    recipes[i].weigth = 1;
+                    recipes[i].weight = 1;
                 }
             }
         }
-        if (recipes[i].weigth !== 0) {
+        if (recipes[i].weight !== 0) {
             resultArray.push(recipes[i]); // push recipe to result array if it contains at least one ingredient
         }
     }
