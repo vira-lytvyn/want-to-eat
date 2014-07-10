@@ -39,7 +39,7 @@ function searchBy() {
             attachReaction('click', loadMore, searchByAuthor.loadMore);
         };
     }
-    byAuthor.value = 'by author: fined:' + authorArr.length;
+    byAuthor.value = 'by author: found:' + authorArr.length;
 
     var byName = searchBox.children[2];//<-byTitle button
     byName.onclick = function () {
@@ -53,7 +53,7 @@ function searchBy() {
             attachReaction('click', loadMore, searchByName.loadMore);
         };
     }
-    byName.value = 'by dish title: fined:' + nameArr.length;
+    byName.value = 'by dish title: found:' + nameArr.length;
 }
 
 //***************************search by name************************************
