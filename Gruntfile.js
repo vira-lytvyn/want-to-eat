@@ -109,7 +109,7 @@ module.exports = function(grunt) {
             },
             style: {
                 files: ['dev/scss/*.scss'],
-                tasks: ['csscomb', 'scsslint', 'newer:sass', 'csslint'],
+                tasks: ['newer:csscomb', 'newer:scsslint', 'newer:sass', 'csslint'],
                 options: {
                     spawn: false
                 }
