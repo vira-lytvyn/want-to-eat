@@ -1,5 +1,5 @@
 function isAnyRecipeSaved() {
-    return !(localStorage.getItem('cockBook') === null);
+    return localStorage.getItem('cockBook') !== null;
 }
 
 function saveRecipeToLocalStorage () {

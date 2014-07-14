@@ -38,12 +38,7 @@ function buildFinalRecipe(currentRecipe) {
         authorButt.type = 'button';
         authorButt.value = currentRecipe.authors[i];
         authors.appendChild(authorButt);
-        authorButt.onclick = function() {
-            var searchByAuthor = new SearchResults(searchByTarget('authors', this.value), 'finalRecipe');
-            searchByAuthor.init();
-            var loadMore = document.querySelector('#loadMoreButton');
-            attachReaction('click', loadMore, searchByAuthor.loadMore);
-        };
+        attachReaction('click', authorButt, searchByAuthor);
     }
     //X end of info block
 
@@ -96,14 +91,7 @@ function buildFinalRecipe(currentRecipe) {
                 }
             }
         }
-
-        ingCheck.onchange = function() {
-            if(this.checked) {
-                this.parentNode.style.color = 'rgba(255, 255, 255, 0.5)';
-            } else {
-                this.parentNode.style.color = 'rgb(255, 255, 255)';
-            }
-        }
+        attachReaction('change', ingCheck, changeIngredientBackground);
     }
     //X end of ingredients block
 
@@ -159,5 +147,19 @@ function buildFinalRecipe(currentRecipe) {
         } else {
             hiddenBlock.style.display = 'none';
         }
+    }
+}
+
+function searchByAuthor() {
+    var searchByAuthorResults = new SearchResults(searchByTarget('authors', this.value), 'finalRecipe');
+    searchByAuthorResults.init();
+    var loadMore = document.querySelector('#loadMoreButton');
+    attachReaction('click', loadMore, searchByAuthorResults.loadMore);
+}
+function changeIngredientBackground() {
+    if(this.checked) {
+        this.parentNode.style.color = 'rgba(255, 255, 255, 0.5)';
+    } else {
+        this.parentNode.style.color = 'rgb(255, 255, 255)';
     }
 }

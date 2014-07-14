@@ -10,7 +10,7 @@ function EmailRequestConstructor () {
 EmailRequestConstructor.prototype.sendRequest = function (params) {
     var request,
         _this = this;
-    if (params == null) {
+    if (params === null) {
         params = {};
     }
     params.key = this.key;
@@ -24,7 +24,7 @@ EmailRequestConstructor.prototype.sendRequest = function (params) {
             return;
         }
         response = JSON.parse(request.responseText);
-        if (response == null) {
+        if (response === null) {
             response = {
                 status: 'error',
                 name: 'GeneralError',

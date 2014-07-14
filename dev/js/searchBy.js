@@ -31,7 +31,7 @@ function searchBy() {
     byAuthor.onclick = function () {
         return false;
     };
-    if (authorArr.length != 0) {
+    if (authorArr.length !== 0) {
         byAuthor.onclick = function () {
             var searchByAuthor = new SearchResults(authorArr, 'startPage');
             searchByAuthor.init();
@@ -45,7 +45,7 @@ function searchBy() {
     byName.onclick = function () {
         return false;
     };
-    if (nameArr.length != 0) {
+    if (nameArr.length !== 0) {
         byName.onclick = function () {
             var searchByName = new SearchResults(nameArr, 'startPage');
             searchByName.init();
@@ -107,7 +107,7 @@ function searchByTarget(target, value) {
 
     function searchMultiWords(object, arr) {
         var length = arr.length;
-        if (length != 0) {
+        if (length !== 0) {
             if (object[target].search(arr[length-1]) + 1) {
                 arr.pop();
                 searchMultiWords(object, arr);

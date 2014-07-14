@@ -65,13 +65,13 @@ function addSortEvent (array) {
             document.onmousemove = trumb.onmouseup = null;
 
             if (parseInt(trumb.style.left) != slider.clientWidth - trumb.clientWidth && parseInt(trumb.style.left) != '0') {
-                var arr;
+                var arr,
+                    loadMore = document.querySelector('#loadMoreButton');
                 if (parseInt(trumb.style.left) > slider.clientWidth / 2 - trumb.clientWidth / 2) {
                     arr = findByVegetarian(array);
 
                     var searchByVegan = new SearchResults(arr);
                     searchByVegan.init();
-                    var loadMore = document.querySelector('#loadMoreButton');
                     attachReaction('click', loadMore, searchByVegan.loadMore);
                     trumb.style.left = slider.clientWidth - trumb.clientWidth + 'px';
                     trumb.style.background = 'rgb(154, 205, 50)';
@@ -82,7 +82,6 @@ function addSortEvent (array) {
 
                     var searchByMeat = new SearchResults(arr.old);
                     searchByMeat.init();
-                    var loadMore = document.querySelector('#loadMoreButton');
                     attachReaction('click', loadMore, searchByMeat.loadMore);
                     trumb.style.left = '0';
                     trumb.style.background = 'rgb(233, 55, 55)';
@@ -90,8 +89,8 @@ function addSortEvent (array) {
                     slider.children[1].innerHTML = '>>> slide >>>';
                 }
             }
-        }
-    }
+        };
+    };
 }
 
 //***find vegetarian dishes, and return Object with new and old dishes arrays***

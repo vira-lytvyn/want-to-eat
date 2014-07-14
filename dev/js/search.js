@@ -79,8 +79,8 @@ function SearchResults(data, sectionId) {
         }
     };
     this.checkMore = function() {
-        return _this.data.length > _this.count
-    }
+        return _this.data.length > _this.count;
+    };
 }
 
 function searchByCategory (category) {
