@@ -9,7 +9,7 @@
         <!--Home page content below -->
         <section id="startPage">
             <div class="single-line logo">
-                <img src="img/logo.png" class="logo">
+                <img src="img/logo.png" class="logo" alt="Logo">
             </div>
             <div class="single-line hidable-buttons clearfix">
                 <input type="button" class="button half-screen" id="cookBook" value="cook book" onclick="showCockBook();">
@@ -100,13 +100,13 @@
                 <input type="button" class="menu-step button wrapper-div disabled" value="choose recipe"
                        onclick="animationPagesBack('finalRecipe', 'searchResult', 900);">
             </nav>
-           <img src="" alt="" id="finalImg">
+           <img src="img/logo.png" alt="Recipe image" id="finalImg">
             <div>
-                <h1 id="finalTitle"></h1>
+                <h1 id="finalTitle">Recipe name</h1>
             </div>
             <div class="clearfix">
-                <input type="button" class="sub-blocks navigation-button" id="showAuthors" />
-                <input type="button" class="sub-blocks navigation-button" id="rank" />
+                <input type="button" class="sub-blocks navigation-button" id="showAuthors" value="authors:"/>
+                <input type="button" class="sub-blocks navigation-button" id="rank" value="social rank:"/>
             </div>
             <div id="authors"></div>
             <div>
