@@ -254,59 +254,6 @@ input.search-authors {
     margin: 5px 3% 0;
     }
   }
-
-.button.recipe-but {
-  font-family: Georgia, Serif;
-  font-size: 34px;
-  font-size: 13px;
-  font-weight: normal;
-
-  display: block;
-
-  height: $button-height;
-  margin: 0;
-  margin-top: 5px;
-  padding: 11.5px 23px;
-  padding-top: 7px;
-
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-
-  color: white;
-  border: $simple-border;
-  text-shadow: rgba(0,0,0,.4) 0 1px 0;
-
-  @include linear-gradient(#2f9429, #69c972);
-  @include rounded-border(4px);
-  @include box-shadow($one-pixel-shadow);
-  &.ing-head {
-    margin-top: 15px;
-    }
-  @media screen and (max-width: 400px) {
-    font-size: 24px;
-
-    padding-top: 14px;
-    }
-  &:hover {
-    color: #ccc;
-    border-top-color: #1d8f24;
-
-    @include background-color(#1d8f24);
-    }
-  &:active {
-    border-top-color: #1b5c1d;
-
-    @include background-color(#1b5c1d);
-    }
-  @media screen and (max-width: 560px) {
-    padding-left: 2px;
-    }
-  @media screen and (max-width: 400px) {
-    font-size: 10px;
-    }
-  }
 //final recipe end
 
 .clearfix:after {
@@ -351,5 +298,59 @@ input.search-authors {
     @include background-color(#1b435e);
     }
   }
+.button {
+  font-family: Georgia, Serif;
+  font-size: 13px;
 
+  height: $button-height;
+  margin: 0;
+  padding: 11.5px 23px;
 
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+
+  color: white;
+  border: $simple-border;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+
+  @include linear-gradient(#2f9429, #69c972);
+  @include rounded-border(4px);
+  @include box-shadow($one-pixel-shadow);
+  &.recipe-but {
+    font-size: 34px;
+    font-weight: normal;
+
+    display: block;
+
+    margin-top: 5px;
+    padding-top: 7px;
+
+    text-align: center;
+    &.ing-head {
+      margin-top: 15px;
+      }
+    @media screen and (max-width: 400px) {
+      font-size: 24px;
+
+      padding-top: 14px;
+      }
+    }
+  &:hover {
+    color: #ccc;
+    border-top-color: #1d8f24;
+
+    @include background-color(#1d8f24);
+    }
+  &:active {
+    border-top-color: #1b5c1d;
+
+    @include background-color(#1b5c1d);
+    }
+  @media screen and (max-width: 560px) {
+    padding-left: 2px;
+    }
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+    }
+  }
