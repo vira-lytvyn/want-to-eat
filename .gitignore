@@ -4,6 +4,9 @@
 # Grunt #
 /build/
 /node_modules/
+validation-report.json
+validation-status.json
+scss-lint-report.xml
 
 # IDE settings #
 .idea
