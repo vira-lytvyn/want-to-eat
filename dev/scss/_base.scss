@@ -1,323 +1,355 @@
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
   position: relative;
-}
 
-/*main start*/
-body{
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  background: #DCECFD;
-
-  section {
-    max-width: $tablet-section-width;
-    min-width: $mobile-section-width;
-    margin: 0 auto;
-    display: none;
-    background: #DCECFD;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   }
 
+//main start
+body {
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  background: #dcecfd;
+  section {
+    display: none;
+
+    min-width: $mobile-section-width;
+    max-width: $tablet-section-width;
+    margin: 0 auto;
+
+    background: #dcecfd;
+    }
   #startPage {
     display: block;
+    }
   }
-}
 
 .single-line {
   width: 100%;
-
   &.logo {
-      background: $logo-color;
-      max-height: 110px;
-      text-align: center;
-      height: 100%;
+    height: 100%;
+    max-height: 110px;
+
+    text-align: center;
+
+    background: $logo-color;
+    }
   }
-}
 
 .half-screen {
   display: inline-block;
-  width: 50%;
   float: left;
-}
+
+  width: 50%;
+  }
 
 .search-box {
   position: relative;
-  display: none;
 
+  display: none;
   .search-input {
     width: 100%;
     height: $button-height / 2;
-  }
-}
-/*main end*/
-
-/*filter-box*/
-#slider {
-  height: 57px;
-  background: white;
-  margin: 20px 0;
-  text-align: center;
-  font-size: 20px;
-  @include rounded-border(10px);
-
-  #trumb {
-    background: rgb(233, 55, 55);
-    width: 33%;
-    height: 58px;
-    position: absolute;
-    left: 0;
-    z-index: 100;
-    cursor: pointer;
-    text-shadow: 0px 2px 3px rgba(150, 150, 150, 1);
-    font-size: 15px;
-    @include rounded-border(10px);
-    top: -1px;
-
-    &:focus {
-      outline: none;
     }
   }
-}
+//main end
+
+//filter-box
+#slider {
+  font-size: 20px;
+
+  height: 57px;
+  margin: 20px 0;
+
+  text-align: center;
+
+  background: white;
+
+  @include rounded-border(10px);
+  #trumb {
+    font-size: 15px;
+
+    position: absolute;
+    z-index: 100;
+    top: -1px;
+    left: 0;
+
+    width: 33%;
+    height: 58px;
+
+    cursor: pointer;
+
+    background: rgb(233, 55, 55);
+    text-shadow: 0 2px 3px rgba(150, 150, 150, 1);
+
+    @include rounded-border(10px);
+    &:focus {
+      outline: none;
+      }
+    }
+  }
 
 #slider-text {
   top: 19px;
-}
+  }
 
 input.load-more {
-  width: 100%;
   font-size: 24px;
+
   display: none;
 
+  width: 100%;
   @media screen and (max-width: 400px) {
     margin-top: 10px;
+    }
   }
-}
-/*filter-box*/
+//filter-box
 
-/*recipe item start*/
+//recipe item start
 .recipeItem {
-  border: $simple-border;
   margin: 5px auto;
-}
+
+  border: $simple-border;
+  }
 
 .general-info {
-  background: rgb(135, 185, 248);
-  @include box-shadow(0 8px 8px -6px rgba(0, 0, 0, 0.6));
   padding: 0 1%;
 
+  background: rgb(135, 185, 248);
+
+  @include box-shadow(0 8px 8px -6px rgba(0, 0, 0, .6));
   .title {
     display: inline-block;
-    width: 70%;
 
+    width: 70%;
     @media screen and (max-width: 400px) {
       width: 94%;
       margin: 5px 3%;
+      }
     }
   }
-}
 
 .buttonDesc.button {
   width: 25%;
-
   @media screen and (max-width: 400px) {
     width: 94%;
     margin: 5px 3% 0;
+    }
   }
-}
 
 .detail-info {
   padding: 5px 1%;
-}
+  }
 
 .infoImg {
-  width: 49%;
-  @include rounded-border(5px);
   float: left;
 
+  width: 49%;
+
+  @include rounded-border(5px);
   @media screen and (max-width: 400px) {
-    width: 94%;
-    float: none;
     display: block;
+    float: none;
+
+    width: 94%;
     margin: 0 auto;
+    }
   }
-}
 
 .info-text {
   float: left;
+
   width: 49%;
   margin-left: 2%;
-
   .detailButton {
     width: 100%;
-  }
-
+    }
   @media screen and (max-width: 400px) {
-    width: 94%;
-    float: none;
     display: block;
-    margin: 0 auto;
-  }
-}
-/*recipe item end*/
+    float: none;
 
-/*final recipe start*/
+    width: 94%;
+    margin: 0 auto;
+    }
+  }
+//recipe item end
+
+//final recipe start
 #finalImg {
-  @include rounded-border(5px);
   width: 100%;
   margin-top: 5px;
-}
+
+  @include rounded-border(5px);
+  }
 
 #finalTitle {
   margin-left: 30px;
-}
+  }
 
 input.search-authors {
-  padding: 4px 15px;
-  margin-left: 3%;
-  margin-top: 5px;
   height: 24px;
-}
+  margin-top: 5px;
+  margin-left: 3%;
+  padding: 4px 15px;
+  }
 
 #description {
   margin-left: 5px;
-}
+  }
 
 .medallions {
   margin-left: 5px;
   padding: 7px;
-  @include rounded-border(100%);
-  @include box-shadow(0px 2px 5px 0px rgba(0,0,0,0.75));
+
   text-shadow: -1px 1px 3px rgba(150, 150, 150, 1);
-}
+
+  @include rounded-border(100%);
+  @include box-shadow(0 2px 5px 0 rgba(0,0,0,.75));
+  }
 
 #ingredients {
   list-style: none;
-
   li {
     display: inline-block;
-  }
-
+    }
   .navigation-button {
     font-size: 16px;
-    height: 40px;
-    padding-top: 9px;
-    margin: 2px 0 0 2px;
-    display: inline-block;
-  }
 
+    display: inline-block;
+
+    height: 40px;
+    margin: 2px 0 0 2px;
+    padding-top: 9px;
+    }
   input {
     top: 3px;
+
     margin-right: 15px;
+    }
   }
-}
 
 #ingredients,
 #tips {
   font-size: 17px;
-}
+  }
 
 .sub-blocks {
-  border: $simple-border;
-  width: 49%;
   float: left;
-  cursor: pointer;
-  height: 60px;
-  margin: 5px 0 0 0.7%;
 
+  width: 49%;
+  height: 60px;
+  margin: 5px 0 0 .7%;
+
+  cursor: pointer;
+
+  border: $simple-border;
   @media screen and (max-width: 400px) {
     width: 94%;
     margin: 5px 3% 0;
+    }
   }
-}
 
 .button.recipe-but {
-  text-align: center;
+  font-family: Georgia, Serif;
   font-size: 34px;
-  display: block;
-  padding-top: 7px;
+  font-size: 13px;
   font-weight: normal;
-  margin-top: 5px;
 
+  display: block;
+
+  height: $button-height;
+  margin: 0;
+  margin-top: 5px;
+  padding: 11.5px 23px;
+  padding-top: 7px;
+
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+
+  color: white;
+  border: $simple-border;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+
+  @include linear-gradient(#2f9429, #69c972);
+  @include rounded-border(4px);
+  @include box-shadow($one-pixel-shadow);
   &.ing-head {
     margin-top: 15px;
-  }
-
+    }
   @media screen and (max-width: 400px) {
     font-size: 24px;
+
     padding-top: 14px;
+    }
+  &:hover {
+    color: #ccc;
+    border-top-color: #1d8f24;
+
+    @include background-color(#1d8f24);
+    }
+  &:active {
+    border-top-color: #1b5c1d;
+
+    @include background-color(#1b5c1d);
+    }
+  @media screen and (max-width: 560px) {
+    padding-left: 2px;
+    }
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+    }
   }
-}
-/*final recipe end*/
+//final recipe end
 
 .clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
   line-height: 0;
+
+  display: block;
+  visibility: hidden;
+  clear: both;
+
   height: 0;
-}
+
+  content: '.';
+  }
 
 //create design--------------------------------------------------------
 
 .navigation-button {
-  border: $simple-border;
-  @include linear-gradient(#3e779d, #65a9d7);
+  font-family: Georgia, Serif;
+  font-size: 12px;
+
   padding: 12px 24px;
+
+  vertical-align: middle;
+  text-decoration: none;
+
+  color: white;
+  border: $simple-border;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+
+  @include linear-gradient(#3e779d, #65a9d7);
   @include rounded-border(5px);
   @include box-shadow($one-pixel-shadow);
-  text-shadow: rgba(0,0,0,.4) 0 1px 0;
-  color: white;
-  font-size: 12px;
-  font-family: Georgia, Serif;
-  text-decoration: none;
-  vertical-align: middle;
-
   &:hover {
-    border-top-color: #28597a;
-    @include background-color(#28597a);
     color: #ccc;
-  }
+    border-top-color: #28597a;
+
+    @include background-color(#28597a);
+    }
   &:active {
     border-top-color: #1b435e;
+
     @include background-color(#1b435e);
-  }
-}
-
-.button {
-  border: $simple-border;
-  @include linear-gradient(#2f9429, #69c972);
-  padding: 11.5px 23px;
-  @include rounded-border(4px);
-  @include box-shadow($one-pixel-shadow);
-  text-shadow: rgba(0,0,0,.4) 0 1px 0;
-  color: white;
-  font-size: 13px;
-  font-family: Georgia, Serif;
-  text-decoration: none;
-  vertical-align: middle;
-  height: $button-height;
-  cursor: pointer;
-  margin: 0;
-
-  &:hover {
-    border-top-color: #1d8f24;
-    @include background-color(#1d8f24);
-    color: #ccc;
+    }
   }
 
-  &:active {
-    border-top-color: #1b5c1d;
-    @include background-color(#1b5c1d);
-  }
 
-  @media screen and (max-width: 560px) {
-    padding-left: 2px;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 10px;
-  }
-}

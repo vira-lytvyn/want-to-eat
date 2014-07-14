@@ -1,43 +1,51 @@
 input[type='text'],
 input[type='email'],
 textarea {
-    padding: 5px 10px;
-    height: $button-height / 2;
-}
+  height: $button-height / 2;
+  padding: 5px 10px;
+  }
 
 textarea {
-    resize: none;
-    height: $button-height / 2 * 3;
-}
+  height: $button-height / 2 * 3;
 
-    :required {
-      @include box-shadow(0 0 1px 1px #fa0);
-        background-color: #fff;
-        border: none;
-    }
+  resize: none;
+  }
 
-    :required:valid{
-      @include box-shadow(0 0 1px 1px #3f8);
-        border: none;
-    }
+:required {
+  border: 0;
+  background-color: #fff;
 
-    :invalid{
+  @include box-shadow(0 0 1px 1px #fa0);
+  }
+
+:required:valid {
+  border: 0;
+
+  @include box-shadow(0 0 1px 1px #3f8);
+  }
+
+:invalid {
   //    background-color: rgba(255, 80, 80, 0.1);
-    }
+  }
 
-    input:focus:invalid {
-      @include box-shadow(0 0 1px 1px #f55);
-        border: none;
-    }
+input:focus:invalid {
+  border: 0;
 
-    input:focus, textarea:focus {
-        outline: none;
-    }
+  @include box-shadow(0 0 1px 1px #f55);
+  }
 
-.label-blocks{
-    margin: 15px 0px 5px 0px;
-    font-weight: bold;
-    line-height: 20px;
-    cursor: pointer;
-    display: block;
-}
+input:focus,
+textarea:focus {
+  outline: none;
+  }
+
+.label-blocks {
+  font-weight: bold;
+  line-height: 20px;
+
+  display: block;
+
+  margin: 15px 0 5px;
+
+  cursor: pointer;
+  }

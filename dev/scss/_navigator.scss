@@ -1,32 +1,29 @@
-.main-menu {
 
-}
 .menu-step {
   width: 25%;
-  &:hover, &:active {
+  &:hover,
+  &:active {
     @include background-color(#2eb626);
-  }
+    }
   &.active {
     @include background-color(#0a820e);
-  }
+    }
   &.disabled {
     @include background-color(#0a820e);
+    }
   }
-}
 
 .navigation-button.main-page {
-
   @media screen and (max-width: 560px) {
     padding-left: 2px;
-  }
-
+    }
   @media screen and (max-width: 400px) {
     font-size: 10px;
+    }
   }
-}
 
 .navigation-button.main-page:hover {
+  color: #ccc;
   border-top-color: #28597a;
   background-color: #28597a;
-  color: #ccc;
-}
+  }
